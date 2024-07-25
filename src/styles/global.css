@@ -1,3 +1,169 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
+body{
+    /* background: url('../../static/bg.jpg'); */
+    background-size: cover;
+    /* padding: 10px; */
+}
+
+nav .lists a[aria-current="page"] {
+    color: #fff;
+    background-color: rgb(22 163 74 );
+    padding: 1px 10px 2px 10px;
+    border-radius: 50px;
+}
+
+footer a[aria-current="page"]{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.customFaqCard svg {
+    font-size: 16px;
+    color: #00d35b;
+    background-color: #aff0c8;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.topBgDesign{
+    background-image: url('../images/Footer.png');
+    background-size: contain;
+    height: 80px;
+}
+.bottomBgDesign {
+    background-image: url('../images/Footer.png');
+    background-size: contain;
+}
+
+.successApplyBtn{
+    background-color: #00d35b;
+}
+/*Login page SVG-----------------------------------------------*/
+.custom-shape-divider-bottom-1720724252 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1720724252 svg {
+    position: relative;
+    display: block;
+    width: calc(239% + 1.3px);
+    height: 145px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1720724252 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*Header SVG-----------------------------------------------*/
+
+.custom-shape-divider-bottom-1720730232 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720730232 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 32px;
+}
+
+.custom-shape-divider-bottom-1720730232 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*Footer SVG-----------------------------------------------*/
+.custom-shape-divider-top-1720730029 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1720730029 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 32px;
+}
+
+.custom-shape-divider-top-1720730029 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.footerBg{
+    position: relative;
+    min-height: 25vh;
+    background: linear-gradient(to bottom, #cde666, #27cb64);
+}
+
+/* map hover color---------------------------------------------- */
+
+.usaMap svg {
+    width: 100%;
+    height: 100%;
+}
+
+.usaMap svg path {
+    cursor: pointer;
+}
+
+.usaMap svg path:hover {
+    fill: #555;
+}
+
+/* .usaMap div svg{
+    width: 100%;
+    height: 50%;
+}
+.usaMap div svg path{
+    cursor: pointer;
+}
+
+.usaMap div svg .state:hover{
+    background: black;
+    background-color: black;
+    color: black;
+} 
+
+.state-hover:hover {
+    fill: black;
+} */
+
+/* Media Queries------------------------------------------------ */
+@media screen and (max-width: 768px){
+    .loanApply{
+        margin-top: 50px;
+    }
+    .logoSec{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .footerLogo{
+        width: 35%;
+    }
+    .headLogo{
+        width: 12%;
+    }
+    .footerBg {
+        min-height: 40vh;
+    }
+}

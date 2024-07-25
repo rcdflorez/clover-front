@@ -1,0 +1,24 @@
+.accordion{
+    cursor: pointer;
+}
+.accordion div {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+.accordion div button{
+    background-color: #bbb;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #969595;
+    font-size: 14px;
+}
+.accordion div button svg{
+    color: #fff;
+}
+.accordion div div div {
+    font-size: 14px;
+    background-color: #d4d3d3;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #969595;
+}

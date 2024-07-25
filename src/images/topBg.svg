@@ -1,0 +1,9 @@
+<svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style={{ stopColor: '#cde666', stopOpacity: 1 }} />
+      <stop offset="100%" style={{ stopColor: '#24d75d', stopOpacity: 1 }} />
+    </linearGradient>
+  </defs>
+  <path d="M0,50 C150,100 350, 0 600,100 L500,00 L0,0 Z" style={{ stroke: 'none', fill: 'url(#grad1)' }} />
+</svg>
