@@ -45,3 +45,17 @@
     margin: 0px auto;
     text-align: center;
 }
+
+.card span{
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .card h3{
+        font-size: 32px;
+    }
+    .card a {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+}

@@ -31,7 +31,7 @@ export default function Modal({ closeModal }) {
         </span>
         <h2 className="text-lg font-bold mb-4">Contact Management</h2>
         <p className="mb-4">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+          We are here to help. Feel free to reach out to a manager. Customer service is our first priority. Fill out this quick form and we will contact you as quickly as possible.
         </p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">

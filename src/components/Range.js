@@ -31,7 +31,7 @@ export default function Range({ min, max, step }) {
           {`$ ${value}.00`}
         </div>
       </div>
-      <button className="w-[50%] h-[30px] ml-10 mt-1 text-xs successApplyBtn hover:shadow-lg text-white py-1 px rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+      <button className="sm:w-[50%] xs:w-[100%] h-[30px] sm:ml-10 xs:ml-0 mt-1 xs:mx-auto xs:text-lg lg:text-xs successApplyBtn hover:shadow-lg text-white spy-1 px rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 ">
           Apply
       </button>
     </div>

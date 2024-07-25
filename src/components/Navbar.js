@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <header className="topBgDesign relative">
       <div className="absolute w-[100%] z-0">
-        <div style={{ position: 'relative', minHeight: '19.5vh', background: 'linear-gradient(to bottom, #cde666, #27cb64)' }}>
+        <div className="headerBg" style={{ position: 'relative', background: 'linear-gradient(to bottom, #cde666, #27cb64)' }}>
           <div className="custom-shape-divider-bottom-1720730232">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-2 rounded-lg p-1 pr-3 z-10 relative" aria-label="Global">
+      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-4 sm:mt-2 rounded-lg p-1 pr-3 z-10 relative w-[90%]" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="#" className="-m-1.5 p-1.5">
             <div className="headLogo w-[8%] bg-green-600 rounded-lg p-2">

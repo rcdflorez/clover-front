@@ -3,48 +3,58 @@ import Layout from "../components/Layout"
 import * as cardStyles from '../styles/card.module.css'
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+import { faMedal, faQuestion, faUser } from '@fortawesome/free-solid-svg-icons';
 import RangeInput from "../components/Range";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Home() {
   return <div>
     <Layout>
-      <section className="loanApply">
-        <div className="container mx-auto pt-8 pb-4 px-4">
-          <div className="logoSec w-[15%] mb-1">
-              <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
-          </div>
-          <h3 className="text-2xl font-bold mb-8 text-left">Apply now for a loan upto <span className="text-[#0bcd5e]">$2000</span></h3>
-          <RangeInput min={300} max={2000} step={100} />
-        </div>
-      </section>
-      <section>
-        <div className={`${cardStyles.card} font-Aldrich container mx-auto p-2`}>
-          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 gap-2">
-            <div className="main">
-              <FontAwesomeIcon icon={faEnvelopeOpen} />
-              <h3>Common Questions</h3>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <Link to="/">Learn More</Link>
+      <div className="px-7">
+        <section className="loanApply">
+          <div className="container mx-auto pt-8 pb-4 px-4">
+            <div className="logoSec w-[15%] mb-1">
+                <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
             </div>
+            <h3 className="text-2xl font-bold mb-8 text-left">Apply now for a loan upto <span className="text-[#0bcd5e]">$2000</span></h3>
+            <RangeInput min={300} max={2000} step={100} />
+          </div>
+        </section>
+        <section className="container mx-auto my-5 p-2">
+          <h3 className="text-2xl font-bold">Building relationships through financial trust</h3>
+          <p>Clover Credit is a smart, simple, fast way to borrow money when you need it most. We offer short-term installment loans with no hidden fees. Our super easy online loan process offers you the funds you need now.</p>
+        </section>
+        <section className="container mx-auto p-2">
+          <article className="sm:mx-0 md:mx-[10%] sm:text-left md:text-center my-5 p-2">
+            <h3 className="text-2xl font-bold">Do it yourself safely and securely</h3>
+            <p>Forget the paperwork. No need to talk to anyone. <br />Use our fully automated, completely secure online portal to apply for a loan in minutes.</p>
+          </article>
+          <div className={`${cardStyles.card} font-Aldrich `}>
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 gap-2">
+              <div className="main">
+                <FontAwesomeIcon icon={faQuestion} />
+                <h3>Common Questions</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <Link to="/">Learn More</Link>
+              </div>
 
-            <div className="main">
-              <FontAwesomeIcon icon={faEnvelopeOpen} />
-              <h3>Rewards and Perks</h3>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <Link to="/">View Benefits</Link>
-            </div>
-            
-            <div className="main">
-              <FontAwesomeIcon icon={faEnvelopeOpen} />
-              <h3>Common Questions</h3>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <Link to="/">Customer Portal</Link>
+              <div className="main">
+                <FontAwesomeIcon icon={faMedal} />
+                <h3>Rewards and Perks</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <Link to="/">View Benefits</Link>
+              </div>
+              
+              <div className="main">
+                <FontAwesomeIcon icon={faUser} />
+                <h3>Self Service</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <Link to="/">Customer Portal</Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </Layout>
   </div>
 }
