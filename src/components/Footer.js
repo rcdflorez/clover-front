@@ -13,7 +13,7 @@ export default function Footer() {
     const closeModal = () => setIsModalOpen(false);
 
     return (
-        <footer className="text-black-300 pt-4 mt-10">
+        <footer className="text-black-300 pt-4 mt-10 relative">
             <div className="absolute w-[100%] z-0">
                 <div className="footerBg">
                     <div className="custom-shape-divider-top-1720730029">

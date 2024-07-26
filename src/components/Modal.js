@@ -54,7 +54,7 @@ export default function Modal({ closeModal }) {
               onChange={handleChange}
             />
           </div>
-          <span className="mb-1 block text-[14px]">Message</span>
+          <span className="mb-1 block text-[16px]">Message</span>
           <div className="mb-1">
             <input
               className="shadow appearance-none border rounded-md w-full py-2 px-1 text-gray-700 mb-0 leading-tight focus:outline-none focus:shadow-outline text-sm"
