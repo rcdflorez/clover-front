@@ -34,7 +34,7 @@ export default function Footer() {
                         <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link>
                         <Link to="/faqs" className="text-sm font-medium leading-6 text-gray-900 m-1">FAQs</Link>
                         <Link to="/terms" className="text-sm font-medium leading-6 text-gray-900 m-1">Terms</Link>
-                        <button onClick={openModal} className="rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 hover:bg-gray-50 font-medium">Support</button>
+                        <button onClick={openModal} className="rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 font-medium">Support</button>
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-2 gap-2 mt-2 border-t-2 border-gray-600 border-b-2 text-center mb-2">
