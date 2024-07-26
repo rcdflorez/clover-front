@@ -1,15 +1,15 @@
-import './src/styles/global.css';
+import "./src/styles/global.css";
 
 export const onClientEntry = () => {
-  const link = document.createElement("link")
-  link.href ="https://fonts.googleapis.com/css2?family=Aldrich&display=swap"
-  link.rel = "stylesheet"
-  document.head.appendChild(link)
-}
+  const Aldrich = document.createElement("link");
+  Aldrich.href =
+    "https://fonts.googleapis.com/css2?family=Aldrich&display=swap";
+  Aldrich.rel = "stylesheet";
+  document.head.appendChild(Aldrich);
 
-export const onClientEntryOne = () => {
-  const link = document.createElement("link")
-  link.href ="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
-  link.rel = "stylesheet"
-  document.head.appendChild(link)
-}
+  const Varela = document.createElement("link");
+  Varela.href =
+    "https://fonts.googleapis.com/css2?family=Varela+Round&display=swap";
+  Varela.rel = "stylesheet";
+  document.head.appendChild(Varela);
+};
