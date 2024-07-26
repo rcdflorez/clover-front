@@ -12,7 +12,7 @@ export default function Home() {
     <Layout>
       <div className="px-7">
         <section className="loanApply">
-          <div className="container mx-auto pt-8 pb-4 px-4">
+          <div className="container mx-auto pb-4 px-4">
             <div className="logoSec w-[15%] mb-1">
                 <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
             </div>
