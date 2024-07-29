@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons"
+import { faCoins, faDollar, faWallet } from "@fortawesome/free-solid-svg-icons"
 import Usamap from "../components/UsaMap"
 
 export default function Terms() {
@@ -19,8 +19,8 @@ export default function Terms() {
     <Layout>
       <section className="container mx-auto py-3 px-8">
         <div className="pt-4 mt-8">
-          <h1 className="text-lg font-bold text-[24px]">Where we lend</h1>
-          <span className="block my-2 text-green-500 text-md">Clover Credit is currently available in the following states:</span>
+          <h1 className="text-3xl font-bold">Where we lend</h1>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">Clover Credit is currently available in the following states:</span>
           <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
         </div>
 
@@ -40,21 +40,21 @@ export default function Terms() {
 
 
         <div className="pt-4 mt-4">
-          <h1 className="text-lg font-bold text-[24px]">What does a loan cost?</h1>
-          <span className="block my-2 text-green-500 text-md">We offer a range of short-term installment loans to fit your financial needs.</span>
+          <h1 className="text-3xl font-bold">What does a loan cost?</h1>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">We offer a range of short-term installment loans to fit your financial needs.</span>
           <div className='flex pb-3 pt-3 my-4'>
               <span className="text-center sm:w-auto sm:flex-1">
-                <FontAwesomeIcon icon={faEnvelopeOpen} className="mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
-                <h6 className="text-[16px] font-bold">Loans up to $200</h6>
+                <FontAwesomeIcon icon={faDollar} className="mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
+                <h6 className="text-[16px] font-bold">Loans up to $2000</h6>
               </span>
               
               <span className="text-center sm:w-auto sm:flex-1">
-                <FontAwesomeIcon icon={faEnvelopeOpen} className="mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
+                <FontAwesomeIcon icon={faCoins} className="mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
                 <h6 className="text-[16px] font-bold">Competitive interest rates</h6>
               </span>
               
               <span className="text-center sm:w-auto sm:flex-1">
-                <FontAwesomeIcon icon={faEnvelopeOpen} className="mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
+                <FontAwesomeIcon icon={faWallet} className="mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
                 <h6 className="text-[16px] font-bold">No hidden fees</h6>
               </span>
           </div>
@@ -64,22 +64,22 @@ export default function Terms() {
         </div>
 
         <div className="pt-4">
-          <h1 className="text-lg font-bold text-[24px]">What to consider before applying for a Clover Credit loan?</h1>
+          <h1 className="text-3xl font-bold">What to consider before applying for a Clover Credit loan?</h1>
           <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          <span className="block my-2 text-green-500 text-md">Is borrowing money really necessary?</span>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">Is borrowing money really necessary?</span>
           <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          <span className="block my-2 text-green-500 text-md">Can I afford to pay back in full?</span>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford to pay back in full?</span>
           <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          <span className="block my-2 text-green-500 text-md">Can I afford extra charges, interest, and fees if I miss a payment?</span>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford extra charges, interest, and fees if I miss a payment?</span>
           <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          <span className="block my-2 text-green-500 text-md">Have some questions?</span>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">Have some questions?</span>
           <p className="text-[16px] pb-2">Lorem Ipsum is If you stillhave questions, contact a Clover Credit team member at <span className="text-green-500 text-[16px]
           ">844-355-LOAN</span> or <span className="text-green-500 text-[16px]">support@explorecredit.com</span> 8AM EST - 9PM EST (Every Day) for any other questions you have. </p>
         </div>
         <div className="pt-4">
           <h1 className="text-lg font-bold text-[24px]">Ready to Apply?</h1>
-          <span className="block my-2 text-green-500 text-md">The application process is quick. Just answer a few questions in our easy application process.</span>
-          <button className="w-full md:w-1/6 text-md bg-green-600 hover:shadow-lg text-white py-2 px rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75  mb-4">
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">The application process is quick. Just answer a few questions in our easy application process.</span>
+          <button className="w-full md:w-1/6 text-md bg-[#00D35B] hover:shadow-lg text-white py-2 px rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75  mb-4">
               Apply
           </button>
         </div>

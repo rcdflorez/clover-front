@@ -316,7 +316,7 @@ export function Tabs() {
           </div>
           <div className="bg-gray-200 text-center rounded-b-2xl">
             <button
-              className="m-2 w-[150px] px-2 py-1 text-sm bg-green-600 text-white rounded-full"
+              className="m-2 w-[150px] px-2 py-1 text-sm bg-[#00D35B] text-white rounded-full"
             >
               {`Continue >`}
             </button>
@@ -551,7 +551,7 @@ export function Tabs() {
           </div>
           <div className="bg-gray-200 text-center rounded-b-2xl">
             <button
-              className="m-2 w-[150px] px-2 py-1 text-sm bg-green-600 text-white rounded-full"
+              className="m-2 w-[150px] px-2 py-1 text-sm bg-[#00D35B] text-white rounded-full"
             >
               {`Continue >`}
             </button>
@@ -619,7 +619,7 @@ export function Tabs() {
           </div>
           <div className="bg-gray-200 text-center rounded-b-2xl">
             <button
-              className="m-2 w-[150px] px-2 py-1 text-sm bg-green-600 text-white rounded-full"
+              className="m-2 w-[150px] px-2 py-1 text-sm bg-[#00D35B] text-white rounded-full"
             >
               {`Continue >`}
             </button>

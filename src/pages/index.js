@@ -21,12 +21,12 @@ export default function Home() {
           </div>
         </section>
         <section className="container mx-auto my-5 p-2">
-          <h3 className="text-2xl font-bold">Building relationships through financial trust</h3>
+          <h3 className="text-3xl font-bold">Building relationships through financial trust</h3>
           <p>Clover Credit is a smart, simple, fast way to borrow money when you need it most. We offer short-term installment loans with no hidden fees. Our super easy online loan process offers you the funds you need now.</p>
         </section>
         <section className="container mx-auto p-2">
           <article className="sm:mx-0 md:mx-[10%] sm:text-left md:text-center my-5 p-2">
-            <h3 className="text-2xl font-bold">Do it yourself safely and securely</h3>
+            <h3 className="text-3xl font-bold">Do it yourself safely and securely</h3>
             <p>Forget the paperwork. No need to talk to anyone. <br />Use our fully automated, completely secure online portal to apply for a loan in minutes.</p>
           </article>
           <div className={`${cardStyles.card} font-Aldrich `}>

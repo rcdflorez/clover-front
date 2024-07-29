@@ -44,8 +44,8 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-xs font-normal leading-6 text-gray-900">Home</Link>
-          <Link to="/login" className="text-xs font-normal leading-6 text-gray-900">Login</Link>
+          <Link to="/" className="text-sm font-normal leading-6 text-gray-900">Home</Link>
+          <Link to="/login" className="text-sm font-normal leading-6 text-gray-900">Login</Link>
           <Link to="/apply" className="text-sm font-normal leading-6 text-gray-900">Apply</Link>
           <Link to="/faqs" className="text-sm font-normal leading-6 text-gray-900">FAQs</Link>
           <Link to="/terms" className="text-sm font-normal leading-6 text-gray-900">Terms</Link>

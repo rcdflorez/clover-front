@@ -76,7 +76,7 @@ export default function Modal({ closeModal }) {
             ></textarea>
           </div>
           <div className="flex items-center justify-between">
-            <button className="w-full bg-green-600 text-white py-1 px-2 rounded-lg" type="submit">
+            <button className="w-full bg-[#00D35B] text-white py-1 px-2 rounded-lg" type="submit">
               Send
             </button>
           </div>

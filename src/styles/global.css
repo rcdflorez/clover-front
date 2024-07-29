@@ -34,11 +34,11 @@ footer a[aria-current="page"]{
 }
 
 .customFaqCard svg {
-    font-size: 16px;
-    color: #00d35b;
-    background-color: #aff0c8;
-    padding: 8px;
-    border-radius: 3px;
+    font-size: 20px;
+        color: #00d35b;
+        background-color: #aff0c8;
+        padding: 12px;
+        border-radius: 3px;
 }
 
 .topBgDesign{

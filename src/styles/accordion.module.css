@@ -6,10 +6,10 @@
     margin-bottom: 5px;
 }
 .accordion div button{
-    background-color: #bbb;
+    background-color: #E3E3E3;
     color: #000;
     border-radius: 10px;
-    border: 1px solid #969595;
+    /* border: 1px solid #969595; */
     font-size: 16px;
 }
 .accordion div button svg{

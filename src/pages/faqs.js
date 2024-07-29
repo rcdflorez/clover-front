@@ -3,22 +3,23 @@ import Layout from "../components/Layout"
 import Accordion from "../components/Accordion"
 import * as accordions from '../styles/accordion.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons"
+import { faRefresh, faStar, faUnlock } from "@fortawesome/free-solid-svg-icons"
+import '../styles/global.css'
 
 export default function Faqs() {
   return <div>
     <Layout>
       <section className="container mx-auto py-3 px-8">
         <div className="pt-4 mt-8">
-          <h1 className="text-lg font-bold text-[24px]">How it Works</h1>
-          <span className="block my-2 text-lime-600 text-md">What is an online installment loan?</span>
+          <h1 className="text-3xl font-bold">How it Works</h1>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">What is an online installment loan?</span>
           <p className="text-[16px] pb-2">An installment loan is a specific amount of money you borrow and then pay back, split up into equal payments within a certain timeframe.</p>
           <p className="text-[16px]">With Clover Credit our super simple online process gets you a decission in just minutes.</p>
         </div>
 
         <div className="pt-4 pb-4">
-          <h1 className="text-lg font-bold text-[24px]">FAQs</h1>
-          <span className="block my-2 text-lime-600 text-md">What is an online installment loan?</span>
+          <h1 className="text-3xl font-bold">FAQs</h1>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">What is an online installment loan?</span>
           <p className="text-[16px] pb-2">An installment loan is a specific amount of money you borrow and then pay back, split up into equal payments within a certain timeframe.</p>
           <p className="text-[16px]">With Clover Credit our super simple online process gets you a decission in just minutes.</p>
         </div>
@@ -43,16 +44,16 @@ export default function Faqs() {
         </div>
 
         <div className="pt-4">
-          <h1 className="text-lg font-bold text-[24px]">Rewards & Perks</h1>
+          <h1 className="text-3xl font-bold mb-2">Rewards & Perks</h1>
           <p className="text-[16px] pb-2">Over Clover Credit Loyality Points Program is a great way for you to get money deposited directly into your bank acount.</p>
-          <span className="block my-2 text-lime-600 text-md">Here's How it works:</span>
+          <span className="block my-2 text-[#00D35B] text-lg font-bold">Here's How it works:</span>
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 gap-2">
           <div>
             <div className="flex gap-5 customFaqCard">
-              <div>
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
+              <div className="main">
+                <FontAwesomeIcon icon={faStar} />
               </div>
               <div>
                 <p className=" text-[16px]"><span className="font-bold">Earn Loyality Points:</span>Every dollar you pay towards your loan with Coover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards.</p>
@@ -62,7 +63,7 @@ export default function Faqs() {
           <div>
             <div className="flex gap-5 customFaqCard">
               <div>
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
+                <FontAwesomeIcon icon={faUnlock} />
               </div>
               <div>
                 <p className=" text-[16px]"><span className="font-bold">Unlock Discounts:</span>Once you reach 1500 loyalty points, you'll unlock a fantastic perk - a $25 discount on your next payment. It's our way of saying thank you for choosing Clover Credit and begin a part of our loyal customer community.</p>
@@ -72,7 +73,7 @@ export default function Faqs() {
           <div>
             <div className="flex gap-5 customFaqCard">
               <div>
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
+                <FontAwesomeIcon icon={faRefresh} />
               </div>
               <div>
                 <p className=" text-[16px]"><span className="font-bold">Seamless Redemption:</span>We've made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - you reward will be seamless and automatically applied, making your next payment even more affordable.</p>
