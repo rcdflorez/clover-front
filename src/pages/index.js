@@ -13,7 +13,7 @@ export default function Home() {
       <div className="px-7">
         <section className="loanApply">
           <div className="container mx-auto pb-4 px-4">
-            <div className="logoSec w-[4%] md:w-[15%] mb-1">
+            <div className="logoSec w-[7%] md:w-[15%] mb-1">
                 <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
             </div>
             <h3 className="text-[32px] font-bold mb-[50px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
