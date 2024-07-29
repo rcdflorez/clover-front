@@ -13,7 +13,7 @@ export default function Footer() {
     const closeModal = () => setIsModalOpen(false);
 
     return (
-        <footer className="text-black-300 mt-5 pb-5" style={{ background: 'linear-gradient(rgb(205, 230, 102), rgb(39, 203, 100))' }}>
+        <footer className="text-black-300 mt-16 pb-5" style={{ background: 'linear-gradient(rgb(205, 230, 102), rgb(39, 203, 100))' }}>
             <div className="absolute w-[100%] z-0">
                 <div className="">
                     <div className="custom-shape-divider-top-1720730029">

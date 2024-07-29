@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <header className="topBgDesign relative" style={{ background: 'linear-gradient(rgb(205, 230, 102), rgb(39, 203, 100))' }}>
-      <div className="absolute w-[100%] z-0 top-[96px]">
+      <div className="absolute w-[100%] z-0 top-[120.5px]">
         <div className="">
           <div className="custom-shape-divider-bottom-1720730232">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -23,11 +23,11 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-4 sm:mt-2 rounded-lg p-1 pr-3 z-10 relative w-[90%]" aria-label="Global">
+      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-7 sm:mt-8 rounded-lg p-1 pr-3 z-10 relative w-[90%]" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="#" className="-m-1.5 p-1.5">
-            <div className="headLogo w-[8%] bg-green-600 rounded-lg p-2">
-              <StaticImage className="logo" src="../images/icon.png" alt="Clover Credit" />
+            <div className="headLogo w-[10%] rounded-lg p-2">
+              <StaticImage className="logo" src="../images/black-icon.png" alt="Clover Credit" />
             </div>
           </Link>
         </div>
@@ -44,12 +44,12 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
-          <Link to="/login" className="text-sm font-semibold leading-6 text-gray-900">Login</Link>
-          <Link to="/apply" className="text-sm font-semibold leading-6 text-gray-900">Apply</Link>
-          <Link to="/faqs" className="text-sm font-semibold leading-6 text-gray-900">FAQs</Link>
-          <Link to="/terms" className="text-sm font-semibold leading-6 text-gray-900">Terms</Link>
-          <button onClick={openModal} className="cursor-pointer text-sm font-semibold leading-6 text-gray-900">Support</button>
+          <Link to="/" className="text-xs font-normal leading-6 text-gray-900">Home</Link>
+          <Link to="/login" className="text-xs font-normal leading-6 text-gray-900">Login</Link>
+          <Link to="/apply" className="text-sm font-normal leading-6 text-gray-900">Apply</Link>
+          <Link to="/faqs" className="text-sm font-normal leading-6 text-gray-900">FAQs</Link>
+          <Link to="/terms" className="text-sm font-normal leading-6 text-gray-900">Terms</Link>
+          <button onClick={openModal} className="cursor-pointer text-sm font-normal leading-6 text-gray-900">Support</button>
         </div>
       </nav>
       {isMobileMenuOpen && (

@@ -13,10 +13,10 @@ export default function Home() {
       <div className="px-7">
         <section className="loanApply">
           <div className="container mx-auto pb-4 px-4">
-            <div className="logoSec w-[15%] mb-1">
+            <div className="logoSec w-[4%] md:w-[15%] mb-1">
                 <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
             </div>
-            <h3 className="text-2xl font-bold mb-8 text-left">Apply now for a loan upto <span className="text-[#0bcd5e]">$2000</span></h3>
+            <h3 className="text-[32px] font-bold mb-[50px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
             <RangeInput min={300} max={2000} step={100} />
           </div>
         </section>

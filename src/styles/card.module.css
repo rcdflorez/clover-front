@@ -16,15 +16,15 @@
 .card h3{
     font-weight: bold;
     color: #000;
-    font-size: 18x;
+    font-size: 40x;
     margin: 5px 0px;
 }
 
 .card svg{
-    font-size: 16px;
+    font-size: 20px;
     color: #00d35b;
     background-color:#aff0c8;
-    padding: 8px;
+    padding: 12px;
     border-radius: 3px;
 }
 
@@ -52,10 +52,16 @@
 
 @media screen and (max-width: 768px) {
     .card h3{
-        font-size: 32px;
+        font-size: 40px;
+        font-weight: 700;
     }
     .card a {
         font-size: 18px;
         padding: 8px 10px;
+    }
+    .card p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #00D35B;
     }
 }
