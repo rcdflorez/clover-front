@@ -69,9 +69,30 @@
 }
 
 .range-slider_line-fill {
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
     position: absolute;
     height: 1.0vmin;
     width: 0;
     background-color: #8DFFBE;
+}
+
+/* Media query -------------------- */
+
+@media screen and (max-width: 768px) {
+    .range-slider{
+        margin-bottom: 10px;
+    }
+    .range-slider_thumb {
+        width: 30vmin;
+        height: 10vmin;
+        font-size: 8vmin;
+    }
+
+    .range-slider_line {
+        height: 3vmin;
+    }
+
+    .range-slider_line-fill {
+        height: 3vmin;
+    }
 }

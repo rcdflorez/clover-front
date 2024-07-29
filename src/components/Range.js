@@ -19,7 +19,7 @@ export default function Range({ min, max, step }) {
       
       sliderThumb.innerHTML = `$${value}`; // Add $ symbol here
       sliderThumb.style.left = `${bulletPosition * space}px`;
-      sliderLine.style.width = `${newVal}%`;
+      sliderLine.style.width = `${bulletPosition * space}px`;
     }
   }, [value, min, max]);
 
