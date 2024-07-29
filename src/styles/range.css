@@ -1,6 +1,6 @@
 .range-slider {
     position: relative;
-    width: 80vmin;
+    width: 100%;
     /* height: 20vmin; */
 }
 
@@ -81,6 +81,7 @@
 @media screen and (max-width: 768px) {
     .range-slider{
         margin-bottom: 10px;
+        height: 20vmin;
     }
     .range-slider_thumb {
         width: 30vmin;

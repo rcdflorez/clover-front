@@ -43,7 +43,7 @@ export default function Range({ min, max, step }) {
   };
 
   return (
-    <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2'>
       <div className="range-slider">
         <div
           ref={sliderThumbRef}
@@ -68,9 +68,9 @@ export default function Range({ min, max, step }) {
           onChange={handleChange}
         />
       </div>
-      <button className="sm:w-[50%] xs:w-[100%] sm:ml-10 xs:ml-0 mt-8 sm:mt-1 xs:mx-auto xs:text-xl lg:text-xs successApplyBtn hover:shadow-lg text-white spy-1 px py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 bg-[#00D35B]">
-        Apply
-      </button>
+      <div>
+        <button className="hover:shadow-lg text-white rounded-md bg-[#00D35B] py-2 px-4 lg:py-1 w-full md:w-[25%] lg:w-[35%]">Apply</button>
+      </div>
     </div>
   );
 }

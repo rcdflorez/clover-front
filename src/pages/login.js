@@ -18,7 +18,7 @@ export default function Login() {
     return (
         <Layout>
             <div className="login">
-                <div className="absolute h-[0vh] bg-slate-800 w-[100%] z-0">
+                <div className="absolute h-[0vh] bg-slate-800 w-[100%] z-0" style={{top: '90px'}}>
                     <div style={{ position: 'relative', minHeight: '90vh', backgroundColor: '#01d45b' }}>
                         <div className="custom-shape-divider-bottom-1720724252">
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
