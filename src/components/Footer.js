@@ -30,11 +30,12 @@ export default function Footer() {
                     </div>
                     <div className="md:text-right sm:text-left">
                         <Link to="/" className="text-sm font-semibold leading-6 text-gray-900 m-1"><FontAwesomeIcon icon={faHome} /></Link>
-                        <Link to="/login" className="text-sm font-medium leading-6 text-gray-900 m-1">Login</Link>
-                        <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link>
+                        {/* <Link to="/login" className="text-sm font-medium leading-6 text-gray-900 m-1">Login</Link> */}
+                        {/* <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link> */}
                         <Link to="/faqs" className="text-sm font-medium leading-6 text-gray-900 m-1">FAQs</Link>
                         <Link to="/terms" className="text-sm font-medium leading-6 text-gray-900 m-1">Terms</Link>
                         <button onClick={openModal} className="rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 font-medium">Support</button>
+                        <Link to="/contact" className="text-sm font-medium leading-6 text-gray-900 m-1">Contact Us</Link>
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-2 gap-2 mt-2 border-t-2 border-gray-600 border-b-2 text-center mb-2">

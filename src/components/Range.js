@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../styles/range.css'
+import '../styles/range.css';
 
 export default function Range({ min, max, step }) {
   const [value, setValue] = useState(min);
@@ -13,11 +13,11 @@ export default function Range({ min, max, step }) {
       const sliderThumb = sliderThumbRef.current;
       const sliderLine = sliderLineRef.current;
       
-      const newVal = Number(((value - min) * 100) / (max - min));
-      const bulletPosition = (value / sliderInput.max);
+      // const newVal = Number(((value - min) * 100) / (max - min));
+      const bulletPosition = (value - min) / (max - min);
       const space = sliderInput.offsetWidth - sliderThumb.offsetWidth;
-      
-      sliderThumb.innerHTML = `$${value}`; // Add $ symbol here
+
+      sliderThumb.innerHTML = `$${value}`;
       sliderThumb.style.left = `${bulletPosition * space}px`;
       sliderLine.style.width = `${bulletPosition * space}px`;
     }
@@ -49,10 +49,10 @@ export default function Range({ min, max, step }) {
           ref={sliderThumbRef}
           className="range-slider_thumb"
           style={{ 
-            left: `calc(${(value - min) * 100 / (max - min)}% + (${8 - (value - min) * 100 / (max - min) * 0.15}px))` 
+            left: `calc(${(value - min) * 100 / (max - min)}% - (${8 - (value - min) * 100 / (max - min) * 0.15}px))` 
           }}
         >
-          ${value} {/* Add $ symbol here */}
+          ${value}
         </div>
         <div className="range-slider_line">
           <div ref={sliderLineRef} className="range-slider_line-fill"></div>

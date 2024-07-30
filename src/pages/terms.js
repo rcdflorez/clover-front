@@ -21,7 +21,7 @@ export default function Terms() {
         <div className="pt-4 mt-8">
           <h1 className="text-3xl font-bold">Where we lend</h1>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Clover Credit is currently available in the following states:</span>
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p className="text-[16px] pb-2">We are always looking at expanding so please check back often to see our most up-to-date list.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 text-center pt-4">
@@ -59,25 +59,35 @@ export default function Terms() {
               </span>
           </div>
 
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p className="text-[16px] pb-2">Simply pick the loan package that's right for you, use our super-simple online application process and get a decision in minutes.</p>
+          <p className="text-[16px] pb-2">* Returned payments, late payments, and non-payments may result in additional fees, charges, or collection activities pursuant to the terms of your loan agreement and as allowable under Tribal and applicable federal law.</p>
         </div>
 
         <div className="pt-4">
           <h1 className="text-3xl font-bold">What to consider before applying for a Clover Credit loan?</h1>
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p className="text-[16px] pb-2">A short-term installment loan is a great way to get extra cash when an unexpected event or emergency pops
+up, before you apply, consider these questions to make sure a short-term loan is right for you.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Is borrowing money really necessary?</span>
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p className="text-[16px] pb-2">Be realistic about your current financial standing.
+Weigh all of your options. If you are approved  for an
+Clover Credit loan, you can have your money directly
+deposited into your bank account.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford to pay back in full?</span>
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p className="text-[16px] pb-2">With Clover Credit, you can pay back your loan 
+in weekly, bi-weekly, monthly, or semi-monthly installments. 
+If you need to change your due date, just call us at <span className="text-[#00D35B] text-lg font-bold"> 833-276-2274</span> and we'll work with you to make it happen.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford extra charges, interest, and fees if I miss a payment?</span>
-          <p className="text-[16px] pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p className="text-[16px] pb-2">To avoid missing a payment, you can schedule
+automatic electronic payments from your checking
+account. You can set up this option in your
+Clover Credit account, or give us a call and we'll do it
+for you.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Have some questions?</span>
-          <p className="text-[16px] pb-2">Lorem Ipsum is If you stillhave questions, contact a Clover Credit team member at <span className="text-green-500 text-[16px]
-          ">844-355-LOAN</span> or <span className="text-green-500 text-[16px]">support@explorecredit.com</span> 8AM EST - 9PM EST (Every Day) for any other questions you have. </p>
+          <p className="text-[16px] pb-2">If you stillhave questions, contact a Clover Credit team member at <span className="text-[#00D35B] text-lg font-bold
+          ">833-276-2274</span> or <span className="text-[#00D35B] text-lg font-bold">support@clovercredit.com</span> 8AM EST - 9PM EST (Every Day) for any other questions you have. </p>
         </div>
         <div className="pt-4">
-          <h1 className="text-lg font-bold text-[24px]">Ready to Apply?</h1>
+          <h1 className="text-3xl font-bold">Ready to Apply?</h1>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">The application process is quick. Just answer a few questions in our easy application process.</span>
           <button className="w-full md:w-1/6 text-md bg-[#00D35B] hover:shadow-lg text-white py-2 px rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75  mb-4">
               Apply

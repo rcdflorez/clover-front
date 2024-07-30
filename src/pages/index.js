@@ -10,17 +10,24 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Home() {
   return <div>
     <Layout>
-      <div className="px-7">
-        <section className="loanApply">
-          <div className="container mx-auto pb-4 px-4">
-            <div className="logoSec w-[7%] md:w-[15%] mb-1">
-                <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
-            </div>
-            <h3 className="text-[32px] font-bold mb-[50px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
-            <RangeInput min={300} max={2000} step={100} />
+      <div className="px-7 homebg">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4 gap-2">
+            <section className="loanApply">
+              <div className="container mx-auto pb-4 px-4">
+                <div className="logoSec mb-1">
+                    <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
+                </div>
+                <h3 className="text-[32px] font-bold mb-[25px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
+                <RangeInput min={300} max={2000} step={50} />
+              </div>
+            </section>
+            <section>
+              <div>Slider Image</div>
+            </section>
           </div>
-        </section>
-        <section className="container mx-auto my-5 p-2">
+        </div>
+        <section className="container mx-auto my-5 p-2  mb-[35px]">
           <h3 className="text-3xl font-bold">Building relationships through financial trust</h3>
           <p>Clover Credit is a smart, simple, fast way to borrow money when you need it most. We offer short-term installment loans with no hidden fees. Our super easy online loan process offers you the funds you need now.</p>
         </section>
