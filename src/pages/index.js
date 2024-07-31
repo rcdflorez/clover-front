@@ -8,22 +8,32 @@ import RangeInput from "../components/Range";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Home() {
-  return <div>
+  return <React.Fragment>
     <Layout>
       <div className="px-7 homebg">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4 gap-2">
-            <section className="loanApply">
+            <section className="loanApply lg:mx-[25%] xl:mx-[13%]">
               <div className="container mx-auto pb-4 px-4">
                 <div className="logoSec mb-1">
                     <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
                 </div>
-                <h3 className="text-[32px] font-bold mb-[25px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
+                <h3 className="text-[32px] md:text-[40px] font-bold mb-[25px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
                 <RangeInput min={300} max={2000} step={50} />
               </div>
             </section>
             <section>
-              <div>Slider Image</div>
+              <div className="flex gap-2 my-8 mx-[25%]">
+                <div className="w-1/2 pt-6">
+                  <div className="rounded-md bg-gray-400 p-4 my-2 h-[40px]"></div>
+                  <div className="rounded-md bg-[#CDE666] p-4 h-[100px]"></div>
+                  <div className="rounded-md bg-gray-400 p-4 my-2  h-[50px]"></div>
+                </div>
+                <div className="w-1/2 pt-4">
+                  <div className="rounded-md bg-white p-4 h-[50px] mb-2 border-[2px] border-solid border-gray-200"></div>
+                  <div className="rounded-md bg-gray-400 p-4 h-[70px]"></div>
+                </div>
+              </div>
             </section>
           </div>
         </div>
@@ -63,7 +73,7 @@ export default function Home() {
         </section>
       </div>
     </Layout>
-  </div>
+  </React.Fragment>
 }
 
 export const Head = () => <title>Clover Credit</title>

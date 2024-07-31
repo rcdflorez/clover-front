@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-7 sm:mt-6 rounded-lg p-1 pr-3 z-10 relative w-[90%]" aria-label="Global">
+      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-7 sm:mt-6 rounded-lg p-1 pr-3 z-10 relative w-[90%] lg:w-[95%]" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="#" className="-m-1.5 p-1.5">
             <div className="headLogo w-[10%] rounded-lg p-2">

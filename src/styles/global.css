@@ -8,14 +8,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manjari:wght@100;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
     /* background: url('../../static/bg.jpg'); */
-    background-size: cover;
+    /* background-size: cover; */
     /* font-family: "Fredoka", sans-serif; */
     font-family: "Nunito", sans-serif;
     /* padding: 10px; */
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 a, button{
@@ -62,7 +69,7 @@ footer a[aria-current="page"]{
 }
 
 .logoSec{
-    width: 30%;
+    width: 60%;
 }
 
 /* home page bg ---------------------------------------------- */
