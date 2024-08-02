@@ -22,17 +22,15 @@ export default function Footer() {
     return (
         <footer className="text-black-300 mt-16 pb-5" style={{ background: 'linear-gradient(rgb(205, 230, 102), rgb(39, 203, 100))' }}>
             <div className="absolute w-[100%] z-0">
-                <div className="">
-                    <div className="custom-shape-divider-top-1720730029">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
-                        </svg>
-                    </div>
+                <div className="custom-shape-divider-top-1720730029">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+                    </svg>
                 </div>
             </div>
             <div className="container mx-auto z-10 relative pt-6 px-6">
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4">
-                    <div className="footerLogo my-2">
+                <div className="grid lg:grid-cols-7 md:grid-cols-7 sm:grid-cols-1 pt-4">
+                    <div className="lg:col-span-5 md:col-span-5 sm:col-span-1 footerLogo my-2">
                         <div className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
                             <StaticImage src="../images/logo.png" alt="Clover Credit" />
                         </div>
@@ -41,7 +39,7 @@ export default function Footer() {
                             {/* <Link to="/login" className="text-sm font-medium leading-6 text-gray-900 m-1">Login</Link> */}
                             {/* <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link> */}
                             <Link to="/faqs" className="text-sm font-medium leading-6 text-gray-900 m-1">FAQs</Link>
-                            <Link to="/terms" className="text-sm font-medium leading-6 text-gray-900 m-1">Terms</Link>
+                            <Link to="/states" className="text-sm font-medium leading-6 text-gray-900 m-1">States</Link>
                             <button onClick={openModal} className="rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 font-medium">Support</button>
                             <Link to="/contact" className="text-sm font-medium leading-6 text-gray-900 m-1">Contact Us</Link>
                         </div>
@@ -61,22 +59,27 @@ export default function Footer() {
                             <p className="py-1 text-[9px] font-sans text-justify">To obtain a loan, you must have a valid checking account, e-mail address, verifiable identity, and verifiable minimum income. Please Note: Installment loans should be used for short-term financial needs only, not as a long-term financial solution. Customers with credit difficulties should seek credit counseling. Clover Credit will only allow a customer to have one loan at a time.</p>
                         </div>
                     </div>
-                    <div className="text-center mt-10">
+                    <div className="lg:col-span-2 md:col-span-2 text-center mt-0 md:mt-20 ">
                         <div className="mb-5">
-                            <strong className="text-[18px]">Contact:</strong> <br /><span className="text-[32px]">833-276-2274</span>
+                            <strong className="text-[16px]">Contact:</strong> <br /><span className="text-[20px]">833-276-2274</span>
                         </div>
                         <div className="mb-5">
-                            <strong className="text-[18px]">Email: </strong><br /><span className="text-[32px]">support@clovercredit.com</span>
+                            <strong className="text-[16px]">Email: </strong><br /><span className="text-[20px]">support@clovercredit.com</span>
                         </div>
-                        <div className="">
+                        {/* <div className="">
                             <strong className="text-[18px]">Language: </strong><br />
                             <select onChange={(e) =>languageHandler(e)} className="mb-5 w-full md:w-1/2 bg-gray-400 text-white rounded-sm p-1 mx-1 text-center">
                                 {language.map((lang, index) => (
                                     <option key={index} value={lang}>{lang}</option>
                                 ))}
                             </select>
-                        </div>
+                        </div> */}
                     </div>
+                </div>
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 border-t border-gray-800 p-2">
+                    <div className="text-center md:text-right text-md"><Link to="">Privacy Policy</Link></div>
+                    <div className="text-center hidden md:inline-block">|</div>
+                    <div className="text-center md:text-left text-md"><Link to="">Terms & Conditions</Link></div>
                 </div>
             </div>
             {isModalOpen && (

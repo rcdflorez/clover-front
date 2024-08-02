@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
       <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-7 sm:mt-6 rounded-lg p-1 pr-3 z-10 relative w-[90%] lg:w-[95%]" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link to="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <div className="headLogo w-[10%] rounded-lg p-2">
               <StaticImage className="logo" src="../images/black-icon.png" alt="Clover Credit" />
             </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* <Link to="/login" className="text-sm font-normal leading-6 text-gray-900">Login</Link> */}
           {/* <Link to="/apply" className="text-sm font-normal leading-6 text-gray-900">Apply</Link> */}
           <Link to="/faqs" className="text-sm font-normal leading-6 text-gray-900">FAQs</Link>
-          <Link to="/terms" className="text-sm font-normal leading-6 text-gray-900">Terms</Link>
+          <Link to="/states" className="text-sm font-normal leading-6 text-gray-900">States</Link>
           <button onClick={openModal} className="cursor-pointer text-sm font-normal leading-6 text-gray-900">Support</button>
           <Link to="/contact" className="text-sm font-normal leading-6 text-gray-900">Contact Us</Link>
         </div>
@@ -82,7 +82,7 @@ export default function Navbar() {
                   {/* <Link to="/login" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Login</Link> */}
                   {/* <Link to="/apply" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Apply</Link> */}
                   <Link to="/faqs" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">FAQs</Link>
-                  <Link to="/terms" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Terms</Link>
+                  <Link to="/states" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">states</Link>
                   <button onClick={openModal} className="w-[100%] block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Support</button>
                   <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</Link>
                 </div>

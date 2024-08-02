@@ -22,7 +22,7 @@ export default function Home() {
                 <RangeInput min={300} max={2000} step={50} />
               </div>
             </section>
-            <section>
+            <section className="hidden md:block">
               <div className="flex gap-2 my-8 mx-[25%]">
                 <div className="w-1/2 pt-6">
                   <div className="rounded-md bg-gray-400 p-4 my-2 h-[40px]"></div>
