@@ -13,7 +13,7 @@ export default function Home() {
       <div className="px-7 homebg">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4 gap-2">
-            <section className="loanApply lg:mx-[25%] xl:mx-[13%]">
+            <section className="loanApply lg:mx-[15%] xl:mx-[5%]">
               <div className="container mx-auto pb-4 px-4">
                 <div className="logoSec mb-1">
                     <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />

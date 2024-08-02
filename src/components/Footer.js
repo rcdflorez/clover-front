@@ -8,9 +8,16 @@ import Modal from "./Modal";
 export default function Footer() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [language] = useState(["English", "Spanish", "Chinese", "Tagalog", "Vietnamese", "French", "Korean", "German", "Arabic", "Russian", "Italian", "Portuguese", "Hindi", "Polish", "Japanese", "Persian", "Greek", "Urdu", "Gujarati", "Hebrew", "Armenian", "Hmong", "Punjabi", "Telugu", "Bengali", "Tamil", "Navajo", "Khmer", "Thai", "Serbo-Croatian", "Haitian Creole", "Yiddish", "Lao", "Swahili", "Somali", "Czech", "Dutch", "Turkish"]
+)
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
+
+    const languageHandler = (e) => {
+        e.preventDefault();
+        console.log(e.target.value)
+    }
 
     return (
         <footer className="text-black-300 mt-16 pb-5" style={{ background: 'linear-gradient(rgb(205, 230, 102), rgb(39, 203, 100))' }}>
@@ -24,38 +31,53 @@ export default function Footer() {
                 </div>
             </div>
             <div className="container mx-auto z-10 relative pt-6 px-6">
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4 gap-2">
-                    <div className="footerLogo w-[20%] my-2">
-                        <StaticImage src="../images/logo.png" alt="Clover Credit"  />
+                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4">
+                    <div className="footerLogo my-2">
+                        <div className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
+                            <StaticImage src="../images/logo.png" alt="Clover Credit" />
+                        </div>
+                        <div className="text-left">
+                            <Link to="/" className="text-sm font-semibold leading-6 text-gray-900 m-1"><FontAwesomeIcon icon={faHome} /></Link>
+                            {/* <Link to="/login" className="text-sm font-medium leading-6 text-gray-900 m-1">Login</Link> */}
+                            {/* <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link> */}
+                            <Link to="/faqs" className="text-sm font-medium leading-6 text-gray-900 m-1">FAQs</Link>
+                            <Link to="/terms" className="text-sm font-medium leading-6 text-gray-900 m-1">Terms</Link>
+                            <button onClick={openModal} className="rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 font-medium">Support</button>
+                            <Link to="/contact" className="text-sm font-medium leading-6 text-gray-900 m-1">Contact Us</Link>
+                        </div>
+                        <div>
+                            <p className="py-1 text-[9px] font-sans text-justify">All installment loans are underwritten by WLCC Lending JEM doing business as Clover Credit. Clover Credit is a Native American owned business operating within the interior boundaries of the Pine Ridge Reservation of the Oglala Sioux Tribe, a sovereign nation located in the United States.</p>
+
+                            <p className="py-1 text-[9px] font-sans text-justify">WLCC Lending JEM is an entity of the Wakpamni Lake Community Corporation (WLCC), a tribal corporation wholly owned by the Wakpamni Lake Community. The Wakpamni Lake Community is a local municipal subsidiary government under the Oglala Sioux Tribe. WLCC is incorporated under and governed by the laws of the Oglala Sioux Tribe, a federally recognized Indian Tribe, and the regulations of the Wakpamni Lake Community. WLCC operates independently of the Oglala Sioux Tribe. Correspondence should be directed to WLCC. As a tribal government, the Wakpamni Lake Community Corporation is a sovereign corporation and follows all applicable tribal and federal laws. State laws, regulations, and interest rates are not applicable to WLCC Lending JEM DBA Clover Credit or WLCC.</p>
+
+                            <p className="py-1 text-[9px] font-sans text-justify">Typically, Clover Credit reviews your information in real-time to determine whether your information meets our lending criteria. You acknowledge that by completing and submitting the website application that you are applying for a loan. We verify applicant information through national databases including, but not limited to, Clarity and Factor Trust and we may pull your credit to determine your eligibility and ability to repay.</p>
+
+                            <p className="py-1 text-[9px] font-sans text-justify">Clover Credit does not lend to residents of IL, NY, PA, GA, NC, NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam, Puerto Rico, and the US Virgin Islands. Availability of installment loans are subject to change at any time at the sole discretion of Clover Credit.</p>
+
+                            <p className="py-1 text-[9px] font-sans text-justify">IMPORTANT INFORMATION ABOUT PROCEDURES FOR APPLYING FOR A LOAN – To help fight the funding of terrorism and money laundering activities, and to comply with Tribal law and the spirit of federal law requiring all financial institutions to obtain, verify and record information that identifies each person who applies for a loan, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask for your driver’s license number or other identifying documents.</p>
+
+                            <p className="py-1 text-[9px] font-sans text-justify">*Certain events or changes to your information may impact your eligibility to receive a loan. If you no longer meet the pre-selection criteria, we may offer you a loan in a different amount or on different terms. If you reside in a state in which we do not provide services, you will be ineligible for a loan.</p>
+
+                            <p className="py-1 text-[9px] font-sans text-justify">To obtain a loan, you must have a valid checking account, e-mail address, verifiable identity, and verifiable minimum income. Please Note: Installment loans should be used for short-term financial needs only, not as a long-term financial solution. Customers with credit difficulties should seek credit counseling. Clover Credit will only allow a customer to have one loan at a time.</p>
+                        </div>
                     </div>
-                    <div className="md:text-right sm:text-left">
-                        <Link to="/" className="text-sm font-semibold leading-6 text-gray-900 m-1"><FontAwesomeIcon icon={faHome} /></Link>
-                        {/* <Link to="/login" className="text-sm font-medium leading-6 text-gray-900 m-1">Login</Link> */}
-                        {/* <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link> */}
-                        <Link to="/faqs" className="text-sm font-medium leading-6 text-gray-900 m-1">FAQs</Link>
-                        <Link to="/terms" className="text-sm font-medium leading-6 text-gray-900 m-1">Terms</Link>
-                        <button onClick={openModal} className="rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 font-medium">Support</button>
-                        <Link to="/contact" className="text-sm font-medium leading-6 text-gray-900 m-1">Contact Us</Link>
+                    <div className="text-center mt-10">
+                        <div className="mb-5">
+                            <strong className="text-[18px]">Contact:</strong> <br /><span className="text-[32px]">833-276-2274</span>
+                        </div>
+                        <div className="mb-5">
+                            <strong className="text-[18px]">Email: </strong><br /><span className="text-[32px]">support@clovercredit.com</span>
+                        </div>
+                        <div className="">
+                            <strong className="text-[18px]">Language: </strong><br />
+                            <select onChange={(e) =>languageHandler(e)} className="mb-5 w-full md:w-1/2 bg-gray-400 text-white rounded-sm p-1 mx-1 text-center">
+                                {language.map((lang, index) => (
+                                    <option key={index} value={lang}>{lang}</option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-2 gap-2 mt-2 border-t-2 border-gray-600 border-b-2 text-center mb-2">
-                    <div><strong>Contact:</strong> 833-276-2274</div>
-                    <div><strong>Email: </strong> support@clovercredit.com</div>
-                </div>
-                <p className="py-1 text-[9px] font-sans text-justify">All installment loans are underwritten by WLCC Lending JEM doing business as Clover Credit. Clover Credit is a Native American owned business operating within the interior boundaries of the Pine Ridge Reservation of the Oglala Sioux Tribe, a sovereign nation located in the United States.</p>
-
-                <p className="py-1 text-[9px] font-sans text-justify">WLCC Lending JEM is an entity of the Wakpamni Lake Community Corporation (WLCC), a tribal corporation wholly owned by the Wakpamni Lake Community. The Wakpamni Lake Community is a local municipal subsidiary government under the Oglala Sioux Tribe. WLCC is incorporated under and governed by the laws of the Oglala Sioux Tribe, a federally recognized Indian Tribe, and the regulations of the Wakpamni Lake Community. WLCC operates independently of the Oglala Sioux Tribe. Correspondence should be directed to WLCC. As a tribal government, the Wakpamni Lake Community Corporation is a sovereign corporation and follows all applicable tribal and federal laws. State laws, regulations, and interest rates are not applicable to WLCC Lending JEM DBA Clover Credit or WLCC.</p>
-
-                <p className="py-1 text-[9px] font-sans text-justify">Typically, Clover Credit reviews your information in real-time to determine whether your information meets our lending criteria. You acknowledge that by completing and submitting the website application that you are applying for a loan. We verify applicant information through national databases including, but not limited to, Clarity and Factor Trust and we may pull your credit to determine your eligibility and ability to repay.</p>
-
-                <p className="py-1 text-[9px] font-sans text-justify">Clover Credit does not lend to residents of IL, NY, PA, GA, NC, NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam, Puerto Rico, and the US Virgin Islands. Availability of installment loans are subject to change at any time at the sole discretion of Clover Credit.</p>
-
-                <p className="py-1 text-[9px] font-sans text-justify">IMPORTANT INFORMATION ABOUT PROCEDURES FOR APPLYING FOR A LOAN – To help fight the funding of terrorism and money laundering activities, and to comply with Tribal law and the spirit of federal law requiring all financial institutions to obtain, verify and record information that identifies each person who applies for a loan, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask for your driver’s license number or other identifying documents.</p>
-
-                <p className="py-1 text-[9px] font-sans text-justify">*Certain events or changes to your information may impact your eligibility to receive a loan. If you no longer meet the pre-selection criteria, we may offer you a loan in a different amount or on different terms. If you reside in a state in which we do not provide services, you will be ineligible for a loan.</p>
-
-                <p className="py-1 text-[9px] font-sans text-justify">To obtain a loan, you must have a valid checking account, e-mail address, verifiable identity, and verifiable minimum income. Please Note: Installment loans should be used for short-term financial needs only, not as a long-term financial solution. Customers with credit difficulties should seek credit counseling. Clover Credit will only allow a customer to have one loan at a time.</p>
-                
             </div>
             {isModalOpen && (
                 <Modal closeModal={closeModal} />
