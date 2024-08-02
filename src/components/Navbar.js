@@ -44,13 +44,13 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-sm font-normal leading-6 text-gray-900">Home</Link>
-          {/* <Link to="/login" className="text-sm font-normal leading-6 text-gray-900">Login</Link> */}
-          {/* <Link to="/apply" className="text-sm font-normal leading-6 text-gray-900">Apply</Link> */}
-          <Link to="/faqs" className="text-sm font-normal leading-6 text-gray-900">FAQs</Link>
-          <Link to="/states" className="text-sm font-normal leading-6 text-gray-900">States</Link>
-          <button onClick={openModal} className="cursor-pointer text-sm font-normal leading-6 text-gray-900">Support</button>
-          <Link to="/contact" className="text-sm font-normal leading-6 text-gray-900">Contact Us</Link>
+          <Link to="/" className="text-sm font-normal leading-6 text-gray-900 hover:bg-[#00d35b] hover:rounded-3xl px-2">Home</Link>
+          {/* <Link to="/login" className="text-sm font-normal leading-6 text-gray-900 hover:bg-[#00d35b] hover:rounded-3xl px-2">Login</Link> */}
+          {/* <Link to="/apply" className="text-sm font-normal leading-6 text-gray-900 hover:bg-[#00d35b] hover:rounded-3xl px-2">Apply</Link> */}
+          <Link to="/faqs" className="text-sm font-normal leading-6 text-gray-900 hover:bg-[#00d35b] hover:rounded-3xl px-2">FAQs</Link>
+          <Link to="/states" className="text-sm font-normal leading-6 text-gray-900 hover:bg-[#00d35b] hover:rounded-3xl px-2">States</Link>
+          <button onClick={openModal} className="cursor-pointer text-sm font-normal leading-6 hover:bg-[#00d35b] text-gray-900 hover:rounded-3xl px-2">Support</button>
+          <Link to="/contact" className="text-sm font-normal leading-6 text-gray-900 hover:bg-[#00d35b] hover:rounded-3xl px-2">Contact Us</Link>
         </div>
       </nav>
       {isMobileMenuOpen && (
