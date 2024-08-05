@@ -5,6 +5,7 @@ import { faCoins, faDollar, faWallet } from "@fortawesome/free-solid-svg-icons"
 import Usamap from "../components/UsaMap"
 
 export default function Terms() {
+
   const [states, setStates] = React.useState([
     "-Select State-","Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
     "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
@@ -15,6 +16,7 @@ export default function Terms() {
     "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
     "Wisconsin", "Wyoming"
   ])
+
   return <div>
     <Layout>
       <section className="container mx-auto py-3 px-8">
@@ -69,7 +71,7 @@ export default function Terms() {
 up, before you apply, consider these questions to make sure a short-term loan is right for you.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Is borrowing money really necessary?</span>
           <p className="text-[16px] pb-2">Be realistic about your current financial standing.
-Weigh all of your options. If you are approved  for an
+Weigh all of your options. If you are approved  for a
 Clover Credit loan, you can have your money directly
 deposited into your bank account.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford to pay back in full?</span>
@@ -83,7 +85,7 @@ account. You can set up this option in your
 Clover Credit account, or give us a call and we'll do it
 for you.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Have some questions?</span>
-          <p className="text-[16px] pb-2">If you stillhave questions, contact a Clover Credit team member at <span className="text-[#00D35B] text-lg font-bold
+          <p className="text-[16px] pb-2">If you still have questions, contact a Clover Credit team member at <span className="text-[#00D35B] text-lg font-bold
           ">833-276-2274</span> or <span className="text-[#00D35B] text-lg font-bold">support@clovercredit.com</span> 8AM EST - 9PM EST (Every Day) for any other questions you have. </p>
         </div>
         <div className="pt-4">

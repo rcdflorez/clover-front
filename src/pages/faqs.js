@@ -14,7 +14,7 @@ export default function Faqs() {
           <h1 className="text-3xl font-bold">How it Works</h1>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">What is an online installment loan?</span>
           <p className="text-[16px] pb-2">An installment loan is a specific amount of money you borrow and then pay back, split up into equal payments within a certain timeframe.</p>
-          <p className="text-[16px]">With Clover Credit our super simple online process gets you a decission in just minutes.</p>
+          <p className="text-[16px]">With Clover Credit our super simple online process gets you a decision in just minutes.</p>
         </div>
 
         <div className="pt-4 pb-4">
@@ -45,7 +45,7 @@ export default function Faqs() {
 
         <div className="pt-4">
           <h1 className="text-3xl font-bold mb-2">Rewards & Perks</h1>
-          <p className="text-[16px] pb-2">Over Clover Credit Loyality Points Program is a great way for you to get money deposited directly into your bank acount.</p>
+          <p className="text-[16px] pb-2">Over Clover Credit Loyalty Points Program is a great way for you to get money deposited directly into your bank account.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Here's How it works:</span>
         </div>
 
@@ -56,7 +56,7 @@ export default function Faqs() {
                 <FontAwesomeIcon icon={faStar} />
               </div>
               <div>
-                <p className=" text-[16px]"><span className="font-bold">Earn Loyality Points:</span>Every dollar you pay towards your loan with Coover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards.</p>
+                <p className=" text-[16px]"><span className="font-bold">Earn Loyalty Points:</span>Every dollar you pay towards your loan with Clover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards.</p>
               </div>
             </div>
           </div>

@@ -3,6 +3,17 @@ import React, { useState } from "react";
 export function Tabs() {
   const [currentTab, setCurrentTab] = useState(0);
 
+  const [states, setStates] = React.useState([
+    "-Select State-","Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+    "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+    "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+    "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+    "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+    "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+    "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+    "Wisconsin", "Wyoming"
+  ])
+
   const [personalInfo, setPersonalInfo] = useState({
     firstName: "",
     lastName: "",
@@ -145,8 +156,8 @@ export function Tabs() {
               />
             </div>
             <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 pt-4 gap-2">
-              <div className="flex justify-between gap-2 rounded-3xl bg-gray-300 p-2 ">
-                <input type="checkbox" />
+              <div className="flex justify-between items-baseline gap-2 rounded-3xl bg-gray-300 p-3 ">
+                <input type="checkbox" className="relative top-0.5"/>
                 <label>
                   I would like to opt-in and receive text messages related to my
                   account and application status and agree to the Terms of
@@ -198,10 +209,9 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-3xl bg-gray-300 p-2"
               >
-                <option value="">State</option>
-                <option value="India">India</option>
-                <option value="China">China</option>
-                <option value="Russia">Russia</option>
+                {states.map((state, index) => 
+                  <option key={index}>{state}</option>
+                )}
               </select>
             </div>
             <span className="pt-3 block">Time & Address</span>
@@ -259,10 +269,9 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-3xl bg-gray-300 p-2 "
               >
-                <option value="">DL State</option>
-                <option value="India">India</option>
-                <option value="China">China</option>
-                <option value="Russia">Russia</option>
+                {states.map((state, index) => 
+                  <option key={index}>{state}</option>
+                )}
               </select>
               <select
                 name="activeMilitary"
@@ -303,8 +312,8 @@ export function Tabs() {
               />
             </div>
             <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 pt-4 gap-2">
-              <div className="flex justify-between gap-2 rounded-3xl bg-gray-300 p-2 ">
-                <input type="checkbox" />
+              <div className="flex justify-between items-baseline gap-2 rounded-3xl bg-gray-300 p-3 ">
+                <input type="checkbox" className="relative top-0.5" />
                 <label>
                   I would like to opt-in and receive text messages related to my
                   account and application status and agree to the Terms of
@@ -394,7 +403,7 @@ export function Tabs() {
             <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 pt-4 gap-2">
               <textarea
                 rows="3"
-                className="rounded-2xl bg-gray-300 p-2"
+                className="rounded-2xl bg-gray-300 p-3"
                 placeholder="I would like to opt-in and receive text messages related to my account and application status and agree to the Terms of Service and Privacy Policy. Message frequency varies. Msg & data rates may apply. Reply STOP, HELP for help."
               ></textarea>
             </div>
@@ -515,10 +524,9 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-3xl bg-gray-300 p-2 "
               >
-                <option value="">State</option>
-                <option value="India">India</option>
-                <option value="China">China</option>
-                <option value="Russia">Russia</option>
+                {states.map((state, index) => 
+                  <option key={index}>{state}</option>
+                )}
               </select>
               <input
                 type="text"
@@ -596,9 +604,9 @@ export function Tabs() {
               />
             </div>
             <span className="pt-3 block">Agree & Submit</span>
-            <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 pt-4 gap-2">
-              <div className="flex justify-between gap-2 rounded-3xl bg-gray-300 p-2 ">
-                <input type="checkbox" />
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4 gap-2">
+              <div className="flex justify-between items-baseline gap-2 rounded-3xl bg-gray-300 p-3 ">
+                <input type="checkbox"  className="relative top-0.5"/>
                 <label>
                   I would like to opt-in and receive text messages related to my
                   account and application status and agree to the Terms of
@@ -606,8 +614,8 @@ export function Tabs() {
                   data rates may apply. Reply STOP, HELP for help.
                 </label>
               </div>
-              <div className="flex justify-between gap-2 rounded-3xl bg-gray-300 p-2 ">
-                <input type="checkbox" />
+              <div className="flex justify-between items-baseline gap-2 rounded-3xl bg-gray-300 p-3 ">
+                <input type="checkbox"  className="relative top-0.5"/>
                 <label>
                   I would like to opt-in and receive text messages related to my
                   account and application status and agree to the Terms of
