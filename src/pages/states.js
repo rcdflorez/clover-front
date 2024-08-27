@@ -33,7 +33,7 @@ export default function Terms() {
                 <option key={index}>{state}</option>
               )}
             </select>
-            <button type="submit" className="w-full md:w-1/2 bg-gray-400 text-sm text-white rounded-sm p-1 mx-1 mt-2 md:mt-0">Apply</button>
+            <button type="submit" className="w-full md:w-1/2 bg-gray-400 text-[16px] text-white rounded-sm p-1 mx-1 mt-2 md:mt-0">Apply</button>
           </form>
           <div className="usaMap">
             {/* <Usamap /> */}

@@ -23,16 +23,8 @@ export default function Home() {
               </div>
             </section>
             <section className="hidden md:block">
-              <div className="flex gap-2 my-8 mx-[25%]">
-                <div className="w-1/2 pt-6">
-                  <div className="rounded-md bg-gray-400 p-4 my-2 h-[40px]"></div>
-                  <div className="rounded-md bg-[#CDE666] p-4 h-[100px]"></div>
-                  <div className="rounded-md bg-gray-400 p-4 my-2  h-[50px]"></div>
-                </div>
-                <div className="w-1/2 pt-4">
-                  <div className="rounded-md bg-white p-4 h-[50px] mb-2 border-[2px] border-solid border-gray-200"></div>
-                  <div className="rounded-md bg-gray-400 p-4 h-[70px]"></div>
-                </div>
+              <div className="flex gap-2 my-4 mx-[15%]">
+                <StaticImage classname="heroLogoImg" src="../images/clover.png" />
               </div>
             </section>
           </div>
@@ -47,27 +39,57 @@ export default function Home() {
             <p>Forget the paperwork. No need to talk to anyone. <br />Use our fully automated, completely secure online portal to apply for a loan in minutes.</p>
           </article>
           <div className={`${cardStyles.card} font-Aldrich `}>
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 gap-2">
-              <div className="main">
-                <FontAwesomeIcon icon={faQuestion} />
-                <h3>Common Questions</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <Link to="/">Learn More</Link>
+            <div className="pt-4 gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="col-span-1 lg:col-span-1">
+                  <div className="main">
+                    <FontAwesomeIcon icon={faQuestion} />
+                    <h3>Common Questions</h3>
+                    <p>It is a long established fact that a reader will be...</p>
+                    <Link to="/">Learn More</Link>
+                  </div>
+                </div>
+
+                <div className="col-span-1 md:col-span-2 lg:col-span-3">
+                  <span><strong>How to benefit:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.</span>
+                </div>
               </div>
 
-              <div className="main">
-                <FontAwesomeIcon icon={faMedal} />
-                <h3>Rewards and Perks</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <Link to="/">View Benefits</Link>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="col-span-1 md:col-span-2 lg:col-span-3">
+                  <span>
+                    <strong>Earn Loyalty Points:</strong> Every dollar you pay towards your loan with Clover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards. <br /><br /><br />
+                    <strong>Unlock Discounts:</strong> Once you reach 1500 loyalty points, you’ll unlock a fantastic perk - a $25 discount on your next payment! It’s our way of saying thank you for choosing Clover Credit and being a part of our loyal customer community.
+                  </span>
+                </div>
+                
+                <div className="col-span-1 md:col-span-1 lg:col-span-1">
+                  <div className="main">
+                    <FontAwesomeIcon icon={faMedal} />
+                    <h3>Rewards and Perks</h3>
+                    <p>It is a long established fact that a reader will be...</p>
+                    <Link to="/">View Benefits</Link>
+                  </div>
+                </div>
               </div>
-              
-              <div className="main">
-                <FontAwesomeIcon icon={faUser} />
-                <h3>Self Service</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <Link to="/">Customer Portal</Link>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="col-span-1 md:col-span-1 lg:col-span-1">
+                  <div className="main">
+                    <FontAwesomeIcon icon={faUser} />
+                    <h3>Self Service</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <Link to="/">Customer Portal</Link>
+                  </div>
+                </div>
+                
+                <div className="col-span-1 md:col-span-2 lg:col-span-3">
+                  <span>
+                    <strong>Seamless Redemption:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
+                  </span>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
