@@ -4,7 +4,7 @@ export function Tabs() {
   const [currentTab, setCurrentTab] = useState(0);
 
   const [states, setStates] = React.useState([
-    "-Select State-","Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
     "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
     "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
     "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
@@ -13,6 +13,14 @@ export function Tabs() {
     "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
     "Wisconsin", "Wyoming"
   ])
+
+  const [dlstate, setDlstates] = React.useState([
+    "AL", "AK", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL",
+    "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA",
+    "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "NE", "NH",
+    "NJ", "NM", "NV", "NY", "ND", "OH", "OK", "OR", "PA", "RI",
+    "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WI", "WV", "WY"
+  ]);
 
   const [personalInfo, setPersonalInfo] = useState({
     firstName: "",
@@ -209,6 +217,7 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-3xl bg-gray-300 p-2"
               >
+                <option value="" disabled>State</option>
                 {states.map((state, index) => 
                   <option key={index}>{state}</option>
                 )}
@@ -250,9 +259,9 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-3xl bg-gray-300 p-2 "
               >
-                <option value="">Married / Single</option>
-                <option value="Married">Married</option>
-                <option value="Single">Single</option>
+                <option value="">Marital Status</option>
+                <option value="married">Married</option>
+                <option value="unmarried">Unmarried</option>
               </select>
               <input
                 type="number"
@@ -269,8 +278,9 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-3xl bg-gray-300 p-2 "
               >
-                {states.map((state, index) => 
-                  <option key={index}>{state}</option>
+                <option value="" disabled>DL State</option>
+                {dlstate.map((state, index) => 
+                  <option key={index} value={state}>{state}</option>
                 )}
               </select>
               <select
@@ -374,15 +384,14 @@ export function Tabs() {
                 className="rounded-3xl bg-gray-300 p-2"
               >
                 <option value="">Account Type</option>
-                <option value="Type1">Type 1</option>
-                <option value="Type2">Type 2</option>
-                <option value="Type3">Type 3</option>
+                <option value="checking">Checking</option>
+                <option value="saving">Saving</option>
               </select>
             </div>
             <span className="pt-3 block">How long has it been open?</span>
             <div className="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 pt-4 gap-2">
               <input
-                type="text"
+                type="number"
                 placeholder="Years"
                 
                 name="yearsOpen"
@@ -391,7 +400,7 @@ export function Tabs() {
                 className="rounded-3xl bg-gray-300 p-2 "
               />
               <input
-                type="text"
+                type="number"
                 placeholder="Months"
                 
                 name="monthsOpen"
@@ -410,7 +419,7 @@ export function Tabs() {
             <span className="pt-3 block">Income Details</span>
             <div className="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 pt-4 gap-2">
               <input
-                type="text"
+                type="number"
                 placeholder="Monthly Income"
                 
                 name="monthlyIncome"
@@ -418,15 +427,16 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-3xl bg-gray-300 p-2 "
               />
-              <input
-                type="text"
-                placeholder="Income Source"
-                
+              <select
                 name="incomeSource"
                 value={financialDetails.incomeSource}
                 onChange={handleFinancialDetailsChange}
-                className="rounded-3xl bg-gray-300 p-2 "
-              />
+                className="rounded-3xl bg-gray-300 p-2"
+              >
+                <option value="" disabled>Income Source</option>
+                <option value="Yes">Employed</option>
+                <option value="No">Self-Employed</option>
+              </select>
               <input
                 type="text"
                 placeholder="ECOA Disclosure"
@@ -434,24 +444,30 @@ export function Tabs() {
                 className="text-yellow-600 font-bold bg-yellow-200  rounded-3xl p-2 "
                 readOnly
               />
-              <input
-                type="number"
-                placeholder="Pay Frequency"
-                
+              <select
                 name="payFrequency"
                 value={financialDetails.payFrequency}
                 onChange={handleFinancialDetailsChange}
-                className="rounded-3xl bg-gray-300 p-2 "
-              />
-              <input
-                type="number"
-                placeholder="Direct Deposit"
-                
+                className="rounded-3xl bg-gray-300 p-2"
+              >
+                <option value="" disabled>Pay Frequency</option>
+                <option value="weekly">Weekly</option>
+                <option value="bi-weekly">Bi-Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="twice-a-month">Twice a Month</option>
+              </select>
+              <select
                 name="directDeposit"
                 value={financialDetails.directDeposit}
                 onChange={handleFinancialDetailsChange}
-                className="rounded-3xl bg-gray-300 p-2 "
-              />
+                className="rounded-3xl bg-gray-300 p-2"
+              >
+                <option value="" disabled>Pay Frequency</option>
+                <option value="weekly">Weekly</option>
+                <option value="bi-weekly">Bi-Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="twice-a-month">Twice a Month</option>
+              </select>
               <input
                 type="date"
                 placeholder="Next Pay Date"
@@ -524,8 +540,9 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-3xl bg-gray-300 p-2 "
               >
-                {states.map((state, index) => 
-                  <option key={index}>{state}</option>
+                <option value="" disabled>State</option>
+                {dlstate.map((state, index) => 
+                  <option key={index} value={state}>{state}</option>
                 )}
               </select>
               <input
