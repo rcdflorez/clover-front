@@ -434,8 +434,8 @@ export function Tabs() {
                 className="rounded-3xl bg-gray-300 p-2"
               >
                 <option value="" disabled>Income Source</option>
-                <option value="Yes">Employed</option>
-                <option value="No">Self-Employed</option>
+                <option value="employed">Employed</option>
+                <option value="self">Self-Employed</option>
               </select>
               <input
                 type="text"
@@ -462,11 +462,9 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-3xl bg-gray-300 p-2"
               >
-                <option value="" disabled>Pay Frequency</option>
-                <option value="weekly">Weekly</option>
-                <option value="bi-weekly">Bi-Weekly</option>
-                <option value="monthly">Monthly</option>
-                <option value="twice-a-month">Twice a Month</option>
+                <option value="" disabled>Direct Deposit</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
               </select>
               <input
                 type="date"
