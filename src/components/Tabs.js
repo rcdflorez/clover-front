@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export function Tabs() {
   const [currentTab, setCurrentTab] = useState(0);
+  const [inputType, setInputType] = useState('text')
 
   const [states, setStates] = React.useState([
     "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
@@ -312,12 +313,14 @@ export function Tabs() {
                 className="rounded-3xl bg-gray-300 p-2 "
               />
               <input
-                type="date"
+                type={inputType}
                 placeholder="DOB (mm/dd/yyyy)"
                 
                 name="dob"
                 value={personalInfo.dob}
                 onChange={handlePersonalInfoChange}
+                onBlur={() => setInputType('text')}
+                onFocus={() => setInputType('date')}
                 className="rounded-3xl bg-gray-300 p-2 "
               />
             </div>
@@ -467,12 +470,14 @@ export function Tabs() {
                 <option value="No">No</option>
               </select>
               <input
-                type="date"
+                type={inputType}
                 placeholder="Next Pay Date"
                 
                 name="nextPayDate"
                 value={financialDetails.nextPayDate}
                 onChange={handleFinancialDetailsChange}
+                onBlur={() => setInputType('text')}
+                onFocus={() => setInputType('date')}
                 className="rounded-3xl bg-gray-300 p-2 "
               />
             </div>
