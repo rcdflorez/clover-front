@@ -67,26 +67,15 @@ export default function Terms() {
 
         <div className="pt-4">
           <h1 className="text-3xl font-bold">What to consider before applying for a Clover Credit loan?</h1>
-          <p className="text-[16px] pb-2">A short-term installment loan is a great way to get extra cash when an unexpected event or emergency pops
-up, before you apply, consider these questions to make sure a short-term loan is right for you.</p>
+          <p className="text-[16px] pb-2">A short-term installment loan is a great way to get extra cash when an unexpected event or emergency pops up, before you apply, consider these questions to make sure a short-term loan is right for you.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Is borrowing money really necessary?</span>
-          <p className="text-[16px] pb-2">Be realistic about your current financial standing.
-Weigh all of your options. If you are approved  for a
-Clover Credit loan, you can have your money directly
-deposited into your bank account.</p>
+          <p className="text-[16px] pb-2">Be realistic about your current financial standing. Weigh all of your options. If you are approved for a Clover Credit loan, you can have your money directly deposited into your bank account.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford to pay back in full?</span>
-          <p className="text-[16px] pb-2">With Clover Credit, you can pay back your loan 
-in weekly, bi-weekly, monthly, or semi-monthly installments. 
-If you need to change your due date, just call us at <span className="text-[#00D35B] text-lg font-bold"> 833-276-2274</span> and we'll work with you to make it happen.</p>
+          <p className="text-[16px] pb-2">With Clover Credit, you can pay back your loan in weekly, bi-weekly, monthly, or semi-monthly installments. If you need to change your due date, just call us at <span className="text-[#00D35B] text-lg font-bold"> 833-276-2274</span> and we'll work with you to make it happen.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Can I afford extra charges, interest, and fees if I miss a payment?</span>
-          <p className="text-[16px] pb-2">To avoid missing a payment, you can schedule
-automatic electronic payments from your checking
-account. You can set up this option in your
-Clover Credit account, or give us a call and we'll do it
-for you.</p>
+          <p className="text-[16px] pb-2">To avoid missing a payment, you can schedule automatic electronic payments from your checking account. You can set up this option in your Clover Credit account, or give us a call and we'll do it for you.</p>
           <span className="block my-2 text-[#00D35B] text-lg font-bold">Have some questions?</span>
-          <p className="text-[16px] pb-2">If you still have questions, contact a Clover Credit team member at <span className="text-[#00D35B] text-lg font-bold
-          ">833-276-2274</span> or <span className="text-[#00D35B] text-lg font-bold">support@clovercredit.com</span> 8AM EST - 9PM EST (Every Day) for any other questions you have. </p>
+          <p className="text-[16px] pb-2">If you still have questions, contact a Clover Credit team member at <span className="text-[#00D35B] text-lg font-bold ">833-276-2274</span> or <span className="text-[#00D35B] text-lg font-bold">support@clovercredit.com</span> 8AM EST - 9PM EST (Every Day) for any other questions you have. </p>
         </div>
         <div className="pt-4">
           <h1 className="text-3xl font-bold">Ready to Apply?</h1>

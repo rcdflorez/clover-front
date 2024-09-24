@@ -61,7 +61,7 @@ export default function Footer() {
                     </div>
                     <div className="lg:col-span-2 md:col-span-2 text-center mt-0 md:mt-20 ">
                         <div className="mb-5">
-                            <strong className="text-[16px]">Contact:</strong> <br /><span className="text-[20px]">833-276-2274</span>
+                            <strong className="text-[16px]">Contact Phone Number:</strong> <br /><span className="text-[20px]">833-276-2274</span>
                         </div>
                         <div className="mb-5">
                             <strong className="text-[16px]">Email: </strong><br /><span className="text-[20px]">support@clovercredit.com</span>

@@ -18,7 +18,7 @@ export default function Home() {
                 <div className="logoSec mb-1">
                     <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
                 </div>
-                <h3 className="text-[32px] md:text-[40px] font-bold mb-[25px] text-left">Apply now for a loan upto <span className="text-[#00D35B]">$2000</span></h3>
+                <h3 className="text-[32px] md:text-[40px] font-bold mb-[25px] text-left">Apply now for a loan up to <span className="text-[#00D35B]">$2000</span></h3>
                 <RangeInput min={300} max={2000} step={50} />
               </div>
             </section>
@@ -36,7 +36,7 @@ export default function Home() {
         <section className="container mx-auto p-2">
           <article className="sm:mx-0 md:mx-[10%] sm:text-left md:text-center my-5 p-2">
             <h3 className="text-3xl font-bold">Do it yourself safely and securely</h3>
-            <p>Forget the paperwork. No need to talk to anyone. <br />Use our fully automated, completely secure online portal to apply for a loan in minutes.</p>
+            <p>Forget the paperwork. No need to talk to anyone.<br />Use our fully automated, completely secure online portal to apply for a loan in minutes.</p>
           </article>
           <div className={`${cardStyles.card} font-Aldrich `}>
             <div className="pt-4 gap-2">
@@ -45,7 +45,7 @@ export default function Home() {
                   <div className="main">
                     <FontAwesomeIcon icon={faQuestion} />
                     <h3>Common Questions</h3>
-                    <p>It is a long established fact that a reader will be...</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <Link to="/">Learn More</Link>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function Home() {
                   <div className="main">
                     <FontAwesomeIcon icon={faMedal} />
                     <h3>Rewards and Perks</h3>
-                    <p>It is a long established fact that a reader will be...</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <Link to="/">View Benefits</Link>
                   </div>
                 </div>

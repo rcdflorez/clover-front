@@ -90,7 +90,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <h3 className="text-[22px] font-bold mb-[5px] text-left">Operating Hours</h3>
-                        <p>Monday - Friday</p>
+                        <p>Monday – Friday</p>
                         <p>8 AM - 8 PM EST</p>
                     </div>
                     <div>
