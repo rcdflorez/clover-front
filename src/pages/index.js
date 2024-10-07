@@ -18,7 +18,7 @@ export default function Home() {
                 <div className="logoSec mb-1">
                     <StaticImage className="logo" src="../images/logo.png" alt="Clover Credit"  />
                 </div>
-                <h3 className="text-[32px] md:text-[40px] font-bold mb-[25px] text-left">Apply now for a loan up to <span className="text-[#00D35B]">$2000</span></h3>
+                <h3 className="text-[32px] md:text-[40px] font-bold mb-[25px] text-left">Apply now for a loan up to<span className="text-[#00D35B]"> $2000</span></h3>
                 <RangeInput min={300} max={2000} step={50} />
               </div>
             </section>
@@ -46,7 +46,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faQuestion} />
                     <h3>Common Questions</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <Link to="/">Learn More</Link>
+                    <Link to="/">LEARN MORE</Link>
                   </div>
                 </div>
 
@@ -68,7 +68,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faMedal} />
                     <h3>Rewards and Perks</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <Link to="/">View Benefits</Link>
+                    <Link to="/">VIEW BENEFITS</Link>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faUser} />
                     <h3>Self Service</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <Link to="/">Customer Portal</Link>
+                    <Link to="/">CUSTOMER PORTAL</Link>
                   </div>
                 </div>
                 
