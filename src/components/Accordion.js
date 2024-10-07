@@ -28,9 +28,10 @@ const Accordion = ({ title, content }) => {
         </svg>
       </button>
       {isOpen && (
-        <div className="px-4 py-2 text-gray-700">
-          {(dangerouslySetInnerHTML = content)}
-        </div>
+        <div
+          dangerouslySetInnerHTML={{ __html: content }}
+          className="px-4 py-2 text-gray-700"
+        ></div>
       )}
     </div>
   );
