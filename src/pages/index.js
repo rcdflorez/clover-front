@@ -115,9 +115,10 @@ export default function Home() {
                       <FontAwesomeIcon icon={faMedal} />
                       <h3>Rewards and Perks</h3>
                       <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
+                        Discover the exciting rewards and perks of Clover
+                        Credit, including our loyalty points program and
+                        potential discounts designed to enhance your financial
+                        journey.
                       </p>
                       <Link to="/">VIEW BENEFITS</Link>
                     </div>
@@ -130,9 +131,9 @@ export default function Home() {
                       <FontAwesomeIcon icon={faUser} />
                       <h3>Self Service</h3>
                       <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
+                        With Clover Credit's seamless online service, bypass the
+                        paperwork, skip the agent, and enjoy a fully digital
+                        experience from application to approval.
                       </p>
                       <Link to="/">CUSTOMER PORTAL</Link>
                     </div>
