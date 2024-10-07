@@ -6,18 +6,55 @@ import React, { useState } from "react";
 import Modal from "./Modal";
 
 export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [language] = useState([
+    "English",
+    "Spanish",
+    "Chinese",
+    "Tagalog",
+    "Vietnamese",
+    "French",
+    "Korean",
+    "German",
+    "Arabic",
+    "Russian",
+    "Italian",
+    "Portuguese",
+    "Hindi",
+    "Polish",
+    "Japanese",
+    "Persian",
+    "Greek",
+    "Urdu",
+    "Gujarati",
+    "Hebrew",
+    "Armenian",
+    "Hmong",
+    "Punjabi",
+    "Telugu",
+    "Bengali",
+    "Tamil",
+    "Navajo",
+    "Khmer",
+    "Thai",
+    "Serbo-Croatian",
+    "Haitian Creole",
+    "Yiddish",
+    "Lao",
+    "Swahili",
+    "Somali",
+    "Czech",
+    "Dutch",
+    "Turkish",
+  ]);
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [language] = useState(["English", "Spanish", "Chinese", "Tagalog", "Vietnamese", "French", "Korean", "German", "Arabic", "Russian", "Italian", "Portuguese", "Hindi", "Polish", "Japanese", "Persian", "Greek", "Urdu", "Gujarati", "Hebrew", "Armenian", "Hmong", "Punjabi", "Telugu", "Bengali", "Tamil", "Navajo", "Khmer", "Thai", "Serbo-Croatian", "Haitian Creole", "Yiddish", "Lao", "Swahili", "Somali", "Czech", "Dutch", "Turkish"]
-)
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false);
-
-    const languageHandler = (e) => {
-        e.preventDefault();
-        console.log(e.target.value)
-    }
+  const languageHandler = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+  };
 
     return (
         <footer className="text-black-300 mt-16 pb-5" style={{ background: 'linear-gradient(rgb(205, 230, 102), rgb(39, 203, 100))' }}>
@@ -74,17 +111,23 @@ export default function Footer() {
                                 ))}
                             </select>
                         </div> */}
-                    </div>
-                </div>
-                <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 border-t border-gray-800 p-2">
-                    <div className="text-center md:text-right text-md"><Link to="">Privacy Policy</Link></div>
-                    <div className="text-center hidden md:inline-block">|</div>
-                    <div className="text-center md:text-left text-md"><Link to="">Terms & Conditions</Link></div>
-                </div>
-            </div>
-            {isModalOpen && (
-                <Modal closeModal={closeModal} />
-            )}
-        </footer>
-    )
+          </div>
+        </div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 border-t border-gray-800 p-2">
+          <div className="text-center md:text-right text-md">
+            <a target="_blank" href="/privacy_policy.pdf">
+              Privacy Policy
+            </a>
+          </div>
+          <div className="text-center hidden md:inline-block">|</div>
+          <div className="text-center md:text-left text-md">
+            <a target="_blank" href="/Terms_of_Use.pdf">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+      {isModalOpen && <Modal closeModal={closeModal} />}
+    </footer>
+  );
 }
