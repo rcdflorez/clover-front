@@ -29,7 +29,7 @@ const Accordion = ({ title, content }) => {
       </button>
       {isOpen && (
         <div className="px-4 py-2 text-gray-700">
-          dangerouslySetInnerHTML={content}
+          {(dangerouslySetInnerHTML = content)}
         </div>
       )}
     </div>
