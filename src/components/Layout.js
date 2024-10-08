@@ -6,9 +6,9 @@ import '../styles/global.css';
 export default function Layout({ children }) {
 
     return (
-        <div className="layout flex flex-col min-h-screen bg-white shadow-2xl overflow-hidden m-0 md:m-10 md:rounded-3xl opacity-100 md:opacity-95">
+        <div className="container mx-auto layout flex flex-col bg-white shadow-2xl overflow-hidden opacity-100 md:opacity-95 my-0 md:my-[86px] rounded-0 md:rounded-[60px]">
             <Navbar />
-            <div className="content flex-grow">
+            <div className="content flex-growm mx-[0px] md:mx-[140px]">
                 {children}
             </div>
             <Footer />

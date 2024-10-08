@@ -49,13 +49,17 @@ footer a[aria-current="page"]{
 }
 
 .topBgDesign{
-    background-image: url('../images/Footer.png');
-    background-size: contain;
-    height: 120px;
+    background-image: url('../images/top.png');
+    background-size: cover;
+    height: 248px;
+    background-repeat: no-repeat;
+    border-radius: 50px 50px 0px 0px;
 }
 .bottomBgDesign {
-    background-image: url('../images/Footer.png');
-    background-size: contain;
+    background-image: url('../images/bottom.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 50px 50px;
 }
 
 .successApplyBtn{
@@ -255,6 +259,28 @@ footer a[aria-current="page"]{
     }
     .progressBack{
         display: block;
+    }
+    .topBgDesign{
+        background-image: url('../images/topmin.png');
+        background-size: cover;
+        /* Change to contain to show full image */
+        background-position: center;
+        /* Center the image */
+        height: 130px;
+        /* Adjust height if needed */
+        border-radius: 0;
+        /* Optional: Remove border-radius for a different look */
+    }
+    .bottomBgDesign{
+        background-image: url('../images/bottommin.png');
+        background-size: cover;
+        /* Change to contain to show full image */
+        background-position: top;
+        /* Center the image */
+        height: auto;
+        /* Adjust height if needed */
+        border-radius: 0;
+        /* Optional: Remove border-radius for a different look */
     }
 }
 
