@@ -12,8 +12,8 @@ export default function Home() {
     <Layout>
       <div className="homebg">
         <div className="container mx-auto mt-0 md:mt-[210px]">
-          <div className="grid xl:grid-cols-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-2">
-            <section className="loanApply col-span-2 lg:col-span-2 xl:col-span-3">
+          <div className="grid xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-1 gap-2">
+            <section className="loanApply col-span-6 lg:col-span-6 xl:col-span-6">
               <div className="container mx-auto pb-4 px-4">
                 <div className="logoSec mb-1 md:hidden">
                   <StaticImage className="logo mb-4 mx-[15px] md:mx-auto" src="../images/logo.png" alt="Clover Credit" />
@@ -24,8 +24,8 @@ export default function Home() {
                 <RangeInput min={300} max={2000} step={50} />
               </div>
             </section>
-            <section className="hidden md:block col-span-2 lg:col-span-2 xl:col-span-5">
-              <div className="flex gap-2 my-4 ml-[15%]">
+            <section className="hidden md:block col-span-6 lg:col-span-6 xl:col-span-6">
+              <div className="flex gap-4 m-0">
                 <StaticImage className="heroLogoImg" src="../images/clover.png" />
               </div>
             </section>

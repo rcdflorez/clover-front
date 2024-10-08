@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link to="/" className="-m-1.5 p-1.5">
             <div className="headLogo w-[10%] rounded-lg p-2 bg-[#00D35B] md:bg-white">
               <StaticImage
-                className="logo hidden md:block md:h-[50px] md:w-[62px]"
+                className="logo hidden md:block md:ml-2 md:h-[50px] md:w-[62px]"
                 src="../images/black-icon.png"
                 alt="Clover Credit"
               />
