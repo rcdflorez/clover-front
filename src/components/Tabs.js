@@ -736,16 +736,16 @@ export function Tabs() {
       <div className="mb-[25px]">
         <h1 className="text-[24px] font-semibold">{tabs[currentTab]?.title}</h1>
       </div>
-      <div className="w-full bg-gray-200 h-[10px]">
+      <div className="w-[99%] bg-[#D1D1D1] h-[10px]">
         <div
-          className="bg-green-600 h-[10px] transition-width duration-500"
+          className="bg-[#00D35B] rounded-xl h-[10px] transition-width duration-500"
           style={{ width: progressBarWidth }}
         ></div>
       </div>
-      <div className="flex justify-between w-[72%] mx-0 relative top-[-16px] left-[350px]">
+      <div className="flex justify-between tabbar w-[73%] mx-0 relative top-[-16px] left-[350px]">
         {tabs.map((tab, index) => (
           <div key={index} className="flex items-center relative">
-            <div className={`rounded-full ${currentTab >= index + 1 ? 'bg-green-600 w-[35px] h-[35px] absolute top-[-8px] left-[0px]' : 'bg-gray-300 w-[22px] h-[22px] border-2 border-white'} flex items-center justify-center transition-all duration-300`}>
+            <div className={`progressbar rounded-full ${currentTab >= index + 1 ? 'bg-[#00D35B] w-[35px] h-[35px] absolute top-[-8px] left-[0px]' : 'bg-[#D1D1D1] w-[22px] h-[22px] border-2 border-white'} flex items-center justify-center transition-all duration-300`}>
               {currentTab > index ? <FontAwesomeIcon icon={faCheck} className="text-white text-[16px]" /> : null}
             </div>
           </div>

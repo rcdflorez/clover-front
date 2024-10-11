@@ -22,7 +22,7 @@ export default function Home() {
                   Apply now for a loan up to<span className="text-[#00D35B]"><br /> $2000</span>
                 </h3>
                 <RangeInput min={300} max={2000} step={50} />
-                <div className="mx-[30px]">
+                <div className="">
                   <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full text-[19px] md:text-[29px] rounded-[15px] md:mt-[110px] h-[46px] md:h-[66px]">Apply</button>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function Home() {
                 </div>
 
                 <div className="hidden md:block col-span-1 md:col-span-2 lg:col-span-3">
-                  <span className="ml-0 md:ml-[60px] font-light">
+                  <span className="ml-0 md:ml-[110px] font-light">
                     <strong className="font-medium">How to benefit:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                   </span>
                 </div>
@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
 
                 <div className="hidden md:block col-span-1 md:col-span-2 lg:col-span-3">
-                  <span className="ml-0 md:ml-[60px] font-light">
+                  <span className="ml-0 md:ml-[110px] font-light">
                     <strong className="font-medium">Earn Loyalty Points:</strong> Every dollar you pay towards your loan with Clover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards. <br /><br />
                     <strong>Unlock Discounts:</strong> Once you reach 1500 loyalty points, you’ll unlock a fantastic perk - a $25 discount on your next payment! It’s our way of saying thank you for choosing Clover Credit and being a part of our loyal customer community.
                   </span>
@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
                 
                 <div className="hidden md:block col-span-1 md:col-span-2 lg:col-span-3">
-                  <span className="ml-0 md:ml-[60px] font-light">
+                  <span className="ml-0 md:ml-[110px] font-light">
                     <strong className="font-medium">Seamless Redemption:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                   </span>
                 </div>

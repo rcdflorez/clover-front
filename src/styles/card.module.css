@@ -8,16 +8,16 @@
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     padding: 23px;
-    box-shadow: 0px 6.43px 32.34px 0px #00000040;
-    width: 344px;
-    height: 344px;
+    box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.35);
+    width: 394px;
+    height: 394px;
 }
 
 .card h3{
     /* font-weight: 700; */
     line-height: 48px;
     color: #000;
-    font-size:40px;
+    font-size:37px;
     margin: 10px 0px;
 }
 
@@ -33,7 +33,7 @@
 .card p{
     color: #00d35b;
     /* font-size: 16px; */
-    /* margin-bottom: 20px; */
+    margin-bottom: 100px;
     font-weight: 400;
 }
 

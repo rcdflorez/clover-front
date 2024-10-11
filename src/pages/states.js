@@ -28,12 +28,14 @@ export default function Terms() {
 
         <div className="mt-[35px] md:mt-[115px] grid lg:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 text-center pt-4">
           <form className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4 gap-8">
-            <select style={{fontFamily: 'Aldrich'}} className="w-full md:w-1/2 bg-[#D9D9D9] text-white rounded-[18px] font-[400] text-[20px] md:text-[40px] text-center p-[30px] appearance-none">
+            <div className="bg-[#D9D9D9] px-[25px] w-full md:w-1/2 rounded-[18px]">
+              <select style={{fontFamily: 'Aldrich'}} className="w-full bg-[#D9D9D9] text-white font-[400] text-[20px] md:text-[40px] text-center p-[15px] md:p-[30px]">
               {states.map((state, index) => 
                 <option key={index}>{state}</option>
               )}
             </select>
-            <button type="submit" className="w-full md:w-1/2 bg-[#D9D9D9] text-white rounded-[18px] font-[400] text-[20px] md:text-[40px] text-center p-[30px]">Apply</button>
+            </div>
+            <button type="submit" className="w-full md:w-1/2 bg-[#D9D9D9] text-white rounded-[18px] font-[400] text-[20px] md:text-[40px] text-center p-[13px] md:p-[25px]">Apply</button>
           </form>
           <div className="usaMap">
             {/* <Usamap /> */}
@@ -43,7 +45,7 @@ export default function Terms() {
         <div className="">
           <h1 className="mt-[55px] md:mt-[115px] text-[40px] md:text-[80px] font-semibold">What does a loan cost?</h1>
           <span className="mt-[35px] md:mt-[40px] block my-2 text-[#00D35B] text-[20px] md:text-[40px] font-medium leading-[24px] md:leading-[48px]">We offer a range of short-term installment loans to fit your financial needs.</span>
-          <div className='flex items-center justify-between mt-[20px] md:mt-[115px]'>
+          <div className='flex items-center justify-between my-[20px] md:my-[115px]'>
               <span className="text-center sm:w-auto sm:flex-1 stateIcon customFaqCard">
                 <FontAwesomeIcon icon={faDollar} className=" mx-auto block md:inline  bg-green-200 p-4 text-green-500 rounded-md" />
                 <h6 className="mt-4 text-[15px] md:text-[45px] font-medium leading-[18px] md:leading-[54px]">Loans up to <br />$2000</h6>
@@ -84,7 +86,7 @@ export default function Terms() {
         <div className="">
           <h1 className="font-semibold text-[40px] md:text-[80px] leading-[43px] md:leading-[87px] mt-[55px] md:mt-[115px]">Ready to Apply? </h1>
           <span className="font-medium text-[20px] md:text-[40px] leading-[24px] md:leading-[48px] block mt-[20px] md:mt-[40px] text-[#00D35B]">The application process is quick. Just answer a few questions in our easy application process.</span>
-          <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-[600px] text-[19px] md:text-[29px] rounded-[15px] md:mt-[110px] h-[46px] md:h-[66px] mx-auto block">Apply</button>
+          <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full md:w-[600px] text-[19px] md:text-[29px] rounded-[15px] mt-[40px] md:mt-[110px] h-[46px] md:h-[66px] mx-auto block">Apply</button>
           <p className="mb-[55px] md:mb-[115px] "></p>
         </div>
       </section>

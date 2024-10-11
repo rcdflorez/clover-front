@@ -40,7 +40,7 @@ export default function Login() {
                             <form onSubmit={handleSubmit} className="mt-[15px] md:mt-[25px] md:mb-[200px]">
                                 <div className="mb-[25px] md:mb-[15px]">
                                     <input
-                                        className="shadow appearance-none border rounded-[10px] w-[298px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm h-[35px]"
+                                        className="shadow appearance-none border rounded-[10px] w-[298px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm h-[35px]" style={{fontFamily: 'Aldrich'}}
                                         id="email"
                                         type="email"
                                         placeholder="Email address"
@@ -50,7 +50,7 @@ export default function Login() {
                                 </div>
                                 <div className="mb-[10px]">
                                     <input
-                                        className="shadow appearance-none border rounded-[10px] w-[298px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm"
+                                        className="shadow appearance-none border rounded-[10px] w-[298px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm" style={{fontFamily: 'Aldrich'}}
                                         id="password"
                                         type="password"
                                         placeholder="Social Security Number"
@@ -62,7 +62,7 @@ export default function Login() {
                                 <div className="hidden md:block md:mb-[15px] ">
                                     <input type="checkbox" checked /> Remember me
                                 </div>  
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between w-[298px]">
                                     <button className="w-full bg-[#00D35B] text-white py-1 px-2 rounded-lg" type="submit">
                                         Login
                                     </button>

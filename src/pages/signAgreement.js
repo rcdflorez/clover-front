@@ -248,7 +248,7 @@ function Signagreement() {
                                                 className="form-input flex-1 rounded-[12px] bg-[#AEB0B0] font-medium text-[20px] placeholder:text-[20px] placeholder:text-white  pl-[25px] py-[10px] md:py-[20px] pr-[100px]"
                                                 placeholder="Amount"
                                             />
-                                            <span className="absolute right-[0px] bg-white text-black top-[1px] md:top-[0px] rounded-tr-[12px] rounded-br-[12px]  md:font-medium px-[25px] py-[8px] md:py-[18px] text-[20px] border border-gray-400">of $500</span>
+                                            <span className="absolute right-[2px] bg-white text-black top-[2px] md:top-[2.5px] rounded-tr-[12px] rounded-br-[12px]  md:font-medium px-[23px] py-[6px] md:py-[16px] text-[20px] border border-gray-400">of $500</span>
                                         </div>
                                         <button className="w-full bg-[#00D35B] text-white py-[10px] md:py[20px] md:text-[28px] mb-[50px] md:mb-[50px]  rounded-[15px]" type="submit">Sign Agreement</button>
                                     </div>

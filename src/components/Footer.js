@@ -107,13 +107,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 border-t border-gray-800 p-2">
-          <div className="text-center md:text-right text-md pb-3">
+          <div className="text-center md:text-right text-md pb:40px md:pb-[80px]">
             <a target="_blank" href="/privacy_policy.pdf">
               Privacy Policy
             </a>
           </div>
           <div className="text-center hidden md:inline-block">|</div>
-          <div className="text-center md:text-left text-md pb-3">
+          <div className="text-center md:text-left text-md pb:40px md:pb-[80px]">
             <a target="_blank" href="/Terms_of_Use.pdf">
               Terms & Conditions
             </a>
