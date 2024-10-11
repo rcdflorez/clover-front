@@ -342,31 +342,15 @@ footer a[aria-current="page"] {
     font-weight: bold;
 }
 
-.select-wrapper::after {
-    content: '&#xe5cf';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    width: 10px;
-    /* Arrow width */
-    height: 10px;
-    /* Arrow height */
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-top: 5px solid black;
-    /* Arrow color */
-    transform: translateY(-50%);
-    pointer-events: none;
-    /* Allow click through */
+.mainSection {
+    background: rgb(0, 211, 91);
+    /* Solid green color */
+    background: -moz-linear-gradient(0deg, rgba(0, 211, 91, 1) 20px, rgba(255, 255, 255, 1) 20px);
+    background: -webkit-linear-gradient(0deg, rgba(0, 211, 91, 1) 20px, rgba(255, 255, 255, 1) 20px);
+    background: linear-gradient(0deg, rgba(0, 211, 91, 1) 20px, rgba(255, 255, 255, 1) 20px);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d35b", endColorstr="#ffffff", GradientType=1);
 }
 
-/* .mainSection{
-    background: hsla(132, 42%, 31%, 1);    
-    background: linear-gradient(0deg, hsla(132, 42%, 31%, 1) 0%, hsla(0, 0%, 100%, 1) 26%);
-    background: -moz-linear-gradient(0deg, hsla(132, 42%, 31%, 1) 0%, hsla(0, 0%, 100%, 1) 26%);
-    background: -webkit-linear-gradient(0deg, hsla(132, 42%, 31%, 1) 0%, hsla(0, 0%, 100%, 1) 26%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2E703B", endColorstr="#FFFFFF", GradientType=1);
-} */
 
 /* .usaMap div svg{
     width: 100%;
