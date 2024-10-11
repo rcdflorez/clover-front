@@ -360,13 +360,13 @@ footer a[aria-current="page"] {
     /* Allow click through */
 }
 
-.mainSection{
+/* .mainSection{
     background: hsla(132, 42%, 31%, 1);    
     background: linear-gradient(0deg, hsla(132, 42%, 31%, 1) 0%, hsla(0, 0%, 100%, 1) 26%);
     background: -moz-linear-gradient(0deg, hsla(132, 42%, 31%, 1) 0%, hsla(0, 0%, 100%, 1) 26%);
     background: -webkit-linear-gradient(0deg, hsla(132, 42%, 31%, 1) 0%, hsla(0, 0%, 100%, 1) 26%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#2E703B", endColorstr="#FFFFFF", GradientType=1);
-}
+} */
 
 /* .usaMap div svg{
     width: 100%;
