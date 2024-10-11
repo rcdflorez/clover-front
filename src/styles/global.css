@@ -8,53 +8,174 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manjari:wght@100;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
 
+/* @import url('https://fonts.cdnfonts.com/css/omnes-2'); */
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../omnesFont/fonnts.com-Omnes_Narrow_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../omnesFont/fonnts.com-Omnes_Narrow_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../omnesFont/fonnts.com-Omnes_Cond_Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../omnesFont/fonnts.com-Omnes_Narrow_SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url('../omnesFont/fonnts.com-Omnes_Narrow_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'Omnes';
+    src: url('../omnesFont/fonnts.com-Omnes_Cond_SemiBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+.font-light {
+    font-family: 'Omnes', sans-serif;
+    font-weight: 300;
+}
+
+.font-regular {
+    font-family: 'Omnes', sans-serif;
+    font-weight: 400;
+}
+
+.font-bold {
+    font-family: 'Omnes', sans-serif;
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-family: 'Omnes', sans-serif;
+    font-weight: 600;
+}
+
+.font-medium {
+    font-family: 'Omnes', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Omnes';
+    font-weight: 600;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: url('../images/homebg.png');
     background-size: cover;
     /* font-family: "Fredoka", sans-serif; */
-    font-family: "Nunito", sans-serif;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Omnes', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
-a, button{
+a,
+button {
     font-family: 'Aldrich';
     font-size: 18px;
 }
 
+input::placeholder {
+    font-size: 15px;
+}
+
+.checkmark {
+    height: 20px;
+    width: 45px;
+    background-color: #eee;
+    border-radius: 50%;
+    /* Makes it rounded */
+    border: 2px solid #ccc;
+    display: inline-block;
+    transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+}
+
+input[type="checkbox"]:checked+.checkmark {
+    background-color: #2196F3;
+    /* Change color when checked */
+    border-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"]:checked+.checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
 nav .lists a[aria-current="page"] {
     color: #fff;
-    background-color: rgb(22 163 74 );
+    background-color: rgb(22 163 74);
     padding: 1px 10px 2px 10px;
     border-radius: 50px;
 }
 
-footer a[aria-current="page"]{
+footer a[aria-current="page"] {
     font-size: 14px;
     font-weight: bold;
 }
 
 .customFaqCard svg {
-    font-size: 20px;
+    /* font-size: 20px; */
     color: #00d35b;
     background-color: #aff0c8;
-    padding: 12px;
-    border-radius: 3px;
+    padding: 22px;
+    border-radius: 10px;
+    width: 46px;
+    height: 49px;
 }
 
-.topBgDesign{
+.topBgDesign {
     background-image: url('../images/top.png');
     background-size: cover;
     height: 248px;
     background-repeat: no-repeat;
     border-radius: 50px 50px 0px 0px;
 }
+
 .bottomBgDesign {
     background-image: url('../images/bottom.png');
     background-size: cover;
@@ -62,21 +183,21 @@ footer a[aria-current="page"]{
     border-radius: 0px 0px 50px 50px;
 }
 
-.successApplyBtn{
+.successApplyBtn {
     background-color: #00d35b;
 }
 
-.headerBg{
+.headerBg {
     min-height: 19vh;
 }
 
-.logoSec{
+.logoSec {
     width: 40%;
 }
 
 /* home page bg ---------------------------------------------- */
 
-.homebg{
+.homebg {
     /* background-image: url('../images/homebg.png'); */
     background-size: cover;
     background-position: center;
@@ -149,7 +270,7 @@ footer a[aria-current="page"]{
     fill: #FFFFFF;
 }
 
-.footerBg{
+.footerBg {
     position: relative;
     min-height: 70vh;
     background: linear-gradient(to bottom, #cde666, #27cb64);
@@ -209,10 +330,10 @@ footer a[aria-current="page"]{
 }
 
 .scrollbar-custom {
-    height: 65vh;
+    height: 90vh;
 }
 
-.progressBack{
+.progressBack {
     display: none;
 }
 
@@ -235,45 +356,52 @@ footer a[aria-current="page"]{
 } */
 
 /* Media Queries------------------------------------------------ */
-@media screen and (max-width: 768px){
-    .loanApply{
-        margin-top: 10px;
+@media screen and (max-width: 768px) {
+    .scrollbar-custom {
+        height: 77vh;
     }
-    .logoSec{
+
+    .logoSec {
         width: 50%;
         margin-top: 65px;
     }
+
     /* .footerLogo{
         width: 35%;
     } */
-    .headLogo{
+    .headLogo {
         width: 15%;
     }
+
     .footerBg {
         min-height: 140vh;
     }
+
     .homebg {
         background-image: url('../images/mobilebg.png');
         background-size: auto;
         background-position-y: bottom;
     }
-    .progressBack{
+
+    .progressBack {
         display: block;
     }
-    .topBgDesign{
+
+    .topBgDesign {
         background-image: url('../images/topmin.png');
         background-size: cover;
         /* Change to contain to show full image */
         background-position: center;
         /* Center the image */
-        height: 130px;
+        height: 160px;
         /* Adjust height if needed */
         border-radius: 0;
         /* Optional: Remove border-radius for a different look */
     }
-    .bottomBgDesign{
-        background-image: url('../images/bottommin.png');
-        background-size: cover;
+
+    .bottomBgDesign {
+        background-image: url('../images/footerlarge.png');
+        background-size: auto;
         /* Change to contain to show full image */
         background-position: top;
         /* Center the image */
@@ -282,12 +410,18 @@ footer a[aria-current="page"]{
         border-radius: 0;
         /* Optional: Remove border-radius for a different look */
     }
+
+    .customFaqCard svg {
+        width: 21px;
+        height: 21px;
+    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
     .leftDocSec {
         height: 60vh;
     }
+
     .scrollbar-custom {
         height: 50vh;
     }
@@ -297,16 +431,18 @@ footer a[aria-current="page"]{
     .headerBg {
         min-height: 20vh;
     }
+
     .footerBg {
         min-height: 80vh !important;
     }
-    
+
 }
 
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
     .headerBg {
         min-height: 15vh;
     }
+
     .footerBg {
         min-height: 60vh !important;
     }
@@ -316,6 +452,7 @@ footer a[aria-current="page"]{
     .headerBg {
         min-height: 10vh;
     }
+
     .footerBg {
         min-height: 40vh !important;
     }

@@ -8,17 +8,16 @@ export default function Apply() {
   return <div>
     <Layout>
       <section className="loanApply">
-        <div className="container mx-auto py-8 px-4">
-          <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pt-4 gap-2">
+        <div className="container mx-auto px-8 md:px-0">
+          <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 gap-2">
             <div>
-              <h3 className="text-3xl font-bold mb-8 text-left">How much do you need?</h3>
+              <h3 className="text-[40px] md:text-[80px] font-semibold mt-[67px] md:mt-[115px] md:mb-[30px]">How much do you need?</h3>
               <RangeInput min={300} max={2000} step={50} />
             </div>
-            <div></div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto py-8 px-4">
+      <section className="container mx-auto px-8 md:px-0 md:mt-[110px]">
         <Tabs />
       </section>
     </Layout>

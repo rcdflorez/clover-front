@@ -17,7 +17,7 @@ export default function Range({ min, max, step }) {
       const bulletPosition = (value - min) / (max - min);
       const space = sliderInput.offsetWidth - sliderThumb.offsetWidth;
 
-      sliderThumb.innerHTML = `$ ${value}`;
+      sliderThumb.innerHTML = `$ ${value}.00`;
       sliderThumb.style.left = `${bulletPosition * space}px`;
       sliderLine.style.width = `${bulletPosition * space}px`;
     }
@@ -43,8 +43,8 @@ export default function Range({ min, max, step }) {
   };
 
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 md:gap-0 lg:gap-12 px-[20px]'>
-      <div className="range-slider">
+    <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 md:gap-0 lg:gap-12 px-[30px]'>
+      <div className="range-slider mt-[35px] md:mt-[55px]">
         <div
           ref={sliderThumbRef}
           className="range-slider_thumb w-[130px] md:w-[170px]"
@@ -52,7 +52,7 @@ export default function Range({ min, max, step }) {
             left: `calc(${(value - min) * 100 / (max - min)}% - (${8 - (value - min) * 100 / (max - min) * 0.15}px))` 
           }}
         >
-          ${value}
+          {value}
         </div>
         <div className="range-slider_line">
           <div ref={sliderLineRef} className="range-slider_line-fill"></div>
@@ -67,9 +67,6 @@ export default function Range({ min, max, step }) {
           step={step}
           onChange={handleChange}
         />
-      </div>
-      <div>
-        <button className="hover:shadow-lg text-white bg-[#00D35B] py-2 px-4 lg:py-1 w-full text-[19px] md:text-[29px] rounded-[15px]">Apply</button>
       </div>
     </div>
   );

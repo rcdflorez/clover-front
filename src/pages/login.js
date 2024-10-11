@@ -18,7 +18,7 @@ export default function Login() {
     return (
         <Layout>
             <div className="login">
-                <div className="absolute h-[0vh] bg-slate-800 w-[100%] z-0" style={{top: '90px'}}>
+                <div className="md:hidden absolute h-[0vh] bg-slate-800 w-[100%] z-0" style={{top: '90px'}}>
                     <div style={{ position: 'relative', minHeight: '90vh', backgroundColor: '#01d45b' }}>
                         <div className="custom-shape-divider-bottom-1720724252">
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -27,19 +27,20 @@ export default function Login() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto h-screen flex justify-center z-9 relative">
-                    <div className="p-8 w-full max-w-xs">
-                        <div className="logo">
+                <div className="md:container mx-auto h-screen md:h-auto px-[38px] md:px-0 md:flex md:justify-around md:items-center z-9 relative">
+                    <div className="w-full md:max-w-xs relative top-[-50px] md:top-0">
+                        <div className="logo md:hidden mb-[10px]">
                             <div className="w-[100%] mb-1 text-center">
                                 <StaticImage src="../images/icon-text.png" alt="Clover Credit" className="mx-auto w-[150px]" />
                             </div>
                         </div>
-                        <div className="bg-white p-5 rounded-lg bg-opacity-70">
-                            <h2 className="text-md font-bold mb-3">Login Credentials</h2>
-                            <form onSubmit={handleSubmit}>
-                                <div className="mb-4">
+                        <div className="bg-white px-[28px] py-[25px] rounded-lg bg-opacity-70">
+                            <h2 className="text-[20px] md:hidden font-semibold">Login Credentials</h2>
+                            <h2 className="text-[50px] hidden md:block font-semibold md:mt-[150px]">Welcome</h2>
+                            <form onSubmit={handleSubmit} className="mt-[15px] md:mt-[25px] md:mb-[200px]">
+                                <div className="mb-[25px] md:mb-[15px]">
                                     <input
-                                        className="shadow appearance-none border rounded-md w-full py-2 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm"
+                                        className="shadow appearance-none border rounded-[10px] w-[298px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm h-[35px]"
                                         id="email"
                                         type="email"
                                         placeholder="Email address"
@@ -47,9 +48,9 @@ export default function Login() {
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
-                                <div className="mb-1">
+                                <div className="mb-[10px]">
                                     <input
-                                        className="shadow appearance-none border rounded-md w-full py-2 px-1 text-gray-700 mb-0 leading-tight focus:outline-none focus:shadow-outline text-sm"
+                                        className="shadow appearance-none border rounded-[10px] w-[298px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-sm"
                                         id="password"
                                         type="password"
                                         placeholder="Social Security Number"
@@ -57,7 +58,10 @@ export default function Login() {
                                         onChange={(e) => setPassword(e.target.value)}
                                     />
                                 </div>
-                                <span className="mb-4 block text-[9px]">(Please enter full SSN# without hyphens)</span>
+                                <span className="mb-[35px] md:mb-[25px] block text-[15px] font-normal">(Please enter full SSN# without hyphens)</span>
+                                <div className="hidden md:block md:mb-[15px] ">
+                                    <input type="checkbox" checked /> Remember me
+                                </div>  
                                 <div className="flex items-center justify-between">
                                     <button className="w-full bg-[#00D35B] text-white py-1 px-2 rounded-lg" type="submit">
                                         Login
@@ -65,6 +69,9 @@ export default function Login() {
                                 </div>
                             </form>
                         </div>
+                    </div>
+                    <div className="hidden md:block">
+                        <StaticImage src="../images//clover.png" />
                     </div>
                 </div>
             </div>

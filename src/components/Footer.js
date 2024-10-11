@@ -57,9 +57,9 @@ export default function Footer() {
   };
 
     return (
-        <footer className="bottomBgDesign text-black-300 mt-5 md:mt-16">
-          <div className="container mx-auto z-10 relative pt-6 px-6">
-              <div className="grid lg:grid-cols-7 md:grid-cols-7 sm:grid-cols-1 pt-4">
+        <footer className="bottomBgDesign text-black-300">
+          <div className="container mx-auto z-10 relative pt-[55px] px-12 md:px-32">
+              <div className="grid lg:grid-cols-7 md:grid-cols-7 sm:grid-cols-1">
                   <div className="lg:col-span-5 md:col-span-5 sm:col-span-1 footerLogo my-2">
                       <div className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
                           <StaticImage src="../images/logo.png" alt="Clover Credit" />
@@ -73,20 +73,20 @@ export default function Footer() {
                           <button onClick={openModal} className="rounded-lg px-3 py-2 text-[16px] leading-6 text-black font-normal">Support</button>
                           <Link to="/contact" className="text-[16px] font-normal leading-6 text-black m-1">Contact Us</Link>
                       </div>
-                      <div className="font-normal text-black">
-                          <p className="py-1 text-[10px] font-sans text-justify">All installment loans are underwritten by Pomo Gold JEM doing business as Clover Credit. Clover Credit is a Native American owned business operating within the interior boundaries of the Pine Ridge Reservation of the Oglala Sioux Tribe, a sovereign nation located in the United States.</p>
+                      <div className="text-black font-medium">
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">All installment loans are underwritten by Pomo Gold JEM doing business as Clover Credit. Clover Credit is a Native American owned business operating within the interior boundaries of the Pine Ridge Reservation of the Oglala Sioux Tribe, a sovereign nation located in the United States.</p>
 
-                          <p className="py-1 text-[10px] font-sans text-justify">Pomo Gold JEM is an entity of the Elem Indian Colony of Pomo Indians (ELEM), a tribal corporation wholly owned by the Elem Indian Colony of Pomo Indians. The Elem Indian Colony of Pomo Indians is a local municipal subsidiary government under the Oglala Sioux Tribe. ELEM is incorporated under and governed by the laws of the Oglala Sioux Tribe, a federally recognized Indian Tribe, and the regulations of the Elem Indian Colony of Pomo Indians. ELEM operates independently of the Oglala Sioux Tribe. Correspondence should be directed to ELEM. As a tribal government, the Elem Indian Colony of Pomo Indians is a sovereign corporation and follows all applicable tribal and federal laws. State laws, regulations, and interest rates are not applicable to Pomo Gold JEM DBA Clover Credit or ELEM.</p>
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">Pomo Gold JEM is an entity of the Elem Indian Colony of Pomo Indians (ELEM), a tribal corporation wholly owned by the Elem Indian Colony of Pomo Indians. The Elem Indian Colony of Pomo Indians is a local municipal subsidiary government under the Oglala Sioux Tribe. ELEM is incorporated under and governed by the laws of the Oglala Sioux Tribe, a federally recognized Indian Tribe, and the regulations of the Elem Indian Colony of Pomo Indians. ELEM operates independently of the Oglala Sioux Tribe. Correspondence should be directed to ELEM. As a tribal government, the Elem Indian Colony of Pomo Indians is a sovereign corporation and follows all applicable tribal and federal laws. State laws, regulations, and interest rates are not applicable to Pomo Gold JEM DBA Clover Credit or ELEM.</p>
 
-                          <p className="py-1 text-[10px] font-sans text-justify">Typically, Clover Credit reviews your information in real-time to determine whether your information meets our lending criteria. You acknowledge that by completing and submitting the website application that you are applying for a loan. We verify applicant information through national databases including, but not limited to, Clarity and Factor Trust and we may pull your credit to determine your eligibility and ability to repay.</p>
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">Typically, Clover Credit reviews your information in real-time to determine whether your information meets our lending criteria. You acknowledge that by completing and submitting the website application that you are applying for a loan. We verify applicant information through national databases including, but not limited to, Clarity and Factor Trust and we may pull your credit to determine your eligibility and ability to repay.</p>
 
-                          <p className="py-1 text-[10px] font-sans text-justify">Clover Credit does not lend to residents of IL, NY, PA, GA, NC, NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam, Puerto Rico, and the US Virgin Islands. Availability of installment loans are subject to change at any time at the sole discretion of Clover Credit.</p>
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">Clover Credit does not lend to residents of IL, NY, PA, GA, NC, NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam, Puerto Rico, and the US Virgin Islands. Availability of installment loans are subject to change at any time at the sole discretion of Clover Credit.</p>
 
-                          <p className="py-1 text-[10px] font-sans text-justify">IMPORTANT INFORMATION ABOUT PROCEDURES FOR APPLYING FOR A LOAN – To help fight the funding of terrorism and money laundering activities, and to comply with Tribal law and the spirit of federal law requiring all financial institutions to obtain, verify and record information that identifies each person who applies for a loan, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask for your driver’s license number or other identifying documents.</p>
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">IMPORTANT INFORMATION ABOUT PROCEDURES FOR APPLYING FOR A LOAN – To help fight the funding of terrorism and money laundering activities, and to comply with Tribal law and the spirit of federal law requiring all financial institutions to obtain, verify and record information that identifies each person who applies for a loan, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask for your driver’s license number or other identifying documents.</p>
 
-                          <p className="py-1 text-[10px] font-sans text-justify">*Certain events or changes to your information may impact your eligibility to receive a loan. If you no longer meet the pre-selection criteria, we may offer you a loan in a different amount or on different terms. If you reside in a state in which we do not provide services, you will be ineligible for a loan.</p>
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">*Certain events or changes to your information may impact your eligibility to receive a loan. If you no longer meet the pre-selection criteria, we may offer you a loan in a different amount or on different terms. If you reside in a state in which we do not provide services, you will be ineligible for a loan.</p>
 
-                          <p className="py-1 text-[10px] font-sans text-justify">To obtain a loan, you must have a valid checking account, e-mail address, verifiable identity, and verifiable minimum income. Please Note: Installment loans should be used for short-term financial needs only, not as a long-term financial solution. Customers with credit difficulties should seek credit counseling. Clover Credit will only allow a customer to have one loan at a time.</p>
+                          <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">To obtain a loan, you must have a valid checking account, e-mail address, verifiable identity, and verifiable minimum income. Please Note: Installment loans should be used for short-term financial needs only, not as a long-term financial solution. Customers with credit difficulties should seek credit counseling. Clover Credit will only allow a customer to have one loan at a time.</p>
                       </div>
                   </div>
                   <div className="lg:col-span-2 md:col-span-2 text-center mt-0 md:mt-20 ">
@@ -107,13 +107,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 pt-4 border-t border-gray-800 p-2">
-          <div className="text-center md:text-right text-md">
+          <div className="text-center md:text-right text-md pb-3">
             <a target="_blank" href="/privacy_policy.pdf">
               Privacy Policy
             </a>
           </div>
           <div className="text-center hidden md:inline-block">|</div>
-          <div className="text-center md:text-left text-md">
+          <div className="text-center md:text-left text-md pb-3">
             <a target="_blank" href="/Terms_of_Use.pdf">
               Terms & Conditions
             </a>
