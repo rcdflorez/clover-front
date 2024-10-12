@@ -1,4 +1,4 @@
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
@@ -118,7 +118,7 @@ export function Tabs() {
     } else if (tabIndex === 3) {
       console.log("Agreement Details:", agreementDetails);
       setCurrentTab(tabIndex);
-      // window.location.href = "/login"; // Redirect to login page
+      window.location.href = "/login"; // Redirect to login page
     }
 
     setCurrentTab(tabIndex);
@@ -230,13 +230,16 @@ export function Tabs() {
                 name="state"
                 value={personalInfo.state}
                 onChange={handlePersonalInfoChange}
-                className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
+                className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none"
               >
                 <option value="" disabled>State</option>
                 {states.map((state, index) => 
                   <option key={index}>{state}</option>
                 )}
               </select>
+              <span className="relative right-12 top-[30px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+              </span>
             </div>
             <div className="grid md:grid-cols-[2fr_2fr_2fr_2fr_2fr_2fr] sm:grid-cols-1 mb-4 md:mb-[35px] gap-5">
               <input
@@ -257,26 +260,34 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] md:w-[225px] placeholder:text-[12px] placeholder:font-semibold"
               />
-              <select
-                name="rentOwn"
-                value={personalInfo.rentOwn}
-                onChange={handlePersonalInfoChange}
-                className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="">Rent / Own</option>
-                <option value="Rent">Rent</option>
-                <option value="Own">Own</option>
-              </select>
+              <div className="relative">
+                <select
+                  name="rentOwn"
+                  value={personalInfo.rentOwn}
+                  onChange={handlePersonalInfoChange}
+                  className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="">Rent / Own</option>
+                  <option value="Rent">Rent</option>
+                  <option value="Own">Own</option>
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
               <select
                 name="maritalStatus"
                 value={personalInfo.maritalStatus}
                 onChange={handlePersonalInfoChange}
-                className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
+                className="rounded-[50px] bg-gray-300  px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none"
               >
                 <option value="">Marital Status</option>
                 <option value="married">Married</option>
                 <option value="unmarried">Unmarried</option>
               </select>
+              <span className="relative right-12 top-[30px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+              </span>
             </div>
             <div className="grid md:grid-cols-[4fr_2fr_2fr_2fr_2fr] sm:grid-cols-1 mb-4 md:mb-[35px] gap-5">
               <input
@@ -288,27 +299,37 @@ export function Tabs() {
                 onChange={handlePersonalInfoChange}
                 className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] md:w-[445px] placeholder:text-[12px] placeholder:font-semibold"
               />
-              <select
-                name="dlState"
-                value={personalInfo.dlState}
-                onChange={handlePersonalInfoChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="" disabled>DL State</option>
-                {dlstate.map((state, index) => 
-                  <option key={index} value={state}>{state}</option>
-                )}
-              </select>
-              <select
-                name="activeMilitary"
-                value={personalInfo.activeMilitary}
-                onChange={handlePersonalInfoChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="">Active Military</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
+              <div className="relative">
+                <select
+                  name="dlState"
+                  value={personalInfo.dlState}
+                  onChange={handlePersonalInfoChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="" disabled>DL State</option>
+                  {dlstate.map((state, index) => 
+                    <option key={index} value={state}>{state}</option>
+                  )}
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
+              <div className="relative">
+                <select
+                  name="activeMilitary"
+                  value={personalInfo.activeMilitary}
+                  onChange={handlePersonalInfoChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="">Active Military</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
               <input
                 type="email"
                 placeholder="E-mail Address"
@@ -432,16 +453,21 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
               />
-              <select
-                name="accountType"
-                value={financialDetails.accountType}
-                onChange={handleFinancialDetailsChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="">Account Type</option>
-                <option value="checking">Checking</option>
-                <option value="saving">Saving</option>
-              </select>
+              <div className="relative">
+                <select
+                  name="accountType"
+                  value={financialDetails.accountType}
+                  onChange={handleFinancialDetailsChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="">Account Type</option>
+                  <option value="checking">Checking</option>
+                  <option value="saving">Saving</option>
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
             </div>
             <span className="mb-[10px] block">How long has it been open?</span>
             <div className="grid md:grid-cols-[2fr_2fr_4fr_4fr] sm:grid-cols-1 mb-2 md:mb-[35px] gap-5">
@@ -490,39 +516,53 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
               />
-              <select
-                name="incomeSource"
-                value={financialDetails.incomeSource}
-                onChange={handleFinancialDetailsChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="" disabled>Income Source</option>
-                <option value="employed">Employed</option>
-                <option value="self">Self-Employed</option>
-              </select>
-              
-              <select
-                name="payFrequency"
-                value={financialDetails.payFrequency}
-                onChange={handleFinancialDetailsChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="" disabled>Pay Frequency</option>
-                <option value="weekly">Weekly</option>
-                <option value="bi-weekly">Bi-Weekly</option>
-                <option value="monthly">Monthly</option>
-                <option value="twice-a-month">Twice a Month</option>
-              </select>
-              <select
-                name="directDeposit"
-                value={financialDetails.directDeposit}
-                onChange={handleFinancialDetailsChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="" disabled>Direct Deposit</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
+              <div className="relative">
+                <select
+                  name="incomeSource"
+                  value={financialDetails.incomeSource}
+                  onChange={handleFinancialDetailsChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="" disabled>Income Source</option>
+                  <option value="employed">Employed</option>
+                  <option value="self">Self-Employed</option>
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
+              <div className="relative">
+                <select
+                  name="payFrequency"
+                  value={financialDetails.payFrequency}
+                  onChange={handleFinancialDetailsChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="" disabled>Pay Frequency</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="bi-weekly">Bi-Weekly</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="twice-a-month">Twice a Month</option>
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
+              <div className="relative">
+                <select
+                  name="directDeposit"
+                  value={financialDetails.directDeposit}
+                  onChange={handleFinancialDetailsChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="" disabled>Direct Deposit</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
               <input
                 type={inputType}
                 placeholder="Next Pay Date"
@@ -602,17 +642,22 @@ export function Tabs() {
                 onChange={handleFinancialDetailsChange}
                 className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
               />
-              <select
-                name="employerState"
-                value={financialDetails.employerState}
-                onChange={handleFinancialDetailsChange}
-                className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold"
-              >
-                <option value="" disabled>State</option>
-                {dlstate.map((state, index) => 
-                  <option key={index} value={state}>{state}</option>
-                )}
-              </select>
+              <div className="relative">
+                <select
+                  name="employerState"
+                  value={financialDetails.employerState}
+                  onChange={handleFinancialDetailsChange}
+                  className="rounded-[50px] bg-gray-300 px-[15px] py-[13px] placeholder:text-[12px] placeholder:font-semibold appearance-none w-full"
+                >
+                  <option value="" disabled>State</option>
+                  {dlstate.map((state, index) => 
+                    <option key={index} value={state}>{state}</option>
+                  )}
+                </select>
+                <span className="absolute right-5 top-[20px] transform -translate-y-1/2 pointer-events-none text-[16px] text-black">
+                  <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+                </span>
+              </div>
             </div>
             <span className="mb-[10px] block">Time at Job</span>
             <div className="grid md:grid-cols-[2fr_2fr_2fr_6fr] sm:grid-cols-1 mb-[35px] gap-5">
@@ -745,7 +790,7 @@ export function Tabs() {
       <div className="flex justify-between tabbar w-[73%] mx-0 relative top-[-16px] left-[350px]">
         {tabs.map((tab, index) => (
           <div key={index} className="flex items-center relative">
-            <div className={`progressbar rounded-full ${currentTab >= index + 1 ? 'bg-[#00D35B] w-[35px] h-[35px] absolute top-[-8px] left-[0px]' : 'bg-[#D1D1D1] w-[22px] h-[22px] border-2 border-white'} flex items-center justify-center transition-all duration-300`}>
+            <div className={`progressbar rounded-full ${currentTab >= index + 1 ? 'hello bg-[#00D35B] w-[35px] h-[35px] absolute top-[-8px] left-[0px]' : 'bg-[#D1D1D1] w-[22px] h-[22px] border-2 border-white'} flex items-center justify-center transition-all duration-300`}>
               {currentTab > index ? <FontAwesomeIcon icon={faCheck} className="text-white text-[16px]" /> : null}
             </div>
           </div>

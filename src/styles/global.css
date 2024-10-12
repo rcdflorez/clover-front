@@ -351,6 +351,11 @@ footer a[aria-current="page"] {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d35b", endColorstr="#ffffff", GradientType=1);
 }
 
+.tabbar div:last-child .hello{
+    right:40px;
+    position: relative;
+}
+
 
 /* .usaMap div svg{
     width: 100%;

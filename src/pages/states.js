@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCoins, faDollar, faWallet } from "@fortawesome/free-solid-svg-icons"
+import { faAngleDown, faArrowDown, faCoins, faDollar, faWallet } from "@fortawesome/free-solid-svg-icons"
 import Usamap from "../components/UsaMap"
 
 export default function Terms() {
@@ -28,15 +28,22 @@ export default function Terms() {
 
         <div className="mt-[35px] md:mt-[115px] grid lg:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 text-center pt-4">
           <form className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4 gap-8">
-            <div className="bg-[#D9D9D9] px-[25px] w-full md:w-1/2 rounded-[18px]">
-              <select style={{fontFamily: 'Aldrich'}} className="w-full bg-[#D9D9D9] text-white font-[400] text-[20px] md:text-[40px] text-center p-[15px] md:p-[30px] appearance-none">
-              {states.map((state, index) => 
-                <option key={index}>{state}</option>
-              )}
-            </select>
+            <div className="bg-[#D9D9D9] px-[25px] w-full md:w-1/2 rounded-[18px] relative">
+              <select
+                style={{ fontFamily: 'Aldrich' }}
+                className="w-full bg-[#D9D9D9] text-white font-[400] text-[20px] md:text-[40px] text-center p-[15px] md:p-[25px] appearance-none"
+              >
+                {states.map((state, index) => (
+                  <option key={index}>{state}</option>
+                ))}
+              </select>
+              <span className="absolute right-10 top-[55px] transform -translate-y-1/2 pointer-events-none text-[35px] text-white">
+                <FontAwesomeIcon icon={faAngleDown} /> {/* Down arrow (custom) */}
+              </span>
             </div>
             <button type="submit" className="w-full md:w-1/2 bg-[#D9D9D9] text-white rounded-[18px] font-[400] text-[20px] md:text-[40px] text-center p-[13px] md:p-[25px]">Apply</button>
           </form>
+
           <div className="usaMap">
             {/* <Usamap /> */}
           </div>
