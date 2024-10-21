@@ -36,6 +36,7 @@ export default function Navbar() {
           </Link>
           <div className="hidden lg:flex lg:gap-x-[55px] items-center">
             <Link to="/" className="text-[23px] font-normal leading-6 text-black">Home</Link>
+            <Link to="/about" className="text-[23px] font-normal leading-6 text-black">About Us</Link>
             <Link to="/faqs" className="text-[23px] font-normal leading-6 text-black">FAQs</Link>
             <Link to="/states" className="text-[23px] font-normal leading-6 text-black">States</Link>
             <button onClick={openModal} className="cursor-pointer text-[23px] font-normal leading-6">Support</button>
@@ -98,6 +99,7 @@ export default function Navbar() {
               <div className="-my-6">
                 <div className="space-y-2 text-center">
                   <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Home</Link>
+                  <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">About Us</Link>
                   <Link to="/faqs" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">FAQs</Link>
                   <Link to="/states" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">States</Link>
                   <button onClick={openModal} className="w-[100%] block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Support</button>

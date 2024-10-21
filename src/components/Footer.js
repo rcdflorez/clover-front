@@ -66,12 +66,13 @@ export default function Footer() {
                       </div>
                       <div className="text-left flex md:block items-center justify-between">
                           <Link to="/" className="text-[16px] font-normal leading-6 text-black m-1"><FontAwesomeIcon icon={faHome} /></Link>
+                          <Link to="/about" className="text-[16px] font-normal leading-6 text-black m-1">About</Link>
                           {/* <Link to="/login" className="text-sm font-medium leading-6 text-gray-900 m-1">Login</Link> */}
                           {/* <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link> */}
                           <Link to="/faqs" className="text-[16px] font-normal leading-6 text-black m-1">FAQs</Link>
                           <Link to="/states" className="text-[16px] font-normal leading-6 text-black m-1">States</Link>
                           <button onClick={openModal} className="rounded-lg px-3 py-2 text-[16px] leading-6 text-black font-normal">Support</button>
-                          <Link to="/contact" className="text-[16px] font-normal leading-6 text-black m-1">Contact Us</Link>
+                          <Link to="/contact" className="text-[16px] font-normal leading-6 text-black m-1">Contact</Link>
                       </div>
                       <div className="text-black font-medium">
                           <p className="py-1 text-[10px] font-sans text-justify leading-[12px]">All installment loans are underwritten by Pomo Gold JEM doing business as Clover Credit. Clover Credit is a Native American owned business operating within the interior boundaries of the Pine Ridge Reservation of the Oglala Sioux Tribe, a sovereign nation located in the United States.</p>
