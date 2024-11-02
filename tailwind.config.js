@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Aldrich', 'sans-serif'],
+        custom: ['Omnes','sans-serif'],
       },
     },
   },
