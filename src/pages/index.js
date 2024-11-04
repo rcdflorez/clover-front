@@ -74,7 +74,7 @@ export default function Home() {
             </article>
            <div className="flex justify-evenly items-center">
             <div className="pt-4 gap-2">
-              <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-28 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-8 md:mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
                   <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-28 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-12 md:mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
                   <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
@@ -122,7 +122,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-28 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-12 md:mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
                   <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>

@@ -393,9 +393,9 @@ footer a[aria-current="page"] {
         margin-top: 65px;
     }
 
-    /* .footerLogo{
-        width: 35%;
-    } */
+    .footerLogo a{
+        font-size: 14px;
+    }
     .headLogo {
         width: 15%;
     }
