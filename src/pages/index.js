@@ -76,7 +76,7 @@ export default function Home() {
             <div className="pt-4 gap-2">
               <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
-                  <div className="bg-white bg-opacity-95 rounded-lg p-6 shadow-lg w-[65%] lg:w-full aspect-square flex flex-col justify-between">
+                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
                       <FontAwesomeIcon icon={faQuestion} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
                       <h3 className="line-height-[48px] text-black text-[37px] my-2">Common Questions</h3>
@@ -99,7 +99,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
-                  <div className="bg-white bg-opacity-95 rounded-lg p-6 shadow-lg w-[65%] lg:w-full aspect-square flex flex-col justify-between">
+                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
                       <FontAwesomeIcon icon={faMedal} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
                       <h3 className="text-black text-[37px] my-2">Rewards and Perks</h3>
@@ -124,7 +124,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
-                  <div className="bg-white bg-opacity-95 rounded-lg p-6 shadow-lg w-[65%] lg:w-full aspect-square flex flex-col justify-between">
+                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
                       <FontAwesomeIcon icon={faUser} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
                       <h3 className="text-black text-[37px] my-2">Self Service</h3>
