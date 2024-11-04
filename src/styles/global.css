@@ -356,6 +356,9 @@ footer a[aria-current="page"] {
     position: relative;
 }
 
+.aspect-square {
+    aspect-ratio: 1 / 1;
+}
 
 /* .usaMap div svg{
     width: 100%;

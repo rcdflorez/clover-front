@@ -72,112 +72,75 @@ export default function Home() {
                 apply for a loan in minutes.
               </p>
             </article>
-            <div className={`${cardStyles.card} font-Aldrich `}>
+            <div className="flex justify-evenly items-center">
               <div className="pt-4 gap-2">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[15px] mt-[115px] items-start">
-                  <div className="col-span-1 lg:col-span-1">
-                    <div className="main">
-                      <FontAwesomeIcon icon={faQuestion} />
-                      <h3 className="font-narrow-bold text-[40px]">
-                        Common Questions
-                      </h3>
-                      <p className="font-regular text-[20px] mb-[50px] md:mb-[20px]">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
+                <div className="grid md:grid-cols-[4fr_4fr_4fr] sm:grid-cols-1 mb-4 md:mb-[35px] gap-5 mt-28 items-start">
+                  <div className="col-span-1">
+                    <div className="bg-white bg-opacity-95 rounded-lg p-6 shadow-lg w-full aspect-square">
+                      <FontAwesomeIcon icon={faQuestion} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
+                      <h3 className="line-height-[48px] text-black text-[37px] my-2">Common Questions</h3>
+                      <p className="text-[#00d35b] mb-[50px] md:mb-[20px] text-[20px] font-normal">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </p>
-                      <Link to="/" className="font-normal text-[20px]">
+                      <Link to="/" className="bg-black text-white text-[16px] block rounded-lg text-center h-[42px] flex items-center justify-center">
                         Learn More
                       </Link>
                     </div>
                   </div>
 
-                  <div className="hidden md:block col-span-1 md:col-span-2 lg:col-span-3">
-                    <span className="ml-0 md:ml-[110px] font-light">
-                      <strong className="font-medium">How to benefit:</strong>{" "}
-                      We’ve made it even easier for you to enjoy the benefits of
-                      our loyalty program. Once you accumulate 1500 loyalty
-                      points, our system will automatically apply a $25 discount
-                      to your next payment. No need to worry about redemption or
-                      extra steps - your reward will be seamlessly and
-                      automatically applied, making your next payment even more
-                      affordable.
+                  <div className="col-span-2 hidden md:block">
+                    <span className="font-light text-[30px]">
+                      <strong className="font-medium">How to benefit:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                     </span>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[15px] mt-[115px] items-start">
-                  <div className="col-span-1 md:col-span-1 lg:col-span-1">
-                    <div className="main">
-                      <FontAwesomeIcon icon={faMedal} />
-                      <h3 className="font-semibold text-[40px]">
-                        Rewards and Perks
-                      </h3>
-                      <p className="font-medium  text-[20px] mb-[50px] md:mb-[20px]">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
+                <div className="grid md:grid-cols-[4fr_4fr_4fr] sm:grid-cols-1 mb-4 md:mb-[35px] gap-5 mt-28 items-start">
+                  <div className="col-span-1">
+                    <div className="bg-white bg-opacity-95 rounded-lg p-6 shadow-lg w-full aspect-square">
+                      <FontAwesomeIcon icon={faMedal} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
+                      <h3 className="text-black text-[37px] my-2">Rewards and Perks</h3>
+                      <p className="text-[#00d35b] mb-[50px] md:mb-[20px] text-[20px] font-medium">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </p>
-                      <Link to="/" className="font-normal text-[20px]">
+                      <Link to="/" className="bg-black text-white text-[16px] block rounded-lg text-center h-[42px] flex items-center justify-center">
                         View Benefits
                       </Link>
                     </div>
                   </div>
 
-                  <div className="hidden md:block col-span-1 md:col-span-2 lg:col-span-3">
-                    <span className="ml-0 md:ml-[110px] font-light">
-                      <strong className="font-medium">
-                        Earn Loyalty Points:
-                      </strong>{" "}
-                      Every dollar you pay towards your loan with Clover Credit
-                      earns you 1 loyalty point. As you make regular payments,
-                      your points will start to accumulate, bringing you closer
-                      to exciting rewards. <br />
+                  <div className="col-span-2 hidden md:block">
+                    <span className="font-light text-[30px]">
+                      <strong className="font-medium">Earn Loyalty Points:</strong> Every dollar you pay towards your loan with Clover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards. <br />
                       <br />
-                      <strong>Unlock Discounts:</strong> Once you reach 1500
-                      loyalty points, you’ll unlock a fantastic perk - a $25
-                      discount on your next payment! It’s our way of saying
-                      thank you for choosing Clover Credit and being a part of
-                      our loyal customer community.
+                      <strong>Unlock Discounts:</strong> Once you reach 1500 loyalty points, you’ll unlock a fantastic perk - a $25 discount on your next payment! It’s our way of saying thank you for choosing Clover Credit and being a part of our loyal customer community.
                     </span>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[15px] mt-[115px] items-start">
-                  <div className="col-span-1 md:col-span-1 lg:col-span-1">
-                    <div className="main">
-                      <FontAwesomeIcon icon={faUser} />
-                      <h3 className="font-semibold text-[40px]">
-                        Self Service
-                      </h3>
-                      <p className="font-medium text-[20px] mb-[50px] md:mb-[20px]">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
+                <div className="grid md:grid-cols-[4fr_4fr_4fr] sm:grid-cols-1 mb-4 md:mb-[35px] gap-5 mt-28 items-start">
+                  <div className="col-span-1">
+                    <div className="bg-white bg-opacity-95 rounded-lg p-6 shadow-lg w-full aspect-square">
+                      <FontAwesomeIcon icon={faUser} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
+                      <h3 className="text-black text-[37px] my-2">Self Service</h3>
+                      <p className="text-[#00d35b] mb-[50px] md:mb-[20px] text-[20px] font-medium">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </p>
-                      <Link to="/" className="font-normal text-[20px]">
+                      <Link to="/" className="bg-black text-white text-[16px] block rounded-lg text-center h-[42px] flex items-center justify-center">
                         Customer Portal
                       </Link>
                     </div>
                   </div>
 
-                  <div className="hidden md:block col-span-1 md:col-span-2 lg:col-span-3">
-                    <span className="ml-0 md:ml-[110px] font-light">
-                      <strong className="font-medium">
-                        Seamless Redemption:
-                      </strong>{" "}
-                      We’ve made it even easier for you to enjoy the benefits of
-                      our loyalty program. Once you accumulate 1500 loyalty
-                      points, our system will automatically apply a $25 discount
-                      to your next payment. No need to worry about redemption or
-                      extra steps - your reward will be seamlessly and
-                      automatically applied, making your next payment even more
-                      affordable.
+                  <div className="col-span-2 hidden md:block">
+                    <span className="font-light text-[30px]">
+                      <strong className="font-medium">Seamless Redemption:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                     </span>
                   </div>
                 </div>
               </div>
             </div>
+
           </section>
         </div>
       </Layout>
