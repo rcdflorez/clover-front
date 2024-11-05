@@ -15,8 +15,8 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="topBgDesign relative">
-      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-[50px] rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative w-[95%] lg:w-[95%] h-auto md:h-[100px]" aria-label="Global">
+    <header className="topBgDesign relative px-[48px]">
+      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-[50px] rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative h-auto md:h-[100px]" aria-label="Global">
 
         {/* Left Side: Logo and Navigation Links */}
         <div className="flex lg:flex-1">
@@ -51,7 +51,7 @@ export default function Navbar() {
             <input type="text" className="rounded-full border border-gray-300 pl-10 pr-4 py-2 w-full" placeholder="Search..." />
             <FontAwesomeIcon icon={faSearch} className="h-5 w-7 text-gray-700 absolute left-2 top-3" />
           </div>
-          <div className="p-1 rounded-full border">
+          <div className="p-1 rounded-full border mr-[8px]">
             <FontAwesomeIcon icon={faUser} className="h-5 w-7 text-gray-700" />
           </div>
         </div>
