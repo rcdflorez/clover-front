@@ -71,7 +71,7 @@ export default function Footer() {
                           {/* <Link to="/apply" className="text-sm font-medium leading-6 text-gray-900 m-1">Apply</Link> */}
                           <Link to="/faqs" className="text-[16px] font-normal leading-6 text-black m-1">FAQs</Link>
                           <Link to="/states" className="text-[16px] font-normal leading-6 text-black m-1">States</Link>
-                          <button onClick={openModal} className="rounded-lg px-3 py-2 text-[16px] leading-6 text-black font-normal">Support</button>
+                          <Link to="" onClick={openModal} className="rounded-lg px-3 py-2 text-[16px] leading-6 text-black footerSupportLink">Support</Link>
                           <Link to="/contact" className="text-[16px] font-normal leading-6 text-black m-1">Contact</Link>
                       </div>
                       <div className="text-black font-medium">

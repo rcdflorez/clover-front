@@ -34,18 +34,18 @@ export default function Navbar() {
               />
             </div>
           </Link>
-          <div className="hidden lg:flex lg:gap-x-[55px] items-center">
+          <div className="hidden xl:flex xl:gap-x-[55px] items-center">
             <Link to="/" className="text-[23px] font-normal leading-6 text-black">Home</Link>
-            <Link to="/about" className="text-[23px] font-normal leading-6 text-black">About Us</Link>
+            <Link to="/about" className="text-[23px] font-normal leading-6 text-black">About</Link>
             <Link to="/faqs" className="text-[23px] font-normal leading-6 text-black">FAQs</Link>
             <Link to="/states" className="text-[23px] font-normal leading-6 text-black">States</Link>
             <button onClick={openModal} className="cursor-pointer text-[23px] font-normal leading-6">Support</button>
-            <Link to="/contact" className="text-[23px] font-normal leading-6 text-black">Contact Us</Link>
+            <Link to="/contact" className="text-[23px] font-normal leading-6 text-black">Contact</Link>
           </div>
         </div>
 
         {/* Right Side: Icons */}
-        <div className="hidden lg:flex items-center gap-x-[15px]">
+        <div className="hidden xl:flex items-center gap-x-[15px]">
           <FontAwesomeIcon icon={faGlobe} className="h-6 w-6" />
           <div className="relative">
             <input type="text" className="rounded-full border border-gray-300 pl-10 pr-4 py-2 w-full" placeholder="Search..." />
@@ -57,7 +57,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
           <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onClick={toggleMobileMenu}>
             <span className="sr-only">Open main menu</span>
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -69,7 +69,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden" role="dialog" aria-modal="true">
+        <div className="xl:hidden" role="dialog" aria-modal="true">
           <div className="fixed inset-0 z-10"></div>
           <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
@@ -99,11 +99,11 @@ export default function Navbar() {
               <div className="-my-6">
                 <div className="space-y-2 text-center">
                   <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Home</Link>
-                  <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">About Us</Link>
+                  <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">About</Link>
                   <Link to="/faqs" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">FAQs</Link>
                   <Link to="/states" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">States</Link>
                   <button onClick={openModal} className="w-[100%] block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Support</button>
-                  <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Contact Us</Link>
+                  <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Contact</Link>
                 </div>
                 <div className="flex flex-col items-center">
                   {/* <FontAwesomeIcon icon={faGlobe} className="h-6 w-6" /> */}

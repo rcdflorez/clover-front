@@ -76,10 +76,10 @@ export default function Home() {
             <div className="pt-4 gap-2">
               <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-8 md:mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
-                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
+                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[90%] sm:w-[75%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
                       <FontAwesomeIcon icon={faQuestion} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
-                      <h3 className="line-height-[48px] text-black text-[37px] my-2">Common Questions</h3>
+                      <h3 className="text-black text-[30px] md:text-[37px] my-2">Common Questions</h3>
                       <p className="text-[#00d35b] mb-[20px] text-[20px] font-medium">
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </p>
@@ -90,7 +90,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-span-1 md:col-span-2 hidden lg:block">
+                <div className="col-span-1 md:col-span-2 hidden lg:block lg:pl-[20px]">
                   <span className="font-light text-[30px]">
                     <strong className="font-medium">How to benefit:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                   </span>
@@ -99,10 +99,10 @@ export default function Home() {
 
               <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-12 md:mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
-                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
+                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[90%] sm:w-[75%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
                       <FontAwesomeIcon icon={faMedal} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
-                      <h3 className="text-black text-[37px] my-2">Rewards and Perks</h3>
+                      <h3 className="text-black  text-[30px] md:text-[37px] my-2">Rewards and Perks</h3>
                       <p className="text-[#00d35b] mb-[20px] text-[20px] font-medium">
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </p>
@@ -113,7 +113,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-span-1 md:col-span-2 hidden lg:block">
+                <div className="col-span-1 md:col-span-2 hidden lg:block lg:pl-[20px]">
                   <span className="font-light text-[30px]">
                     <strong className="font-medium">Earn Loyalty Points:</strong> Every dollar you pay towards your loan with Clover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards. <br />
                     <br />
@@ -124,10 +124,10 @@ export default function Home() {
 
               <div className="grid grid-cols-1 lg:grid-cols-[4fr_4fr_4fr] mb-4 md:mb-[35px] gap-5 mt-12 md:mt-28 items-start">
                 <div className="col-span-1 flex justify-center">
-                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[95%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
+                  <div className="bg-white bg-opacity-95 rounded-lg p-6 cardShadow w-[90%] sm:w-[75%] md:w-[65%] lg:w-full aspect-square flex flex-col justify-between">
                     <div>
                       <FontAwesomeIcon icon={faUser} className="text-[#00d35b] bg-[#aff0c8] p-3 rounded" />
-                      <h3 className="text-black text-[37px] my-2">Self Service</h3>
+                      <h3 className="text-black  text-[30px] md:text-[37px] my-2">Self Service</h3>
                       <p className="text-[#00d35b] mb-[20px] text-[20px] font-medium">
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </p>
@@ -138,7 +138,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-span-1 md:col-span-2 hidden lg:block">
+                <div className="col-span-1 md:col-span-2 hidden lg:block lg:pl-[20px]">
                   <span className="font-light text-[30px]">
                     <strong className="font-medium">Seamless Redemption:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                   </span>
