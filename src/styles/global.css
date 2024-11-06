@@ -420,7 +420,7 @@ footer a[aria-current="page"] {
 
     .topBgDesign {
         background-image: url('../images/topmin.png');
-        /* background-size: cover; */
+        background-size: cover;
         /* Change to contain to show full image */
         background-position: center;
         /* Center the image */
