@@ -171,7 +171,7 @@ footer a[aria-current="page"] {
 
 .topBgDesign {
     background-image: url('../images/top.png');
-    background-size: cover;
+    /* background-size: cover; */
     height: 248px;
     background-repeat: no-repeat;
     border-radius: 50px 50px 0px 0px;
@@ -420,7 +420,7 @@ footer a[aria-current="page"] {
 
     .topBgDesign {
         background-image: url('../images/topmin.png');
-        background-size: cover;
+        /* background-size: cover; */
         /* Change to contain to show full image */
         background-position: center;
         /* Center the image */

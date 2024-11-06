@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <React.Fragment>
       <Layout>
-        <div className="homebg md:mb-[190px]">
-          <div className="container mx-auto mt-0 md:mt-[210px]">
+        <div className="homebg xl:mb-[100px] 2xl:mb-[190px]">
+          <div className="container mx-auto mt-0 xl:mt-[105px] 2xl:mt-[210px]">
             <div className="grid xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-1 gap-2">
               <section className="loanApply col-span-6 lg:col-span-6 xl:col-span-6">
                 <div className="container mx-auto pb-4 px-4">
@@ -23,7 +23,7 @@ export default function Home() {
                       alt="Clover Credit"
                     />
                   </div>
-                  <h3 className="text-[40px] md:text-[96px] font-black-italic md:mb-[55px] text-left leading-[43.6px] md:leading-[104.64px] mx-[30px] md:mx-auto">
+                  <h3 className="text-[40px] xl:text-[60px] 2xl:text-[96px] font-black-italic xl:mb-[20px] 2xl:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
                     Apply now for a loan up to
                     <span className="text-[#00D35B]">
                       <br /> $2000
@@ -31,7 +31,7 @@ export default function Home() {
                   </h3>
                   <RangeInput min={300} max={2000} step={50} />
                   <div className="">
-                    <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full text-[19px] md:text-[29px] rounded-[15px] md:mt-[110px] h-[46px] md:h-[66px]">
+                    <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full text-[19px] md:text-[29px] rounded-[15px] md:mt-[110px] h-[46px] xl:h-[56px] 2xl:h-[66px]">
                       Apply
                     </button>
                   </div>
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
           </div>
           <section className="hidden md:block container mx-[15px] md:mx-auto my-5 p-2 md:mt-[180px] mb-[35px]">
-            <h3 className="text-[40px] md:text-[96px] font-semibold md:mb-[55px] text-left leading-[43.6px] md:leading-[104.64px] mx-[30px] md:mx-auto">
+            <h3 className="text-[40px] xl:text-[60px] 2xl:text-[96px] font-semibold md:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
               Building relationships through financial trust
             </h3>
             <p className="text-[15px] md:text-[30px] font-light pb-4 md:pb-8 leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
@@ -61,7 +61,7 @@ export default function Home() {
           </section>
           <section className="mx-auto p-2">
             <article className="hidden md:block md:mx-auto">
-              <h3 className="text-[40px] md:text-[96px] font-semibold md:mb-[55px] text-left leading-[43.6px] md:leading-[104.64px] mx-[30px] md:mx-auto">
+              <h3 className="text-[40px] xl:text-[60px] 2xl:text-[96px] font-semibold md:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
                 Do it yourself safely and securely
               </h3>
               <p className="text-[15px] md:text-[30px] font-light pb-4 md:pb-8 leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">

@@ -15,32 +15,32 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="topBgDesign relative px-[48px]">
-      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-[50px] rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative h-auto md:h-[100px]" aria-label="Global">
+    <header className="topBgDesign relative px-[15px] xl:px-[36px] 2xl:px-[50px] xl:bg-contain">
+      <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-[50px] xl:mt-[40px] 2xl:mt-[50px] rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative h-auto xl:h-[75px] 2xl:h-[100px]" aria-label="Global">
 
         {/* Left Side: Logo and Navigation Links */}
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 pr-[45px]">
-            <div className="headLogo w-[10%] rounded-[13px] p-2 bg-[#00D35B] md:bg-white">
+            <div className="headLogo w-[10%] rounded-[13px] p-2">
               <StaticImage
-                className="logo hidden md:block md:ml-2 md:h-[50px] md:w-[62px]"
+                className="logo md:ml-2 md:h-[50px] md:w-[62px]"
                 src="../images/black-icon.png"
                 alt="Clover Credit"
               />
-              <StaticImage
+              {/* <StaticImage
                 className="logo block md:hidden md:h-[50px] md:w-[62px]"
                 src="../images/icon.png"
                 alt="Clover Credit"
-              />
+              /> */}
             </div>
           </Link>
-          <div className="hidden xl:flex xl:gap-x-[55px] items-center">
-            <Link to="/" className="text-[23px] font-normal leading-6 text-black">Home</Link>
-            <Link to="/about" className="text-[23px] font-normal leading-6 text-black">About</Link>
-            <Link to="/faqs" className="text-[23px] font-normal leading-6 text-black">FAQs</Link>
-            <Link to="/states" className="text-[23px] font-normal leading-6 text-black">States</Link>
-            <button onClick={openModal} className="cursor-pointer text-[23px] font-normal leading-6">Support</button>
-            <Link to="/contact" className="text-[23px] font-normal leading-6 text-black">Contact</Link>
+          <div className="hidden xl:flex xl:gap-x-[40px] 2xl:gap-x-[55px] items-center">
+            <Link to="/" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">Home</Link>
+            <Link to="/about" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">About</Link>
+            <Link to="/faqs" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">FAQs</Link>
+            <Link to="/states" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">States</Link>
+            <button onClick={openModal} className="cursor-pointer xl:text-[17px] 2xl:text-[23px] font-normal leading-6">Support</button>
+            <Link to="/contact" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">Contact</Link>
           </div>
         </div>
 
