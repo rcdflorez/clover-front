@@ -905,7 +905,6 @@ export function Tabs() {
       <div className="mb-[25px]">
         <h1 className="text-[24px] font-semibold">{tabs[currentTab]?.title}</h1>
       </div>
-      // Progress bar container
 <div className="w-full bg-[#D1D1D1] h-[10px] rounded-full">
   <div
     className="bg-[#00D35B] rounded-full h-[10px] transition-width duration-500"

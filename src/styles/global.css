@@ -497,3 +497,27 @@ footer a[aria-current="page"] {
         min-height: 40vh !important;
     }
 }
+
+@media screen and (min-width:1280px){
+    h1{
+        font-size: 60px !important;
+    }
+    .greenParagraph{
+        font-size: 30px !important;
+    }
+    .commonParagraph{
+        font-size: 22.5px !important;
+    }
+}
+
+@media screen and (min-width:1536px) {
+    h1 {
+        font-size: 80px !important;
+    }
+    .greenParagraph {
+        font-size: 40px !important;
+    }
+    .commonParagraph {
+        font-size: 30px !important;
+    }
+}

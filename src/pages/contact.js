@@ -43,12 +43,12 @@ const ContactForm = () => {
   return (
     <Layout>
       <div className="container mx-auto px-8 md:px-0">
-        <h2 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
+        <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
           Contact Us
-        </h2>
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-[7fr_5fr] gap-6 items-center">
           <div>
-            <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light mt-[20px] md:mt-[40px]">
+            <p className="commonParagraph text-[15px] md:text-[30px] md:leading-[36px] font-light mt-[20px] md:mt-[40px]">
               Clover Credit is here for you whenever you need assistance.
               Whether you have questions about your current line of credit
               account, or you'd like more info about your line of credit options
@@ -119,36 +119,36 @@ const ContactForm = () => {
           </div>
           <div className="space-y-10 pl-4 text-center">
             <div>
-              <h3 className="font-semibold text-[40px] mb-[5px]">
+              <h3 className="font-semibold text-[30px] md:text-[37px] xl:text-[30px] 2xl:text-[40px] mb-[5px]">
                 Support Email
               </h3>
-              <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light">
+              <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] md:leading-[36px] font-light">
                 support@clovercredit.com
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-[40px] mb-[5px]">Phone</h3>
-              <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light">
+              <h3 className="font-semibold text-[30px] md:text-[37px] xl:text-[30px] 2xl:text-[40px] mb-[5px]">Phone</h3>
+              <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] md:leading-[36px] font-light">
                 833-276-2274
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-[40px] mb-[5px]">
+              <h3 className="font-semibold text-[30px] md:text-[37px] xl:text-[30px] 2xl:text-[40px] mb-[5px]">
                 Operating Hours
               </h3>
-              <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light">
+              <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] md:leading-[36px] font-light">
                 Monday – Friday
               </p>
-              <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light">
+              <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] md:leading-[36px] font-light">
                 8 AM - 9 PM EST
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-[40px] mb-[5px]">Location</h3>
-              <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light">
+              <h3 className="font-semibold text-[30px] md:text-[37px] xl:text-[30px] 2xl:text-[40px] mb-[5px]">Location</h3>
+              <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] md:leading-[36px] font-light">
                 PO Box 435, Lower Lake,
               </p>
-              <p className="text-[15px] md:text-[30px] md:leading-[36px] font-light">
+              <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] md:leading-[36px] font-light">
                 CA 95457
               </p>
             </div>

@@ -15,10 +15,10 @@ export default function Faqs() {
             <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">
               How it Works
             </h1>
-            <span className="block text-[#00D35B] text-[20px] md:text-[40px]  font-medium mt-[20px] md:mt-[40px]">
+            <span className="greenParagraph block text-[#00D35B] text-[20px] md:text-[40px]  font-medium mt-[20px] md:mt-[40px]">
               What is an online installment loan?
             </span>
-            <p className="text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
+            <p className="commonParagraph text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
               An installment loan is a specific amount of money you borrow and
               then pay back, split up into equal payments within a certain
               timeframe. With Clover Credit our super simple online process gets
@@ -30,10 +30,10 @@ export default function Faqs() {
             <h1 className=" mt-[55px] md:mt-[115px] text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">
               FAQs
             </h1>
-            <span className="block mt-[20px] md:mt-[40px] text-[#00D35B] text-[20px] md:text-[40px]  font-medium">
+            <span className="greenParagraph block mt-[20px] md:mt-[40px] text-[#00D35B] text-[20px] md:text-[40px]  font-medium">
               What is an online installment loan?
             </span>
-            <p className="text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
+            <p className="commonParagraph text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
               An installment loan is a specific amount of money you borrow and
               then pay back, split up into equal payments within a certain
               timeframe. With Clover Credit our super simple online process gets
@@ -99,13 +99,13 @@ export default function Faqs() {
             <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">
               Rewards & Perks
             </h1>
-            <p className="mt-[20px] md:mt-[40px] text-[15px] md:text-[30px] font-light pb-2">
+            <p className="commonParagraph mt-[20px] md:mt-[40px] text-[15px] md:text-[30px] font-light pb-2">
               Over Clover Credit Loyalty Points Program is a great way for you
               to get money deposited directly into your bank account.
             </p>
           </div>
 
-          <span className="block mt-[20px] md:mt-[115px] text-[#00D35B] text-[20px] md:text-[40px] font-medium ">
+          <span className="greenParagraph block mt-[20px] md:mt-[115px] text-[#00D35B] text-[20px] md:text-[40px] font-medium ">
             Here's How it works:
           </span>
           <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 mt-[20px] md:mt-[40px] gap-2">
@@ -115,7 +115,7 @@ export default function Faqs() {
                   <FontAwesomeIcon icon={faStar} />
                 </div>
                 <div>
-                  <p className=" text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mb-2 md:mb-16 ml-[15px] md:ml-[60px]">
+                  <p className="commonParagraph text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mb-2 md:mb-16 ml-[15px] md:ml-[60px]">
                     <span className="font-medium">Earn Loyalty Points: </span>
                     Every dollar you pay towards your loan with Clover Credit
                     earns you 1 loyalty point. As you make regular payments,
@@ -131,7 +131,7 @@ export default function Faqs() {
                   <FontAwesomeIcon icon={faUnlock} />
                 </div>
                 <div>
-                  <p className=" text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mb-2 md:mb-16 ml-[15px] md:ml-[60px]">
+                  <p className="commonParagraph text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mb-2 md:mb-16 ml-[15px] md:ml-[60px]">
                     <span className="font-medium">Unlock Discounts:</span> Once
                     you reach 1500 loyalty points, you'll unlock a fantastic
                     perk - a $25 discount on your next payment. It's our way of
@@ -147,7 +147,7 @@ export default function Faqs() {
                   <FontAwesomeIcon icon={faRefresh} />
                 </div>
                 <div>
-                  <p className=" text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] ml-[15px] md:ml-[60px]">
+                  <p className="commonParagraph text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] ml-[15px] md:ml-[60px]">
                     <span className="font-medium">Seamless Redemption:</span>{" "}
                     We've made it even easier for you to enjoy the benefits of
                     our loyalty program. Once you accumulate 1500 loyalty
