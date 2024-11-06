@@ -7,7 +7,7 @@ const About = () => {
     <Layout>
         <section className="container mx-auto px-8 md:px-0">
             <div className="mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
-            <h1 className="text-[40px] xl:text-[60px] 2xl:text-[80px] font-semibold">About Us</h1>
+            <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">About Us</h1>
             <span className="block text-[#00D35B] text-[20px] md:text-[40px]  font-medium mt-[20px] md:mt-[40px]">Who We Are:</span>
             <p className="text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">Clover Credit is an entity of the Wakpamni Lake Community Coporation (WLCC). We are fully automated financial lending company that provides customers with an incredibly easyonline loan application process. We offer excellent customer service and simple interest rates with no hidden fees and pride ourselves in approving customers when others don’t.</p>
             </div>

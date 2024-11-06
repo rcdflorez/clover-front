@@ -21,7 +21,7 @@ export default function Terms() {
     <Layout>
       <section className="container mx-auto px-8 md:px-0">
         <div className="mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
-          <h1 className="text-[40px] xl:text-[60px] 2xl:text-[80px] font-semibold">Where we lend</h1>
+          <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">Where we lend</h1>
           <span className="mt-[35px] md:mt-[40px] block my-2 text-[#00D35B] text-[20px] md:text-[40px] font-medium leading-[24px] md:leading-[48px]">Clover Credit is currently available in the following states:</span>
           <p className="text-[15px] md:text-[30px] font-light pb-4 md:pb-8 leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">We are always looking at expanding so please check back often to see our most up-to-date list.</p>
         </div>
@@ -50,7 +50,7 @@ export default function Terms() {
         </div>
 
         <div className="">
-          <h1 className="mt-[55px] md:mt-[115px] text-[40px] xl:text-[60px] 2xl:text-[80px] font-semibold">What does a loan cost?</h1>
+          <h1 className="mt-[55px] md:mt-[115px] text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">What does a loan cost?</h1>
           <span className="mt-[35px] md:mt-[40px] block my-2 text-[#00D35B] text-[20px] md:text-[40px] font-medium leading-[24px] md:leading-[48px]">We offer a range of short-term installment loans to fit your financial needs.</span>
           <div className='flex items-center justify-between my-[20px] md:my-[115px]'>
               <span className="text-center sm:w-auto sm:flex-1 stateIcon customFaqCard">
@@ -74,7 +74,7 @@ export default function Terms() {
         </div>
 
         <div className="">
-          <h1 className="text-[40px] xl:text-[60px] 2xl:text-[80px] font-semibold leading-[43px] md:leading-[87px] mt-[55px] md:mt-[115px]">What to consider before applying for a Clover Credit loan?</h1>
+          <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold leading-[43px] md:leading-[87px] mt-[55px] md:mt-[115px]">What to consider before applying for a Clover Credit loan?</h1>
           <p className="text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">A short-term installment loan is a great way to get extra cash when an unexpected event or emergency pops up, before you apply, consider these questions to make sure a short-term loan is right for you.</p>
 
           <span className="font-medium text-[20px] md:text-[40px] leading-[24px] md:leading-[48px] block my-2 text-[#00D35B] mt-[25px] md:mt-[115px]">Is borrowing money really necessary?	</span>
@@ -91,7 +91,7 @@ export default function Terms() {
         </div>
 
         <div className="">
-          <h1 className="font-semibold text-[40px] xl:text-[60px] 2xl:text-[80px] leading-[43px] md:leading-[87px] mt-[55px] md:mt-[115px]">Ready to Apply? </h1>
+          <h1 className="font-semibold text-[40px] xl:text-[62px] 2xl:text-[76px] leading-[43px] md:leading-[87px] mt-[55px] md:mt-[115px]">Ready to Apply? </h1>
           <span className="font-medium text-[20px] md:text-[40px] leading-[24px] md:leading-[48px] block mt-[20px] md:mt-[40px] text-[#00D35B]">The application process is quick. Just answer a few questions in our easy application process.</span>
           <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full md:w-[600px] text-[19px] md:text-[29px] rounded-[15px] mt-[40px] md:mt-[110px] h-[46px] md:h-[66px] mx-auto block">Apply</button>
           <p className="mb-[55px] md:mb-[115px] "></p>
