@@ -14,7 +14,7 @@ export default function Home() {
         <div className="homebg xl:mb-[100px] 2xl:mb-[190px]">
           <div className="container mx-auto mt-0 xl:mt-[105px] 2xl:mt-[210px]">
             <div className="grid xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-1 gap-2">
-              <section className="loanApply col-span-6 lg:col-span-6 xl:col-span-6">
+              <section className="loanApply sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                 <div className="container mx-auto pb-4 px-4">
                   <div className="logoSec mb-1 md:hidden">
                     <StaticImage
@@ -61,7 +61,7 @@ export default function Home() {
           </section>
           <section className="mx-auto p-2">
             <article className="hidden md:block md:mx-auto">
-              <h3 className="text-[30px] md:text-[37px] xl:text-[30px] 2xl:text-[40px] font-semibold md:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
+              <h3 className="text-[30px] md:text-[37px] xl:text-[30px] 2xl:text-[40px] font-semibold text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
                 Do it yourself safely and securely
               </h3>
               <p className="text-[30px] xl:text-[22.5px] 2xl:text-[30px] font-light pb-4 md:pb-8 leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
@@ -91,7 +91,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-span-1 md:col-span-2 hidden lg:block lg:pl-[20px]">
-                    <span className="font-light text-[30px] xl:text-[22.5px] 2xl:text-[30px]">
+                    <span className="commonParagraph font-light text-[30px] xl:text-[22.5px] 2xl:text-[30px]">
                       <strong className="font-medium">How to benefit:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                     </span>
                   </div>
@@ -114,7 +114,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-span-1 md:col-span-2 hidden lg:block lg:pl-[20px]">
-                    <span className="font-light text-[30px] xl:text-[22.5px] 2xl:text-[30px]">
+                    <span className="commonParagraph font-light text-[30px] xl:text-[22.5px] 2xl:text-[30px]">
                       <strong className="font-medium">Earn Loyalty Points:</strong> Every dollar you pay towards your loan with Clover Credit earns you 1 loyalty point. As you make regular payments, your points will start to accumulate, bringing you closer to exciting rewards. <br />
                       <br />
                       <strong>Unlock Discounts:</strong> Once you reach 1500 loyalty points, you’ll unlock a fantastic perk - a $25 discount on your next payment! It’s our way of saying thank you for choosing Clover Credit and being a part of our loyal customer community.
@@ -139,7 +139,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-span-1 md:col-span-2 hidden lg:block lg:pl-[20px]">
-                    <span className="font-light text-[30px] xl:text-[22.5px] 2xl:text-[30px]">
+                    <span className="commonParagraph font-light text-[30px] xl:text-[22.5px] 2xl:text-[30px]">
                       <strong className="font-medium">Seamless Redemption:</strong> We’ve made it even easier for you to enjoy the benefits of our loyalty program. Once you accumulate 1500 loyalty points, our system will automatically apply a $25 discount to your next payment. No need to worry about redemption or extra steps - your reward will be seamlessly and automatically applied, making your next payment even more affordable.
                     </span>
                   </div>

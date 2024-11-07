@@ -18,7 +18,7 @@ export default function Faqs() {
             <span className="greenParagraph block text-[#00D35B] text-[20px] md:text-[40px]  font-medium mt-[20px] md:mt-[40px]">
               What is an online installment loan?
             </span>
-            <p className="commonParagraph text-[15px] md:text-[30px] font-light leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
+            <p className="commonParagraph text-[15px] md:text-[30px] leading-[18px] md:leading-[36px] mt-[20px] md:mt-[40px]">
               An installment loan is a specific amount of money you borrow and
               then pay back, split up into equal payments within a certain
               timeframe. With Clover Credit our super simple online process gets

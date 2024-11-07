@@ -28,7 +28,7 @@ export default function Login() {
                     </div>
                 </div>
                 <div className="md:container mx-auto h-screen md:h-auto px-[38px] md:px-0 md:flex md:justify-around md:items-center z-9 relative">
-                    <div className="w-full md:max-w-xs relative top-[-50px] md:top-0">
+                    <div className="w-full md:max-w-xs relative top-[-20px] md:top-0">
                         <div className="logo md:hidden mb-[10px]">
                             <div className="w-[100%] mb-1 text-center">
                                 <StaticImage src="../images/icon-text.png" alt="Clover Credit" className="mx-auto w-[150px]" />

@@ -165,7 +165,7 @@ function Signagreement() {
                     </div>
                     <div className="mx-auto relative md:mt-[-120px] xl:md:mt-[-120px] 2xl:md:mt-[-80px] z-0">
                         <div className="grid lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 relative">
-                            <div className="lg:col-span-7 md:col-span-7 sm:col-span-4">
+                            <div className="lg:col-span-7 md:col-span-12 sm:col-span-12">
                                 <div className='bg-gray-200 rounded-[50px] mx-[10%] md:mx-auto xl:pl-[35px] 2xl:pl-[50px] pr-2 md:pt-[90px] pb-2 leftDocSec'>
                                     <div className='progressBack mb-3 w-[100%]'>
                                         <div className="relative pt-1">
@@ -186,8 +186,8 @@ function Signagreement() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='scrollbar-custom overflow-y-scroll xl:h-[110vh] 2xl:h-[90vh]'>
-                                        <div className='bg-white rounded-2xl shadow-xl p-5 md:mr-10 mb-[150px] md:mb-0'>
+                                    <div className='scrollbar-custom overflow-y-scroll xl:h-[110vh] 2xl:h-[90vh] mt-3'>
+                                        <div className='bg-white rounded-2xl shadow-xl p-5 md:mx-10 mb-[150px] md:mb-0'>
                                             <p className='commonParagraph mb-14'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p><p className='commonParagraph mb-14'> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p><p className='commonParagraph mb-14'> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p><p className='commonParagraph mb-14'> This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                                             <p className='commonParagraph mb-14'>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p><p className='commonParagraph mb-14'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p><p className='commonParagraph mb-14'> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p><p className='commonParagraph mb-14'> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p><p className='commonParagraph mb-14'> This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                                             <p className='commonParagraph mb-14'>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
@@ -198,7 +198,7 @@ function Signagreement() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`lg:col-span-5 md:col-span-5 sm:col-span-2 bg-white px-[10%] md:px-0 rounded-tl-[20px] rounded-tr-[20px] md:rounded-none absolute md:relative ${isExpanded ? 'bottom-[0px]' : 'bottom-[-530px] md:bottom-0'} w-[100%]`} style={{boxShadow: '0px 4px 124.9px 0px rgba(0, 0, 0, 0.25)',}}>
+                            <div className={`lg:col-span-5 md:col-span-12 sm:col-span-2 bg-white px-[10%] md:px-0 rounded-tl-[20px] rounded-tr-[20px] md:rounded-none absolute md:relative ${isExpanded ? 'bottom-[0px]' : 'bottom-[-530px] md:bottom-0'} w-[100%]`} style={{boxShadow: '0px 4px 124.9px 0px rgba(0, 0, 0, 0.25)',}}>
                                 <div className='md:px-[45px]'>
                                     <div className='bg-[#D9D9D9] cursor-pointer p-[2px] md:hidden relative top-10 w-1/2 rounded-xl mx-auto toggleBar' onClick={handleToggle}></div>
                                     <div className='flex justify-between items-center flex-wrap md:mt-[90px] mb-[20px] md:mb-[40px] pt-20 md:pt-0'>
@@ -216,7 +216,7 @@ function Signagreement() {
                                                 className="rounded-[12px] bg-[#AEB0B0] px-[25px] py-[10px] md:py-[20px] mb-[10px] md:mb-[20px] font-medium text-[20px] placeholder:text-[20px] placeholder:text-white"
                                             />
                                             <button className="w-full bg-[#00D35B] md:text-[28px] text-white py-[10px] md:py[20px] mb-[15px] md:mb-[25px] rounded-[15px]" type="button">Apply Coupon</button>
-                                            <p className='text-[30px] xl:text-[22.5px] 2xl:text-[30px] mb-[10px] md:mb-[15px]'>Please sign your line of credit agreement</p>
+                                            <p className='text-[20px] xl:text-[22.5px] 2xl:text-[30px] mb-[10px] md:mb-[15px]'>Please sign your line of credit agreement</p>
                                             <input
                                                 type="text"
                                                 placeholder="First Name"
@@ -248,10 +248,11 @@ function Signagreement() {
                                                     name="amount"
                                                     value={formData.amount}
                                                     onChange={handleInputChange}
-                                                    className="form-input flex-1 rounded-[12px] bg-[#AEB0B0] font-medium text-[20px] placeholder:text-[20px] placeholder:text-white  pl-[25px] py-[10px] md:py-[20px] pr-[100px]"
+                                                    className="form-input flex-1 rounded-[12px] bg-[#AEB0B0] font-medium text-[20px] placeholder:text-[20px] placeholder:text-white  pl-[25px] py-[10px] md:py-[20px]"
                                                     placeholder="Amount"
+                                                    maxLength={10}
                                                 />
-                                                <span className="absolute right-[2px] bg-white text-black top-[2px] md:top-[2.5px] rounded-tr-[12px] rounded-br-[12px]  md:font-medium px-[23px] py-[6px] md:py-[16px] text-[20px] border border-gray-400">of $500</span>
+                                                <span className="absolute right-[2px] bg-white text-black top-[2px] md:top-[2.5px] rounded-tr-[12px] rounded-br-[12px]  md:font-medium px-[23px] py-[7px] md:py-[16px] text-[20px] border border-gray-400">of $500</span>
                                             </div>
                                             <button className="w-full bg-[#00D35B] text-white py-[10px] md:py[20px] md:text-[28px] mb-[50px] md:mb-[50px]  rounded-[15px]" type="submit">Sign Agreement</button>
                                         </div>

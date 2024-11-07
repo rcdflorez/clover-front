@@ -92,7 +92,7 @@ export default function Terms() {
 
         <div className="">
           <h1 className="font-semibold text-[40px] xl:text-[62px] 2xl:text-[76px] leading-[43px] md:leading-[87px] mt-[55px] md:mt-[115px]">Ready to Apply? </h1>
-          <span className="font-medium text-[20px] md:text-[40px] leading-[24px] md:leading-[48px] block mt-[20px] md:mt-[40px] text-[#00D35B]">The application process is quick. Just answer a few questions in our easy application process.</span>
+          <span className="greenParagraph font-medium text-[20px] md:text-[40px] leading-[24px] md:leading-[48px] block mt-[20px] md:mt-[40px] text-[#00D35B]">The application process is quick. Just answer a few questions in our easy application process.</span>
           <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full md:w-[600px] text-[19px] md:text-[29px] rounded-[15px] mt-[40px] md:mt-[110px] h-[46px] md:h-[66px] mx-auto block">Apply</button>
           <p className="mb-[55px] md:mb-[115px] "></p>
         </div>
