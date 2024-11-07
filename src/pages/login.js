@@ -34,7 +34,7 @@ export default function Login() {
                                 <StaticImage src="../images/icon-text.png" alt="Clover Credit" className="mx-auto w-[150px]" />
                             </div>
                         </div>
-                        <div className="bg-white px-[28px] py-[25px] rounded-lg bg-opacity-70">
+                        <div className="bg-white px-[28px] py-[25px] rounded-lg bg-opacity-70 w-fit md:w-auto mx-auto md:mx-auto lg:mx-0">
                             <h2 className="text-[20px] md:hidden font-semibold">Login Credentials</h2>
                             <h1 className="text-[50px] hidden md:block font-semibold md:mt-[150px]">Welcome</h1>
                             <form onSubmit={handleSubmit} className="mt-[15px] md:mt-[25px] md:mb-[200px]">
