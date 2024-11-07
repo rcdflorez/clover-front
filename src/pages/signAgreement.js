@@ -51,48 +51,49 @@ function Signagreement() {
             <div className="mx-0 sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-[128px]">
                 <div className='container mx-auto bg-gray-200 md:rounded-[50px]' style={{ boxShadow: '0px 4px 124.9px 0px rgba(0, 0, 0, 0.25)' }}>
                     <div className='md:relative md:z-10'>
-                        <header className="topBgDesign relative md:mt-[90px] pt-[35px] md:pt-[50px]">
-                            <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative w-[95%] lg:w-[95%] h-auto md:h-[100px]" aria-label="Global">
+                        <header className="topBgDesign relative px-[15px] xl:px-[36px] 2xl:px-[50px] xl:bg-contain">
+                            <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-[50px] xl:mt-[40px] 2xl:mt-[50px] rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative top-[30px] h-auto xl:h-[75px] 2xl:h-[100px]" aria-label="Global">
 
                                 {/* Left Side: Logo and Navigation Links */}
                                 <div className="flex lg:flex-1">
                                 <Link to="/" className="-m-1.5 p-1.5 pr-[45px]">
-                                    <div className="headLogo w-[10%] rounded-[13px] p-2 bg-[#00D35B] md:bg-white">
+                                    <div className="headLogo w-[10%] rounded-[13px] p-2">
                                     <StaticImage
-                                        className="logo hidden md:block md:ml-2 md:h-[50px] md:w-[62px]"
+                                        className="logo md:ml-2 md:h-[50px] md:w-[62px]"
                                         src="../images/black-icon.png"
                                         alt="Clover Credit"
                                     />
-                                    <StaticImage
+                                    {/* <StaticImage
                                         className="logo block md:hidden md:h-[50px] md:w-[62px]"
                                         src="../images/icon.png"
                                         alt="Clover Credit"
-                                    />
+                                    /> */}
                                     </div>
                                 </Link>
-                                <div className="hidden lg:flex lg:gap-x-[55px] items-center">
-                                    <Link to="/" className="text-[23px] font-normal leading-6 text-black">Home</Link>
-                                    <Link to="/faqs" className="text-[23px] font-normal leading-6 text-black">FAQs</Link>
-                                    <Link to="/states" className="text-[23px] font-normal leading-6 text-black">States</Link>
-                                    <button onClick={openModal} className="cursor-pointer text-[23px] font-normal leading-6">Support</button>
-                                    <Link to="/contact" className="text-[23px] font-normal leading-6 text-black">Contact Us</Link>
+                                <div className="hidden xl:flex xl:gap-x-[40px] 2xl:gap-x-[55px] items-center">
+                                    <Link to="/" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">Home</Link>
+                                    <Link to="/about" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">About</Link>
+                                    <Link to="/faqs" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">FAQs</Link>
+                                    <Link to="/states" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">States</Link>
+                                    <button onClick={openModal} className="cursor-pointer xl:text-[17px] 2xl:text-[23px] font-normal leading-6">Support</button>
+                                    <Link to="/contact" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">Contact</Link>
                                 </div>
                                 </div>
 
                                 {/* Right Side: Icons */}
-                                <div className="hidden lg:flex items-center gap-x-[15px]">
+                                <div className="hidden xl:flex items-center gap-x-[15px]">
                                 <FontAwesomeIcon icon={faGlobe} className="h-6 w-6" />
                                 <div className="relative">
                                     <input type="text" className="rounded-full border border-gray-300 pl-10 pr-4 py-2 w-full" placeholder="Search..." />
                                     <FontAwesomeIcon icon={faSearch} className="h-5 w-7 text-gray-700 absolute left-2 top-3" />
                                 </div>
-                                <div className="p-1 rounded-full border">
+                                <div className="p-1 rounded-full border mr-[8px]">
                                     <FontAwesomeIcon icon={faUser} className="h-5 w-7 text-gray-700" />
                                 </div>
                                 </div>
 
                                 {/* Mobile Menu Button */}
-                                <div className="flex lg:hidden">
+                                <div className="flex xl:hidden">
                                 <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onClick={toggleMobileMenu}>
                                     <span className="sr-only">Open main menu</span>
                                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -104,7 +105,7 @@ function Signagreement() {
 
                             {/* Mobile Menu */}
                             {isMobileMenuOpen && (
-                                <div className="lg:hidden" role="dialog" aria-modal="true">
+                                <div className="xl:hidden" role="dialog" aria-modal="true">
                                 <div className="fixed inset-0 z-10"></div>
                                 <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                                     <div className="flex items-center justify-between">
@@ -134,10 +135,11 @@ function Signagreement() {
                                     <div className="-my-6">
                                         <div className="space-y-2 text-center">
                                         <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Home</Link>
+                                        <Link to="/about" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">About</Link>
                                         <Link to="/faqs" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">FAQs</Link>
                                         <Link to="/states" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">States</Link>
                                         <button onClick={openModal} className="w-[100%] block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Support</button>
-                                        <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Contact Us</Link>
+                                        <Link to="/contact" className="-mx-3 block rounded-lg px-3 py-2 text-[23px] font-semibold leading-7 text-black hover:bg-gray-50">Contact</Link>
                                         </div>
                                         <div className="flex flex-col items-center">
                                         {/* <FontAwesomeIcon icon={faGlobe} className="h-6 w-6" /> */}
@@ -161,7 +163,7 @@ function Signagreement() {
                             )}
                         </header>
                     </div>
-                    <div className="mx-auto relative md:mt-[-20px] z-0">
+                    <div className="mx-auto relative md:mt-[-120px] xl:md:mt-[-120px] 2xl:md:mt-[-80px] z-0">
                         <div className="grid lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 relative">
                             <div className="lg:col-span-7 md:col-span-7 sm:col-span-4">
                                 <div className='bg-gray-200 rounded-[50px] mx-[10%] md:mx-auto xl:pl-[35px] 2xl:pl-[50px] pr-2 md:pt-[90px] pb-2 leftDocSec'>
@@ -184,7 +186,7 @@ function Signagreement() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='scrollbar-custom overflow-y-scroll'>
+                                    <div className='scrollbar-custom overflow-y-scroll xl:h-[110vh] 2xl:h-[90vh]'>
                                         <div className='bg-white rounded-2xl shadow-xl p-5 md:mr-10 mb-[150px] md:mb-0'>
                                             <p className='commonParagraph mb-14'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p><p className='commonParagraph mb-14'> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p><p className='commonParagraph mb-14'> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p><p className='commonParagraph mb-14'> This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                                             <p className='commonParagraph mb-14'>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p><p className='commonParagraph mb-14'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p><p className='commonParagraph mb-14'> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p><p className='commonParagraph mb-14'> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p><p className='commonParagraph mb-14'> This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>

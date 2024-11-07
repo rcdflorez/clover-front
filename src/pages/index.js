@@ -23,7 +23,7 @@ export default function Home() {
                       alt="Clover Credit"
                     />
                   </div>
-                  <h3 className="text-[40px] xl:text-[72px] 2xl:text-[96px] font-black-italic xl:mb-[20px] 2xl:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
+                  <h3 className="text-[40px] xl:text-[67px] 2xl:text-[96px] font-black-italic xl:mb-[20px] 2xl:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
                     Apply now for a loan up to
                     <span className="text-[#00D35B]">
                       <br /> $2000
