@@ -388,6 +388,18 @@ footer a[aria-current="page"] {
 
 /* Media Queries------------------------------------------------ */
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    .greenParagraph {
+        font-size: 20px !important;
+    }
+
+    .commonParagraph {
+        font-size: 15px !important;
+    }
+
     .scrollbar-custom {
         height: 77vh;
     }
@@ -512,6 +524,10 @@ footer a[aria-current="page"] {
         height: 117px;
         width: 117px;
     }
+    .loginImg{
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 
 @media screen and (min-width:1536px) {
@@ -523,5 +539,9 @@ footer a[aria-current="page"] {
     }
     .commonParagraph {
         font-size: 30px !important;
+    }.loginImg {
+        width: 704.43px;
+        height: 544.76px;
+        margin-left: 0;
     }
 }

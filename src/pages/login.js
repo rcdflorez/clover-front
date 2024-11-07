@@ -36,7 +36,7 @@ export default function Login() {
                         </div>
                         <div className="bg-white px-[28px] py-[25px] rounded-lg bg-opacity-70">
                             <h2 className="text-[20px] md:hidden font-semibold">Login Credentials</h2>
-                            <h2 className="text-[50px] hidden md:block font-semibold md:mt-[150px]">Welcome</h2>
+                            <h1 className="text-[50px] hidden md:block font-semibold md:mt-[150px]">Welcome</h1>
                             <form onSubmit={handleSubmit} className="mt-[15px] md:mt-[25px] md:mb-[200px]">
                                 <div className="mb-[25px] md:mb-[15px]">
                                     <input
@@ -71,7 +71,7 @@ export default function Login() {
                         </div>
                     </div>
                     <div className="hidden md:block">
-                        <StaticImage src="../images//clover.png" />
+                        <StaticImage src="../images/clover.png" className="loginImg" />
                     </div>
                 </div>
             </div>
