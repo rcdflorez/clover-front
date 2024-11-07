@@ -75,14 +75,14 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
               <Link to="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Clover Credit</span>
-                <div className="headLogo w-[10%] rounded-[13px] p-2 bg-[#00D35B] md:bg-white">
-                  <StaticImage
+                <div className="headLogo w-[10%] rounded-[13px] p-2 bg-[#00D35B]">
+                  {/* <StaticImage
                     className="logo hidden md:block md:ml-2 md:h-[50px] md:w-[62px]"
                     src="../images/black-icon.png"
                     alt="Clover Credit"
-                  />
+                  /> */}
                   <StaticImage
-                    className="logo block md:hidden md:h-[50px] md:w-[62px]"
+                    className="logo md:h-[50px] md:w-[62px]"
                     src="../images/icon.png"
                     alt="Clover Credit"
                   />
