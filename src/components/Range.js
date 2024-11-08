@@ -44,10 +44,10 @@ export default function Range({ min, max, step }) {
 
   return (
     <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 md:gap-0 lg:gap-12'>
-      <div className="range-slider mt-[35px] md:mt-[55px]">
+      <div className="range-slider mt-[35px] md:mt-[35px] xl:mt-[40px] 2xl:mt-[55px]">
         <div
           ref={sliderThumbRef}
-          className="range-slider_thumb w-[130px] md:w-[170px]"
+          className="range-slider_thumb w-[130px] md:w-[120px] 2xl:w-[170px]"
           style={{ 
             left: `calc(${(value - min) * 100 / (max - min)}% - (${8 - (value - min) * 100 / (max - min) * 0.15}px))` 
           }}

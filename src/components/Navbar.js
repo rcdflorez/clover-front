@@ -15,7 +15,7 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="topBgDesign relative px-[15px] xl:px-[36px] 2xl:px-[50px] xl:bg-contain">
+    <header className="topBgDesign relative px-[15px] xl:px-[36px] 2xl:px-[50px] xl:bg-contain xl:h-[178px] 2xl:h-[230px]">
       <nav className="container mx-auto flex items-center justify-between bg-white shadow-lg mt-[50px] xl:mt-[40px] 2xl:mt-[50px] rounded-[15px] md:rounded-[20px] p-1 pr-3 z-10 relative h-auto xl:h-[75px] 2xl:h-[100px]" aria-label="Global">
 
         {/* Left Side: Logo and Navigation Links */}

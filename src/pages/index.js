@@ -12,7 +12,7 @@ export default function Home() {
     <React.Fragment>
       <Layout>
         <div className="homebg xl:mb-[100px] 2xl:mb-[190px]">
-          <div className="container mx-auto mt-0 xl:mt-[105px] 2xl:mt-[210px]">
+          <div className="container mx-auto mt-0 xl:mt-[15px] 2xl:mt-[30px]">
             <div className="grid xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-1 gap-2">
               <section className="loanApply sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                 <div className="container mx-auto pb-4 px-4">
@@ -23,7 +23,7 @@ export default function Home() {
                       alt="Clover Credit"
                     />
                   </div>
-                  <h3 className="text-[40px] xl:text-[67px] 2xl:text-[96px] font-black-italic xl:mb-[20px] 2xl:mb-[55px] text-left leading-[43.6px] md:leading-[70px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
+                  <h3 className="text-[40px] xl:text-[47px] 2xl:text-[76px] font-black-italic xl:mb-[10px] 2xl:mb-[35px] text-left leading-[43.6px] md:leading-[55px] 2xl:leading-[104.64px] mx-[30px] md:mx-auto">
                     Apply now for a loan up to
                     <span className="text-[#00D35B]">
                       <br /> $2000
@@ -31,7 +31,7 @@ export default function Home() {
                   </h3>
                   <RangeInput min={300} max={2000} step={50} />
                   <div className="">
-                    <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] lg:py-1 w-full text-[19px] md:text-[29px] rounded-[15px] md:mt-[110px] h-[46px] xl:h-[56px] 2xl:h-[66px]">
+                    <button className="hover:shadow-lg text-white bg-[#00D35B] p-[9px] w-full text-[19px] md:text-[29px] xl:text-[20px] 2xl:text-[25px] rounded-[15px] md:mt-[40px] xl:mt-[45px] 2xl:mt-[70px] ">
                       Apply
                     </button>
                   </div>
