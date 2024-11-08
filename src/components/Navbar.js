@@ -35,12 +35,12 @@ export default function Navbar() {
             </div>
           </Link>
           <div className="hidden xl:flex xl:gap-x-[40px] 2xl:gap-x-[55px] items-center">
-            <Link to="/" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">Home</Link>
-            <Link to="/about" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">About</Link>
-            <Link to="/faqs" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">FAQs</Link>
-            <Link to="/states" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">States</Link>
-            <button onClick={openModal} className="cursor-pointer xl:text-[17px] 2xl:text-[23px] font-normal leading-6">Support</button>
-            <Link to="/contact" className="xl:text-[17px] 2xl:text-[23px] font-normal leading-6 text-black">Contact</Link>
+            <Link to="/" className="xl:text-[14px] 2xl:text-[18px] font-normal leading-6 text-black">Home</Link>
+            <Link to="/about" className="xl:text-[14px] 2xl:text-[18px] font-normal leading-6 text-black">About</Link>
+            <Link to="/faqs" className="xl:text-[14px] 2xl:text-[18px] font-normal leading-6 text-black">FAQs</Link>
+            <Link to="/states" className="xl:text-[14px] 2xl:text-[18px] font-normal leading-6 text-black">States</Link>
+            <button onClick={openModal} className="cursor-pointer xl:text-[14px] 2xl:text-[18px] font-normal leading-6">Support</button>
+            <Link to="/contact" className="xl:text-[14px] 2xl:text-[18px] font-normal leading-6 text-black">Contact</Link>
           </div>
         </div>
 
