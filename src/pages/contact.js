@@ -43,7 +43,7 @@ const ContactForm = () => {
   return (
     <Layout>
       <div className="container mx-auto px-8 md:px-0">
-        <h1 className="text-[40px] xl:text-[62px] 2xl:text-[65px] font-semibold mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
+        <h1 className="text-[40px] xl:text-[62px] 2xl:text-[65px] font-semibold mt-[67px] xl:mt-[0px] 2xl:mt-[50px]">
           Contact Us
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-[7fr_5fr] gap-6 items-center">

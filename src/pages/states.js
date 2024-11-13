@@ -69,7 +69,7 @@ export default function Terms() {
     <div>
       <Layout>
         <section className="container mx-auto px-8 md:px-0">
-          <div className="mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
+          <div className="mt-[67px] xl:mt-[0px] 2xl:mt-[50px]">
             <h1 className="text-[40px] xl:text-[62px] 2xl:text-[65px] font-semibold">
               Where we lend
             </h1>
