@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@fortawesome/fontawesome-svg-core/styles.css';
+@import "@fortawesome/fontawesome-svg-core/styles.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Manjari:wght@100;400;700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Manjari:wght@100;400;700&family=Varela+Round&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manjari:wght@100;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manjari:wght@100;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap");
 
-@import url('https://fonts.cdnfonts.com/css/omnes-2');
+@import url("https://fonts.cdnfonts.com/css/omnes-2");
 
 /* @font-face {
     font-family: 'Omnes';
@@ -70,298 +70,302 @@
     font-weight: 500;
 } */
 
- /* @font-face {
+/* @font-face {
     font-family: 'Omnes';
     src: url('../omnesFont/fonnts.com-Omnes_Cond_SemiBold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 } */
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Omnes';
-    font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Omnes";
+  font-weight: 600;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: url('../images/homebg.png');
-    background-size: cover;
-    /* font-family: "Fredoka", sans-serif; */
-    /* font-family: "Nunito", sans-serif; */
-    font-family: 'Omnes', sans-serif;
-    margin: 0;
-    overflow-x: hidden;
+  background: url("../images/homebg.png");
+  background-size: cover;
+  /* font-family: "Fredoka", sans-serif; */
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Omnes", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 a,
 button {
-    font-family: 'Aldrich';
-    font-size: 18px;
+  font-family: "Aldrich";
+  font-size: 18px;
 }
 
 input::placeholder {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .checkmark {
-    height: 20px;
-    width: 55px;
-    background-color: #eee;
-    border-radius: 50%;
-    /* Makes it rounded */
-    border: 2px solid #ccc;
-    display: inline-block;
-    transition: background-color 0.3s, border-color 0.3s;
-    position: relative;
+  height: 20px;
+  width: 55px;
+  background-color: #eee;
+  border-radius: 50%;
+  /* Makes it rounded */
+  border: 2px solid #ccc;
+  display: inline-block;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
 }
 
-input[type="checkbox"]:checked+.checkmark {
-    background-color: #2196F3;
-    /* Change color when checked */
-    border-color: #2196F3;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-input[type="checkbox"]:checked+.checkmark:after {
-    display: block;
+input[type="checkbox"]:checked + .checkmark {
+  background-color: #2196f3;
+  /* Change color when checked */
+  border-color: #2196f3;
 }
 
 .checkmark:after {
-    left: 6px;
-    top: 2px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 nav .lists a[aria-current="page"] {
-    color: #fff;
-    background-color: rgb(22 163 74);
-    padding: 1px 10px 2px 10px;
-    border-radius: 50px;
+  color: #fff;
+  background-color: rgb(22 163 74);
+  padding: 1px 10px 2px 10px;
+  border-radius: 50px;
 }
 
 footer a[aria-current="page"] {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .customFaqCard svg {
-    /* font-size: 20px; */
-    color: #00d35b;
-    background-color: #aff0c8;
-    padding: 40px;
-    border-radius: 15px;
-    width: 95px;
-    height: 95px;
-    margin-bottom: 50px;
+  /* font-size: 20px; */
+  color: #00d35b;
+  background-color: #aff0c8;
+  padding: 40px;
+  border-radius: 15px;
+  width: 95px;
+  height: 95px;
+  margin-bottom: 50px;
 }
 
 .topBgDesign {
-    background-image: url('../images/top.png');
-    /* background-size: cover; */
-    height: 248px;
-    background-repeat: no-repeat;
-    border-radius: 50px 50px 0px 0px;
+  background-image: url("../images/top.png");
+  /* background-size: cover; */
+  height: 248px;
+  background-repeat: no-repeat;
+  border-radius: 50px 50px 0px 0px;
 }
 
 .bottomBgDesign {
-    background-image: url('../images/bottom.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 0px 0px 50px 50px;
+  background-image: url("../images/bottom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 50px 50px;
 }
 
 .successApplyBtn {
-    background-color: #00d35b;
+  background-color: #00d35b;
 }
 
 .headerBg {
-    min-height: 19vh;
+  min-height: 19vh;
 }
 
 .logoSec {
-    width: 40%;
+  width: 40%;
 }
 
 /* home page bg ---------------------------------------------- */
 
 .homebg {
-    /* background-image: url('../images/homebg.png'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  /* background-image: url('../images/homebg.png'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*Login page SVG-----------------------------------------------*/
 .custom-shape-divider-bottom-1720724252 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-bottom-1720724252 svg {
-    position: relative;
-    display: block;
-    width: calc(239% + 1.3px);
-    height: 145px;
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(239% + 1.3px);
+  height: 145px;
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1720724252 .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /*Header SVG-----------------------------------------------*/
 
 .custom-shape-divider-bottom-1720730232 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1720730232 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 32px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 32px;
 }
 
 .custom-shape-divider-bottom-1720730232 .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /*Footer SVG-----------------------------------------------*/
 .custom-shape-divider-top-1720730029 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1720730029 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 32px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 32px;
 }
 
 .custom-shape-divider-top-1720730029 .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footerBg {
-    position: relative;
-    min-height: 70vh;
-    background: linear-gradient(to bottom, #cde666, #27cb64);
+  position: relative;
+  min-height: 70vh;
+  background: linear-gradient(to bottom, #cde666, #27cb64);
 }
 
 /* map hover color---------------------------------------------- */
 
 .usaMap svg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .usaMap svg path {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .usaMap svg path:hover {
-    fill: #555;
+  fill: #555;
 }
 
 /* WebKit-based browsers (Chrome, Safari) */
 .scrollbar-custom::-webkit-scrollbar {
-    width: 12px;
-    /* Width of the scrollbar */
+  width: 12px;
+  /* Width of the scrollbar */
 }
 
 .scrollbar-custom::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    /* Track background */
+  background: #f1f1f1;
+  /* Track background */
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: #888;
-    /* Scrollbar color */
-    border-radius: 10px;
-    /* Roundness of scrollbar */
+  background: #888;
+  /* Scrollbar color */
+  border-radius: 10px;
+  /* Roundness of scrollbar */
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    /* Color of scrollbar on hover */
+  background: #555;
+  /* Color of scrollbar on hover */
 }
 
 /* Firefox */
 .scrollbar-custom {
-    scrollbar-width: thin;
-    /* "auto" or "thin" */
-    scrollbar-color: #888 #f1f1f1;
-    /* Scrollbar color and track color */
+  scrollbar-width: thin;
+  /* "auto" or "thin" */
+  scrollbar-color: #888 #f1f1f1;
+  /* Scrollbar color and track color */
 }
 
 /* Ensure general styling across browsers */
 .scrollbar-custom {
-    /* Optional: For non-WebKit browsers that don't support custom scrollbars */
-    overflow: auto;
-    /* Ensures scrollbars appear if needed */
+  /* Optional: For non-WebKit browsers that don't support custom scrollbars */
+  overflow: auto;
+  /* Ensures scrollbars appear if needed */
 }
 
 .scrollbar-custom {
-    height: 90vh;
+  height: 90vh;
 }
 
 .progressBack {
-    display: none;
+  display: none;
 }
 
-.progressbar svg{
-    font-weight: bold;
+.progressbar svg {
+  font-weight: bold;
 }
 
 .mainSection {
-    background: linear-gradient(0deg, #00d35b 100px, #fff 0)
-    
+  background: linear-gradient(0deg, #00d35b 100px, #fff 0);
 }
 
-.tabbar div:last-child .hello{
-    right:40px;
-    position: relative;
+.tabbar div:last-child .hello {
+  right: 40px;
+  position: relative;
 }
 
 .aspect-square {
-    aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;
 }
 
-.cardShadow{
-    box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.35);
+.cardShadow {
+  box-shadow: 0px 0px 35px 10px rgba(0, 0, 0, 0.35);
 }
 .footerSupportLink {
-    font-weight: normal !important;
-    font-size: 16px !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
 }
 
 /* .usaMap div svg{
@@ -384,169 +388,171 @@ footer a[aria-current="page"] {
 
 /* Media Queries------------------------------------------------ */
 @media screen and (max-width: 768px) {
+  /*
     h1 {
         font-size: 40px !important;
-    }
+    }*/
 
-    .greenParagraph {
-        font-size: 20px !important;
-    }
+  .greenParagraph {
+    font-size: 20px !important;
+  }
 
-    .commonParagraph {
-        font-size: 15px !important;
-    }
+  .commonParagraph {
+    font-size: 15px !important;
+  }
 
-    .scrollbar-custom {
-        height: 77vh;
-    }
+  .scrollbar-custom {
+    height: 77vh;
+  }
 
-    .logoSec {
-        width: 50%;
-        margin-top: 65px;
-    }
+  .logoSec {
+    width: 50%;
+    margin-top: 65px;
+  }
 
-    .footerLogo a{
-        font-size: 10px;
-    }
-    .headLogo {
-        width: 15%;
-    }
+  .footerLogo a {
+    font-size: 10px;
+  }
+  .headLogo {
+    width: 15%;
+  }
 
-    .footerBg {
-        min-height: 140vh;
-    }
+  .footerBg {
+    min-height: 140vh;
+  }
 
-    .homebg {
-        background-image: url('../images/mobilebg.png');
-        background-size: auto;
-        background-position-y: bottom;
-    }
+  .homebg {
+    background-image: url("../images/mobilebg.png");
+    background-size: auto;
+    background-position-y: bottom;
+  }
 
-    .progressBack {
-        display: block;
-    }
+  .progressBack {
+    display: block;
+  }
 
-    .topBgDesign {
-        background-image: url('../images/topmin.png');
-        background-size: cover;
-        /* Change to contain to show full image */
-        background-position: center;
-        /* Center the image */
-        height: 160px;
-        /* Adjust height if needed */
-        border-radius: 0;
-        /* Optional: Remove border-radius for a different look */
-    }
+  .topBgDesign {
+    background-image: url("../images/topmin.png");
+    background-size: cover;
+    /* Change to contain to show full image */
+    background-position: center;
+    /* Center the image */
+    height: 160px;
+    /* Adjust height if needed */
+    border-radius: 0;
+    /* Optional: Remove border-radius for a different look */
+  }
 
-    .bottomBgDesign {
-        background-image: url('../images/footerlarge.png');
-        background-size: cover;
-        /* Change to contain to show full image */
-        background-position: top;
-        /* Center the image */
-        height: auto;
-        /* Adjust height if needed */
-        border-radius: 0;
-        /* Optional: Remove border-radius for a different look */
-    }
+  .bottomBgDesign {
+    background-image: url("../images/footerlarge.png");
+    background-size: cover;
+    /* Change to contain to show full image */
+    background-position: top;
+    /* Center the image */
+    height: auto;
+    /* Adjust height if needed */
+    border-radius: 0;
+    /* Optional: Remove border-radius for a different look */
+  }
 
-    .customFaqCard svg {
-        width: 21px;
-        height: 21px;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    .tabbar{
-        left: 100px;
-    }
-    .footerSupportLink{
-        font-weight: normal !important;
-        font-size: 10px !important;
-    }
+  .customFaqCard svg {
+    width: 21px;
+    height: 21px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .tabbar {
+    left: 100px;
+  }
+  .footerSupportLink {
+    font-weight: normal !important;
+    font-size: 10px !important;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .scrollbar-custom{
-        height: 120vh;
-    }
+  .scrollbar-custom {
+    height: 120vh;
+  }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
-    .leftDocSec {
-        height: 60vh;
-    }
+  .leftDocSec {
+    height: 60vh;
+  }
 
-    .scrollbar-custom {
-        height: 50vh;
-    }
+  .scrollbar-custom {
+    height: 50vh;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
-    .headerBg {
-        min-height: 20vh;
-    }
+  .headerBg {
+    min-height: 20vh;
+  }
 
-    .footerBg {
-        min-height: 80vh !important;
-    }
-
+  .footerBg {
+    min-height: 80vh !important;
+  }
 }
 
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
-    .headerBg {
-        min-height: 15vh;
-    }
+  .headerBg {
+    min-height: 15vh;
+  }
 
-    .footerBg {
-        min-height: 60vh !important;
-    }
+  .footerBg {
+    min-height: 60vh !important;
+  }
 }
 
 @media screen and (min-width: 2000px) {
-    .headerBg {
-        min-height: 10vh;
-    }
+  .headerBg {
+    min-height: 10vh;
+  }
 
-    .footerBg {
-        min-height: 40vh !important;
-    }
+  .footerBg {
+    min-height: 40vh !important;
+  }
 }
 
-@media screen and (min-width:1280px){
+@media screen and (min-width: 1280px) {
+  /*
     h1{
         font-size: 60px !important;
-    }
-    .greenParagraph{
-        font-size: 30px !important;
-    }
-    .commonParagraph{
-        font-weight: 270 !important;
-        font-size: 22.5px !important;
-    }
-    .customFaqCard svg{
-        height: 117px;
-        width: 117px;
-    }
-    .loginImg{
-        width: 80%;
-        margin-left: 20%;
-    }
+    }*/
+  .greenParagraph {
+    font-size: 30px !important;
+  }
+  .commonParagraph {
+    font-weight: 270 !important;
+    font-size: 22.5px !important;
+  }
+  .customFaqCard svg {
+    height: 117px;
+    width: 117px;
+  }
+  .loginImg {
+    width: 80%;
+    margin-left: 20%;
+  }
 }
 
-@media screen and (min-width:1536px) {
+@media screen and (min-width: 1536px) {
+  /*
     h1 {
         font-size: 80px !important;
-    }
-    .greenParagraph {
-        font-size: 40px !important;
-    }
-    .commonParagraph {
-        font-weight: 270 !important;
-        font-size: 27px !important;
-    }
-    .loginImg {
-        width: 704.43px;
-        height: 544.76px;
-        margin-left: 0;
-    }
+    }*/
+  .greenParagraph {
+    font-size: 40px !important;
+  }
+  .commonParagraph {
+    font-weight: 270 !important;
+    font-size: 27px !important;
+  }
+  .loginImg {
+    width: 704.43px;
+    height: 544.76px;
+    margin-left: 0;
+  }
 }
