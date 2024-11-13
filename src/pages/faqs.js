@@ -12,7 +12,7 @@ export default function Faqs() {
       <Layout>
         <section className="container mx-auto px-8 md:px-0">
           <div className="mt-[67px] xl:mt-[0px] 2xl:mt-[115px]">
-            <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">
+            <h1 className="text-[40px] xl:text-[62px] 2xl:text-[65px] font-semibold">
               How it Works
             </h1>
             <span className="greenParagraph block text-[#00D35B] text-[20px] md:text-[40px]  font-medium mt-[20px] md:mt-[40px]">
@@ -27,7 +27,7 @@ export default function Faqs() {
           </div>
 
           <div className="">
-            <h1 className=" mt-[55px] md:mt-[115px] text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">
+            <h1 className=" mt-[55px] md:mt-[115px] text-[40px] xl:text-[62px] 2xl:text-[65px] font-semibold">
               FAQs
             </h1>
             <span className="greenParagraph block mt-[20px] md:mt-[40px] text-[#00D35B] text-[20px] md:text-[40px]  font-medium">
@@ -96,7 +96,7 @@ export default function Faqs() {
           </div>
 
           <div className="mt-[55px] md:mt-[115px]">
-            <h1 className="text-[40px] xl:text-[62px] 2xl:text-[76px] font-semibold">
+            <h1 className="text-[40px] xl:text-[62px] 2xl:text-[65px] font-semibold">
               Rewards & Perks
             </h1>
             <p className="commonParagraph mt-[20px] md:mt-[40px] text-[15px] md:text-[30px] font-light pb-2">
